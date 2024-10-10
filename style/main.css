@@ -34,6 +34,23 @@ body {
   font-family: "HelveticaNeueCyr";
   font-weight: 400;
   font-size: 0.938vw;
+  display: inline-block;
+  line-height: 2.5;
+}
+.header-link:after {
+  display: block; /*превращаем его в блочный элемент*/
+  content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+  height: 1px; /*задаём высоту линии*/
+  width: 0%; /*задаём начальную ширину элемента (линии)*/
+  background-color: rgba(255, 255, 255, 0.5); /*цвет фона элемента*/
+  transition: width 0.4s ease-in-out;
+}
+.header-link:hover:after,
+.header-link:focus:after {
+  width: 100%;
+}
+.header-link:hover {
+  color: white;
 }
 .dropdown-btn {
   display: flex;
@@ -113,7 +130,8 @@ body {
   margin-top: 8px;
 }
 .vector {
-  width: 23.906vw;
+  width: 23vw;
+  height: 43.6vh;
 }
 
 /* main */
@@ -199,11 +217,52 @@ body {
   font-size: 1.042vw;
   color: white;
 }
-.catalog-btns{
-    display: grid;
-    gap: 2.4vh;
+.catalog-btns {
+  display: grid;
+  gap: 2.4vh;
 }
-.catalog-btn{
-    background: none;
-    border: none;
+.catalog-btn {
+  background: none;
+  border: none;
+}
+
+
+
+
+
+
+
+
+/* footer */
+.footer-logo {
+  display: grid;
+  justify-items: right;
+  width: 12.5vw;
+}
+.fo-Logo {
+  width: 12.188vw;
+}
+.fo-text {
+  text-align: right;
+  color: white;
+  width: 9.844vw;
+  font-size: 0.729vw;
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+}
+.footer-block {
+  margin-top: 28px;
+}
+.footer-down_seo{
+  width: 9.583vw;
+}
+.footer-down{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-down_logo{
+  font-size: 0.833vw;
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
 }
