@@ -4,11 +4,13 @@
 }
 body {
   background: #101010 !important;
+  
 }
 .container-fluid {
   width: 83.333vw !important;
   margin: 0 auto;
   padding: 0 !important;
+  overflow: hidden;
 }
 .main-container {
   width: 90%;
@@ -16,7 +18,7 @@ body {
 }
 .header {
   margin-top: 2vh;
-  height: 100vh;
+  height: 93vh;
 }
 .Logo {
   width: 10.313vw;
@@ -141,11 +143,14 @@ body {
   width: 100%;
   height: 43.6vh;
   object-fit: contain;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 /* main */
-
+.main {
+  overflow: hidden;
+  position: relative;
+}
 .main_fon {
   position: absolute;
   top: 0;
@@ -214,6 +219,9 @@ body {
   -webkit-text-fill-color: transparent;
   line-height: 6.21vh;
   text-transform: uppercase;
+  text-align: left;
+  border: none;
+  background: none;
 }
 .active-text {
   -webkit-text-fill-color: white;
@@ -247,6 +255,7 @@ body {
 /* portfolio */
 .main-portfolio {
   margin-bottom: 18vh;
+  position: relative;
 }
 .main-portfolio_top {
   display: flex;
@@ -301,7 +310,6 @@ body {
   width: 36px;
   font-size: 0.238vw;
 }
-
 .main-content_text {
   text-transform: uppercase;
   color: white;
@@ -326,7 +334,14 @@ body {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 5%;
+  letter-spacing: 3px;
+}
+.main-content_more:hover {
+  color: rgba(255, 255, 255, 0.5);
+  transform: 500ms;
+}
+.btn-arror_rigth:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 .portfolio_main-image {
   display: flex;
@@ -341,6 +356,7 @@ body {
 /* contacts */
 .main-contacts {
   margin: 18vh 0;
+  position: relative;
 }
 .main-contacts_top {
   display: grid;
@@ -361,13 +377,76 @@ body {
   font-size: 1.042vw;
   line-height: 2.6vh;
 }
-.main-contacts_main .city-block_title{
+.main-contacts_main .city-block_title {
   width: 18.49vw;
 }
 .map {
   width: 100%;
 }
-
+/* advantages */
+.main-advantages_items {
+  height: 51vh;
+  overflow: hidden;
+  margin-top: 4vh;
+}
+.main-advantages_item {
+  display: flex;
+  justify-content: space-between;
+  height: 51vh;
+}
+.advantages-item_content {
+  display: grid;
+  gap: 2.604vw;
+  align-content: space-between;
+  justify-items: right;
+}
+.item-content_text {
+  width: 18.385vw;
+}
+.image-advan {
+  width: 39.271vw;
+  height: 100%;
+}
+.item_title {
+  width: 18vw;
+  font-size: 1.667vw;
+  color: white;
+  font-family: "Futura PT";
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.advantages-item_title {
+  display: grid;
+  align-items: center;
+}
+.item-content_text {
+  color: white;
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+  font-size: 1.042vw;
+}
+.item-content_numder {
+  color: white;
+  font-family: "Futura PT";
+  font-weight: 600;
+  font-size: 2.708vw;
+}
+.numder-small {
+  color: white;
+  font-family: "Futura PT";
+  font-weight: 600;
+  font-size: 1.458vw;
+}
+.arr-up {
+  font-size: 0.238vw;
+  width: 16px;
+  height: 40px;
+}
+.arr-down {
+  font-size: 0.238vw;
+  width: 16px;
+  height: 40px;
+}
 /* footer */
 .footer-logo {
   display: grid;
@@ -481,4 +560,54 @@ body {
   font-weight: 400;
   text-decoration: none;
   font-size: 0.833vw;
+}
+
+/*backlight*/
+.main-catalog_backlight {
+  position: absolute;
+  width: 10vw;
+  height: 15vh;
+  top: -17vw;
+  right: -330px;
+  border-radius: 50%;
+  background-color: rgba(177, 177, 177, 0.4);
+  box-shadow: -250px 270px 300px 200px rgba(177, 177, 177, 0.4);
+  z-index: -3;
+  border: none;
+}
+.main-advantages_backlight{
+  position: absolute;
+  width: 41vw;
+  height: 8vh;
+  top: 160vh;
+  right: -820px;
+  border-radius: 50%;
+  background-color: rgba(177, 177, 177, 0.4);
+  box-shadow: -250px 270px 300px 200px rgba(177, 177, 177, 0.4);
+  z-index: -3;
+  border: none;
+}
+.main-portfolio_backlight{
+  position: absolute;
+  width: 41vw;
+  height: 8vh;
+  top: 400px;
+  left: -950px;
+  border-radius: 50%;
+  background-color: rgba(177, 177, 177, 0.3);
+  box-shadow: 420px 270px 320px 200px rgba(177, 177, 177, 0.3);
+  z-index: -3;
+  border: none;
+}
+.main-contacts_backlight{
+  position: absolute;
+  width: 41vw;
+  height: 8vh;
+  bottom: 660px;
+  left: -950px;
+  border-radius: 50%;
+  background-color: rgba(177, 177, 177, 0.3);
+  box-shadow: 420px 270px 320px 200px rgba(177, 177, 177, 0.3);
+  z-index: -3;
+  border: none;
 }
