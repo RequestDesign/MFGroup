@@ -9,3 +9,8 @@ dropdown.addEventListener('mouseover', function() {
 dropdown.addEventListener('mouseout', function() {
   dropdownMenu.style.display = 'none';
 });
+
+document.querySelector('.burger-btn').addEventListener('click', function() {
+  const menu = document.querySelector('.header-top_burger');
+  menu.classList.toggle('open');
+});

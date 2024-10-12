@@ -4,7 +4,6 @@
 }
 body {
   background: #101010 !important;
-  
 }
 .container-fluid {
   width: 83.333vw !important;
@@ -33,6 +32,11 @@ body {
   display: flex !important;
   flex-direction: row !important;
   gap: 1.25vw;
+}
+.header-top_burger {
+  display: flex;
+  justify-content: space-between;
+  gap: 5.885vw;
 }
 .header-link {
   color: white;
@@ -64,6 +68,12 @@ body {
   padding: 1.2vh 1.25vw;
   gap: 0.833vw;
   border: none;
+}
+.burger-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5vw;
 }
 .dropdown.footer_model:hover .dropdown-menu {
   display: block;
@@ -162,27 +172,35 @@ body {
 .main-catalog {
   display: flex;
   justify-content: space-between;
-  height: 68vh;
   margin-top: 18vh;
   margin-bottom: 18vh;
 }
 .image-catalog {
-  position: relative;
+  display: none;
   width: 53.333vw;
   height: 100%;
+  object-fit: cover;
 }
-.main-catalog_items {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  z-index: 0;
+.image-active {
+  display: flex;
+}
+.image-btn{
+  position: relative;
 }
 .main-catalog_item {
   position: relative;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  height: 124px;
+}
+.main-catalog_items {
+  display: grid;
+  gap: 2.6vh;
+  z-index: 0;
 }
 .catalog-item_btn {
   position: absolute;
-  display: flex;
+  display: none;
   align-items: center;
   gap: 0.833vw;
   font-size: 0.938vw;
@@ -194,6 +212,9 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(124, 10, 77, 1);
+}
+.item-btn_active {
+  display: flex;
 }
 .catalog-item_btn:hover {
   box-shadow: 4.5px 0px 15px 3px rgba(255, 255, 255, 0.178);
@@ -211,17 +232,20 @@ body {
   gap: 2vmax;
 }
 .text-fon {
+  width: 14vw;
+  height: 100%;
   font-family: "Futura PT";
   font-weight: 600;
   font-size: 2.708vw;
   color: white;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 0.5px white;
   -webkit-text-fill-color: transparent;
   line-height: 6.21vh;
   text-transform: uppercase;
   text-align: left;
   border: none;
   background: none;
+  z-index: -1;
 }
 .active-text {
   -webkit-text-fill-color: white;
@@ -229,8 +253,8 @@ body {
 }
 .main-catalog_btn {
   display: grid;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+  margin-top: 4.4vh;
+  margin-bottom: 4.4vh;
   justify-items: end;
   align-content: space-between;
 }
@@ -430,6 +454,9 @@ body {
   font-family: "Futura PT";
   font-weight: 600;
   font-size: 2.708vw;
+  height: 42px;
+  display: flex;
+  align-items: center;
 }
 .numder-small {
   color: white;
@@ -547,6 +574,9 @@ body {
   display: flex;
   gap: 3.125vw;
 }
+.logord-svg {
+  width: 1.667vw;
+}
 .city-block {
   display: grid;
   gap: 12px;
@@ -562,6 +592,11 @@ body {
   font-size: 0.833vw;
 }
 
+.btn-links_title {
+  border: none;
+  background: none;
+  height: 26px;
+}
 /*backlight*/
 .main-catalog_backlight {
   position: absolute;
@@ -575,7 +610,7 @@ body {
   z-index: -3;
   border: none;
 }
-.main-advantages_backlight{
+.main-advantages_backlight {
   position: absolute;
   width: 41vw;
   height: 8vh;
@@ -587,7 +622,7 @@ body {
   z-index: -3;
   border: none;
 }
-.main-portfolio_backlight{
+.main-portfolio_backlight {
   position: absolute;
   width: 41vw;
   height: 8vh;
@@ -599,7 +634,7 @@ body {
   z-index: -3;
   border: none;
 }
-.main-contacts_backlight{
+.main-contacts_backlight {
   position: absolute;
   width: 41vw;
   height: 8vh;
@@ -610,4 +645,401 @@ body {
   box-shadow: 420px 270px 320px 200px rgba(177, 177, 177, 0.3);
   z-index: -3;
   border: none;
+}
+.no-grid {
+  display: grid;
+}
+.on-grid {
+  display: none;
+}
+.no-flex {
+  display: flex;
+}
+.on-flex{
+  display: none;
+}
+@media (max-width: 420px) {
+  .container-fluid {
+    margin: 0;
+    margin-left: 4.267vw !important;
+    margin-right: 4.267vw !important;
+    width: 91.467vw !important;
+    overflow: hidden;
+  }
+  .main-container {
+    margin: 0;
+    margin-left: 4.267vw !important;
+    margin-right: 4.267vw !important;
+    width: 91.467vw !important;
+    overflow: hidden;
+  }
+  .header-main_block {
+    display: grid;
+    gap: 12px;
+  }
+  .header-main_title {
+    width: 76.8vw;
+    font-size: 7.467vw;
+    line-height: 33.6px;
+  }
+  .header-main_text {
+    width: 76.8vw;
+    font-size: 4.267vw;
+    line-height: 20.8px;
+  }
+  .vector {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+  }
+  .burger-btn {
+    /* display: none; */
+    order: 1;
+  }
+  .header-top_burger {
+    display: grid;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Скрываем за пределами экрана */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 16, 16, 1);
+    transition: left 0.3s ease;
+    padding: 0 16px 40px 16px;
+  }
+  .dropdown-btn {
+    width: 100%;
+  }
+  .header-top_burger.open {
+    left: 0; /* Показываем меню */
+  }
+  .header-logo {
+    order: 2;
+  }
+  .header-top {
+    align-items: end;
+  }
+  .header-contacts {
+    order: 3;
+  }
+  .Logo {
+    width: 107px;
+  }
+  .burger-btn {
+    border: none;
+    background: none;
+  }
+  .header-links {
+    order: 1;
+  }
+  .header-menu {
+    width: 100%;
+    order: 2;
+  }
+  .navbar-nav {
+    display: grid !important;
+    gap: 28px;
+  }
+  .header-link {
+    font-size: 4.267vw;
+    height: 16px;
+  }
+  .header-main {
+    height: 81vh;
+    margin-top: 40px;
+  }
+  .main_fon {
+    object-fit: cover;
+    height: 100vh;
+  }
+  /* portfolio */
+  .main-portfolio{
+    margin-bottom: 80px;
+  }
+  .main-portfolio_main {
+    display: grid;
+    margin-top: 20px;
+    gap: 0;
+  }
+  
+  .portfolio-main_content {
+    order: 3;
+    display: flex;
+    justify-content: space-between;
+    height: 36px;
+  }
+  .portfolio-item_btn{
+   font-size: 14px;
+   padding: 9px 14px;
+   gap: 12px;
+  }
+  .portfolio_main-image {
+    order: 2;
+    height: 202px;
+    gap: 0;
+  }
+  .portfolio-image {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+    height: 202px;
+  }
+  .main-content_text{
+    position: absolute;
+    bottom: 148px;
+    left: 28px;
+    z-index: 2;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 400;
+    font-family: "HelveticaNeueCyr";
+    text-transform: capitalize;
+  }
+  /* catalog */
+  .main-catalog {
+    display: grid;
+    margin: 80px 0;
+  }
+  .main-catalog_btn {
+    order: 1;
+  }
+  .catalog-btn_text {
+    font-size: 4.267vw;
+    width: 100%;
+    text-align: left;
+  }
+  .main-catalog_items {
+    order: 2;
+    gap: 12px;
+  }
+  .text-fon {
+    font-size: 24px;
+    width: 288px;
+    height: 58px;
+    line-height: 28.8px;
+    color: rgba(217, 217, 217, 1);
+  }
+  .main-catalog_item {
+    display: grid;
+    height: 100%;
+  }
+  .image-catalog {
+    width: 100%;
+    margin-top: 16px;
+  }
+  .image-catalog .catalog-item_btn{
+    bottom: -50px;
+  }
+  .catalog-item_btn {
+    padding: 9px 14px;
+    width: 145px;
+    height: 36px;
+    font-size: 14px;
+    gap: 12px;
+  }
+  .btn_arror-left {
+    width: 32px;
+  }
+  .arror-left {
+    width: 100%;
+  }
+  /* advantages */
+  .main-advantages{
+    margin-bottom: 80px;
+  }
+  .main-advantages .portfolio-top_title{
+    text-align: center;
+    line-height: 33.6px;
+  }
+  .main-advantages_items{
+    display: flex;
+    width: 100%;
+  }
+  .main-advantages_item{
+    width: 91vw;
+    display: grid;
+  }
+  .image-advan{
+    orphans: 1;
+    width: 91vw;
+  }
+  .advantages-item_title{
+    order: 2;
+    justify-content: center;
+  }
+  .item_title{
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+  }
+  .advantages-item_content{
+    order: 3;
+  }
+  .item-content_text{
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+  }
+  .catalog-btns{
+    transform: rotate(90deg) ;
+  }
+  .main-advantages_btn{
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .item-content_numder ,.numder-small{
+    font-size: 16px;
+    margin-top: -40px;
+  }
+  /* contacts */
+  .main-contacts {
+    margin: 80px 0;
+  }
+  .main-contacts_content {
+    display: grid;
+    gap: 20px;
+  }
+  .main-contacts_top {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    justify-content: left;
+    order: 1;
+  }
+  .portfolio-top_title {
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+  }
+  .contacts-top_text {
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .main-contacts_main {
+    display: grid;
+    order: 3;
+    margin: 0;
+    gap: 12px;
+    font-size: 14px;
+  }
+  .main-contacts_main .city-block_title {
+    width: 100%;
+    font-size: 14px;
+  }
+  .main-contacts_down {
+    order: 2;
+  }
+  .map {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  /* footer */
+  .footer-top {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+  }
+  .footer-block {
+    display: grid;
+  }
+  .footer-links_title {
+    cursor: pointer;
+  }
+  .footer-logo {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+  .fo-Logo {
+    width: 107px;
+    margin-bottom: 16px;
+    margin-left: -10px;
+  }
+  .fo-text {
+    width: 189.79px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .logo-ages {
+    width: 60px;
+    height: 25px;
+  }
+  .footer-down_seo {
+    width: 100%;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  .footer-down {
+    display: grid;
+    justify-content: center;
+  }
+  .footer-down_logord {
+    display: grid;
+    font-size: 4.375vw;
+    justify-items: center;
+    line-height: 19.6px;
+    text-align: center;
+  }
+  .logord {
+    gap: 8px;
+  }
+  .logord-text {
+    font-size: 4.375vw;
+    letter-spacing: 1px;
+  }
+  .logord-svg {
+    width: 24px;
+    height: 24px;
+  }
+  .footer-main {
+    display: grid;
+    gap: 20px;
+  }
+  .footer-links_title {
+    font-size: 14px;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  .footer-links_link {
+    font-size: 14px;
+  }
+  .footer-links {
+    gap: 1.6vh;
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
+  .btn-links_title {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .arrow-drop-up,
+  .arrow-drop-down {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .over {
+    display: none;
+  }
+  .no-grid {
+    display: none;
+  }
+  .on-grid {
+    display: grid;
+  }
+  .on-flex{
+    display: flex;
+  }
+  .no-flex {
+    display: none;
+  }
 }
