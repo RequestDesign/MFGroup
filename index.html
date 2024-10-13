@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MR group</title>
-</head>
-<body>
+    <link rel="stylesheet" href="assets/fonts/HelveticaNeueCyr/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/Futura/stylesheet.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header">
+        
+        <!-- <img class="main_fon" src="assets/images/main/main_fon.png" alt=""> -->
+        <div class="container-fluid">
+            <div class="header-top">
+                <a href="main.html" class="header-logo">
+                    <img class="Logo" src="assets/images/main/Logo.png" alt="">
+                </a>
+                <button class="burger-btn on-grid">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 15.75V13.1667H22V15.75H0ZM0 9.29167V6.70833H22V9.29167H0ZM0 2.83333V0.25H22V2.83333H0Z" fill="white"/>
+                    </svg>                        
+                </button>
+                <div class="header-top_burger">
+
+                    <div class="header-top">
+                        <div class="header-top_backlight"></div>
+                        <button class="burger-btn burgar-btn_close on-grid">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.3588 19.7802L11.9988 13.4102L5.63875 19.7802L4.21875 18.3602L10.5888 12.0002L4.21875 5.64021L5.63875 4.22021L11.9988 10.5902L18.3588 4.23022L19.7688 5.64021L13.4088 12.0002L19.7688 18.3602L18.3588 19.7802Z" fill="white"/>
+                            </svg>                                                        
+                        </button>
+                        <div class="header-logo on-grid">
+                            <img class="Logo" src="assets/images/main/Logo.png" alt="">
+                        </div>
+                        <a class="number-mobl on-grid" href="tel:+74952100111">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.01128 9.9714C5.34345 15.052 9.48658 19.0789 14.6298 21.2639L15.4557 21.6322C16.3703 22.0397 17.3993 22.1111 18.3613 21.8339C19.3234 21.5566 20.1568 20.9485 20.7147 20.1167L21.7945 18.5076C21.9634 18.2553 22.0318 17.9488 21.9862 17.6485C21.9406 17.3482 21.7842 17.0759 21.5479 16.8852L17.8897 13.932C17.7622 13.8293 17.6154 13.7533 17.4579 13.7087C17.3005 13.6642 17.1356 13.6519 16.9733 13.6727C16.8109 13.6934 16.6545 13.7468 16.5133 13.8296C16.3721 13.9124 16.2491 14.0229 16.1516 14.1544L15.0196 15.6821C12.1139 14.2461 9.76196 11.8923 8.32741 8.98458L9.8529 7.85193C9.98437 7.75441 10.0948 7.63132 10.1775 7.49004C10.2603 7.34875 10.3136 7.1922 10.3344 7.02977C10.3551 6.86734 10.3429 6.70239 10.2983 6.54482C10.2538 6.38725 10.1779 6.24032 10.0752 6.11284L7.12378 2.45237C6.93322 2.21593 6.66108 2.05948 6.36097 2.01381C6.06086 1.96815 5.75454 2.0366 5.50235 2.20566L3.88334 3.29213C3.04699 3.85333 2.4369 4.69339 2.16176 5.66265C1.88662 6.63191 1.96428 7.66743 2.38093 8.58475L3.01128 9.9714Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="burger-content">
+                        <div class="header-menu">
+                            <div class="dropdown">
+                                <button class="dropdown-btn"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.953125" y="0.200195" width="8" height="8" fill="#101010"/>
+                                        <rect x="10.9531" y="0.200195" width="8" height="8" fill="#101010"/>
+                                        <rect x="10.9531" y="10.2002" width="8" height="8" fill="#101010"/>
+                                        <rect x="0.953125" y="10.2002" width="8" height="8" fill="#101010"/>
+                                    </svg>                                
+                                <div class="sorting_text">Аренда</div>
+                                </button>
+                                <ul class="dropdown-menu">
+                                <li><a href="" class="dropdown-item" href="#">Свет</a></li>
+                                <li><a href="" class="dropdown-item" href="#">Звук</a></li>
+                                <li><a href="" class="dropdown-item" href="#">Сцена</a></li>
+                                <li><a href="" class="dropdown-item" href="#">Энергообеспечение</a></li>
+                                <li><a href="" class="dropdown-item" href="#">Продакшн</a></li>
+                                </ul>
+                            </div>                     
+                        </div>
+                        <div class="header-links">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="header-link">Продакшн</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="header-link">Портфолио</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="header-link">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="header-link">Презентация</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="header-link">Клиенты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="header-link">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-down_backlight"></div>
+                    </div>
+                </div>
+                <div class="header-contacts">
+                    <a class="on-grid" href="tel:+74952100111">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.01128 9.9714C5.34345 15.052 9.48658 19.0789 14.6298 21.2639L15.4557 21.6322C16.3703 22.0397 17.3993 22.1111 18.3613 21.8339C19.3234 21.5566 20.1568 20.9485 20.7147 20.1167L21.7945 18.5076C21.9634 18.2553 22.0318 17.9488 21.9862 17.6485C21.9406 17.3482 21.7842 17.0759 21.5479 16.8852L17.8897 13.932C17.7622 13.8293 17.6154 13.7533 17.4579 13.7087C17.3005 13.6642 17.1356 13.6519 16.9733 13.6727C16.8109 13.6934 16.6545 13.7468 16.5133 13.8296C16.3721 13.9124 16.2491 14.0229 16.1516 14.1544L15.0196 15.6821C12.1139 14.2461 9.76196 11.8923 8.32741 8.98458L9.8529 7.85193C9.98437 7.75441 10.0948 7.63132 10.1775 7.49004C10.2603 7.34875 10.3136 7.1922 10.3344 7.02977C10.3551 6.86734 10.3429 6.70239 10.2983 6.54482C10.2538 6.38725 10.1779 6.24032 10.0752 6.11284L7.12378 2.45237C6.93322 2.21593 6.66108 2.05948 6.36097 2.01381C6.06086 1.96815 5.75454 2.0366 5.50235 2.20566L3.88334 3.29213C3.04699 3.85333 2.4369 4.69339 2.16176 5.66265C1.88662 6.63191 1.96428 7.66743 2.38093 8.58475L3.01128 9.9714Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="+74952100111" class="header-contacts_tel no-grid">+7 (495) 210-01-11</a>
+                    <div class="header-contacts_address no-grid">г. Москва, ул.Бутлерова, 17</div>
+                </div>
+            </div>
+            <!-- <div class="header-main">
+                <img class="vector" src="assets/images/main/Vector.png" alt="">
+                <div class="header-main_block">
+                    <div class="header-main_title">Техническое обеспечение и организация событий</div>
+                    <div class="header-main_text">Вы можете арендовать как малую часть, так и весь спектр оборудования для вашего мероприятия </div>
+                </div>
+                
+            </div> -->
+            <div class="header-down no-grid"></div>
+        </div>
+    </header>
+        <div class="main">
+            <div class="container-fluid">
+                <div class="main-content">
+                    <a href="main.html" class="dropdown-item" href="#">Главная страница</a>
+                </div>
+                
+            </div>
+        </div>
     
-</body>
+    
+  </body>
+  <style>
+    .header{
+        height: 100% !important;
+    }
+    .dropdown-item {
+      color:  #101010;
+      background: white;
+      font-family: "HelveticaNeueCyr" !important;
+      font-weight: 500 !important;
+      font-size: 0.938vw !important;
+      height: 48px;
+      display: grid;
+      align-content: center;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0 !important;
+      padding-left: 0.833vw !important;
+    }
+    .dropdown-item:hover{
+        background: rgba(255, 255, 255, 0.886);
+        color: rgb(0, 0, 0);
+    }
+    .main-content{
+        margin-top: 50px;
+        display: grid;
+        align-items: center;
+        gap: 20px;
+    }
+    @media (max-width:420px) {
+        .dropdown-item{
+            font-size: 5vw !important;
+        }
+    }
+  </style>
 </html>
