@@ -9,18 +9,21 @@ body {
   width: 83.333vw !important;
   margin: 0 auto;
   padding: 0 !important;
-  overflow: hidden;
 }
 .main-container {
   width: 90%;
   margin-left: 9.375vw;
 }
 .header {
+  overflow:visible;
   margin-top: 2vh;
   height: 93vh;
 }
 .Logo {
   width: 10.313vw;
+}
+.svg-image{
+  width: 0.99vw;
 }
 .header-top {
   display: flex;
@@ -75,8 +78,10 @@ body {
   width: 100%;
   gap: 5vw;
 }
-.dropdown.footer_model:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {
   display: block;
+  inset: 6.03vh auto auto 0;
+  z-index: 5 !important;
 }
 .sorting_text {
   font-family: "HelveticaNeueCyr";
@@ -96,11 +101,14 @@ body {
 }
 .dropdown-menu {
   width: 10.521vw;
-  inset: 43px auto auto 0px !important;
+ 
   border-radius: 0 !important;
   padding: 0 !important;
   border: 0 !important;
+  z-index: 100 !important;
+  
 }
+
 .header-contacts_tel {
   color: white;
   text-decoration: none;
@@ -217,6 +225,9 @@ body {
   display: flex;
 }
 .catalog-item_btn:hover {
+  box-shadow: 4.5px 0px 15px 3px rgba(255, 255, 255, 0.178);
+}
+.dropdown-btn:hover{
   box-shadow: 4.5px 0px 15px 3px rgba(255, 255, 255, 0.178);
 }
 .btn_arror-left {
@@ -552,7 +563,6 @@ body {
   font-family: "Futura PT";
   font-weight: 500;
   color: white;
-  margin-bottom: 3.6vh;
   text-transform: uppercase;
 }
 .footer-links {
@@ -596,6 +606,7 @@ body {
   border: none;
   background: none;
   height: 26px;
+  margin-bottom: 3.6vh;
 }
 /*backlight*/
 .main-catalog_backlight {
@@ -697,6 +708,7 @@ body {
     order: 1;
   }
   .header-top_burger {
+    overflow: hidden;
     display: grid;
     gap: 0;
     position: fixed;
@@ -1044,7 +1056,6 @@ body {
   }
   .footer-links_title {
     font-size: 14px;
-    margin-bottom: 0;
     cursor: pointer;
   }
   .footer-links_link {
@@ -1063,6 +1074,7 @@ body {
     display: grid;
   }
   .btn-links_title {
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
     height: 30px;
@@ -1104,7 +1116,7 @@ body {
     height: 38.125vh;
     background-color: rgba(124, 10, 77, 0.6);
     box-shadow: -120px 20px 170px 40px rgba(124, 10, 77, 0.6);
-    right: -60px;
+    right: -100px;
     bottom: 0;
     z-index: -1;
   }
