@@ -1,0 +1,43 @@
+.main-bestproject_top {
+  display: flex;
+  justify-content: flex-start;
+  gap: 27%;
+}
+.bestproject-top_prev {
+  border: none;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Futura PT";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 420px) {
+  .main-bestproject_top {
+    display: grid;
+    gap: 26px;
+    width: 91vw;
+  }
+  .portfolio-top_title {
+    line-height: 33.6px;
+    letter-spacing: 2px;
+    font-size: 28px;
+    width: 91vw;
+    height: 34px;
+    display: grid;
+    justify-items: center;
+  }
+  .main-portfolio_backlight{
+    top: 20px;
+  }
+  .bestproject-top_prev{
+    font-size: 14px;
+  }
+}

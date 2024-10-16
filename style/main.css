@@ -101,12 +101,10 @@ body {
 }
 .dropdown-menu {
   width: 10.521vw;
- 
   border-radius: 0 !important;
   padding: 0 !important;
   border: 0 !important;
   z-index: 100 !important;
-  
 }
 
 .header-contacts_tel {
@@ -210,6 +208,7 @@ body {
   position: absolute;
   display: none;
   align-items: center;
+  border: none;
   gap: 0.833vw;
   font-size: 0.938vw;
   bottom: 0;
