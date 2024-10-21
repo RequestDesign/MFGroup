@@ -1,0 +1,214 @@
+.main-way_links {
+  display: flex;
+  gap: 5px;
+  height: 18px;
+  margin-bottom: 40px;
+}
+.main-link {
+  font-family: "HelveticaNeueCyr";
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+
+  overflow: hidden;
+}
+.main-way_square {
+  color: white;
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: 22.4px;
+}
+/* main */
+.main-product {
+  margin-bottom: 18vh;
+}
+.main-product_content {
+  display: flex;
+  gap: 2.604vw;
+}
+.product-content_block {
+  display: grid;
+  justify-content: space-between;
+}
+.product-content_image,
+.image-content {
+  position: relative;
+}
+.image-content {
+  width: 39.323vw;
+  height: 100%;
+}
+.content-image_numder {
+  display: flex;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+.image-number {
+  color: rgba(31, 31, 31, 1);
+  font-family: "HelveticaNeueCyr";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: left;
+}
+.image-number_square {
+  font-family: "HelveticaNeueCyr";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: left;
+  color: rgba(31, 31, 31, 1);
+}
+.btn-image {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  border: none;
+  background: none;
+}
+.content-section_items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.content-section_item {
+  height: 3.6vh;
+  padding: 1.2vh 0.833vw;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "HelveticaNeueCyr";
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: 1px;
+}
+.block-main_file {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.main-border {
+  width: 11vmax;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.main-file_text {
+  color: white;
+  font-family: "HelveticaNeueCyr";
+  font-size: 0.93vw;
+  font-weight: 400;
+  text-align: left;
+  margin-right: 5px;
+}
+.svg-file {
+  width: 1.25vw;
+  /* margin-bottom: 5px; */
+}
+.block-main_title {
+  font-family: "Futura PT";
+  font-size: 1.667vw;
+  font-weight: 600;
+  text-align: left;
+  color: white;
+  margin-bottom: 1vmax;
+  text-transform: uppercase;
+  width: 30vw;
+}
+.block-main_text {
+  font-family: "HelveticaNeueCyr";
+  font-size: 0.833vw;
+  font-weight: 400;
+  text-align: left;
+  color: white;
+  margin-bottom: 1vmax;
+  width: 30vw;
+}
+
+.content-block_botton {
+  width: 100%;
+  display: grid;
+  align-items: end;
+  justify-items: start;
+}
+/* similar */
+.similar-content_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6vh;
+}
+.content-top_title {
+  color: white;
+  font-family: "Futura PT";
+  font-size: 2.708vw;
+  font-weight: 600;
+  line-height: 62.4px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.similar-content_main {
+  margin-left: 9.375vw;
+  margin-bottom: 18vh;
+  width: 100%;
+  display: flex;
+  gap: 3.125vw;
+}
+.content-main_item {
+  display: grid;
+  justify-items: center;
+  /* gap: 3vh; */
+}
+.main-item_img {
+  width: 11.979vw;
+}
+.main-item_title {
+  font-family: "HelveticaNeueCyr";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: 2vh;
+  text-align: center;
+  width: 13.177vw;
+  color: white;
+  margin-top: 4vh;
+}
+.main-item_btn {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: none;
+  padding: 1.4vh 4.375vw;
+  color: white;
+  font-family: "Futura PT";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.833vw;
+  margin-top: 3.4vh;
+}
+.main-content_btn {
+  gap: 0.4vh;
+}
+.btn-arror_rigth,
+.btn-arror_left {
+  width: 80px;
+}
+@media (max-width: 420px) {
+  .content-section_items {
+    height: 100%;
+  }
+  .content-section_item {
+    font-size: 14px;
+    padding: 11px 14px;
+    height: 36px;
+  }
+}
