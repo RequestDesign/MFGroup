@@ -1,0 +1,139 @@
+.catalog-content_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-catalog {
+  margin-top: 5vh;
+  margin-bottom: 18vh;
+  z-index: 5;
+}
+.portfolio-item_btn {
+  border: none;
+}
+/* catalog-content_main */
+.main-services {
+  margin-bottom: 18vh;
+  position: relative;
+}
+.catalog-content_main {
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+}
+.table_blur {
+  border-collapse: collapse;
+  width: 100%;
+}
+.catalog-content_botton {
+  display: flex;
+  justify-content: center;
+}
+.table_blur td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 50px 30px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.main-item_border {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.td-border {
+  border-bottom: 0px !important;
+}
+.services-content_top,
+.services_content_botton {
+  display: flex;
+  justify-content: center;
+}
+.prortfolio-content_project {
+  display: grid;
+  gap: 2vh;
+  width: 100%;
+  object-fit: fill;
+  position: relative;
+  text-decoration: none;
+}
+.services-content_main {
+  display: grid;
+  gap: 24px;
+}
+.content-main_top {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.content-main_botten {
+  display: flex;
+  gap: 24px;
+}
+.block-white_text {
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 38%;
+  color: white;
+  text-transform: uppercase;
+  font-family: "HelveticaNeueCyr";
+  font-weight: 600;
+  font-size: 1.667vw;
+  text-align: center;
+}
+.text-project {
+  top: 45% !important;
+}
+.block-white_text:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: width 0.4s ease-in-out;
+}
+.prortfolio-block_white:hover {
+  .block-white_text:hover:after,
+  .block-white_text:focus:after {
+    width: 100%;
+  }
+}
+.main-services_content {
+  display: grid;
+  gap: 60px;
+}
+/* main-instrumentation */
+.main-instrumentation {
+  margin-bottom: 18vh;
+  position: relative;
+}
+.content-top_title {
+  width: 812px;
+  text-align: center;
+}
+.instrumentation-content_botton {
+  margin-top: 6vh;
+  display: flex;
+  align-items: center;
+  gap: 3.125vw;
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.instrumentation-botton_text {
+  font-family: "HelveticaNeueCyr";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  color: white;
+  width: 750px;
+}
+@media (max-width: 420px) {
+  .prortfolio-content_project {
+    width: 100%;
+    position: relative;
+  }
+  .block-white_text {
+    font-size: 18px;
+    left: 25%;
+    width: 200px;
+  }
+}

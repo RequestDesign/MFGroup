@@ -1,0 +1,47 @@
+.main-way_links {
+  display: flex;
+  gap: 5px;
+  height: 18px;
+  margin-bottom: 40px;
+}
+.main-link {
+  font-family: "HelveticaNeueCyr";
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+}
+.main-way_square {
+  color: white;
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: 22.4px;
+}
+.portfolio-main_btn,
+.bestproject-top_prev {
+  display: none;
+}
+@media (max-width: 420px) {
+  .main-way_links {
+    display: none;
+  }
+  .bestproject-top_prev {
+    border: none;
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Futura PT";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    gap: 16px;
+  }
+}

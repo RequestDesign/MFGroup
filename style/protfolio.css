@@ -507,6 +507,10 @@
   box-shadow: -20px 150px 200px 200px rgba(107, 107, 107, 0.5);
   z-index: 3;
 }
+.main-form_fon{
+  margin-bottom: 18vh;
+  position: relative;
+}
 @media (max-width: 420px) {
   .main-advantages_backlight,.main-story_backlight{
     display: none;

@@ -629,7 +629,7 @@ body {
   right: -350px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.4);
-  box-shadow: -250px 170px 300px 300px rgba(177, 177, 177, 0.7);
+  box-shadow: -250px 170px 300px 200px rgba(177, 177, 177, 0.7);
   z-index: 1;
   border: none;
 }
@@ -654,6 +654,30 @@ body {
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.3);
   box-shadow: 420px 270px 320px 200px rgba(177, 177, 177, 0.3);
+  z-index: -3;
+  border: none;
+}
+.main-services_backlight{
+  position: absolute;
+  width: 10vw;
+  height: 15vh;
+  top: -800px;
+  right: -330px;
+  border-radius: 50%;
+  background-color: rgba(177, 177, 177, 0.4);
+  box-shadow: -250px 270px 300px 200px rgba(177, 177, 177, 0.4);
+  z-index: -3;
+  border: none;
+}
+.main-instrumentation_backlight{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: -650px;
+  left: -150px;
+  border-radius: 50%;
+  background-color: rgba(177, 177, 177, 0.4);
+  box-shadow: 0px 300px 300px 300px rgba(177, 177, 177, 0.4);
   z-index: -3;
   border: none;
 }
