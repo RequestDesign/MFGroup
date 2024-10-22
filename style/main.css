@@ -284,6 +284,7 @@ body {
 .catalog-btn {
   background: none;
   border: none;
+  display: inline-flex;
 }
 
 /* portfolio */
@@ -317,6 +318,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(124, 10, 77, 1);
+  letter-spacing: 2px;
 }
 .portfolio-item_btn:hover {
   box-shadow: 4.5px 0px 15px 3px rgba(255, 255, 255, 0.178);
@@ -622,20 +624,19 @@ body {
 }
 .main-advantages_backlight {
   position: absolute;
-  width: 41vw;
-  height: 8vh;
-  top: 160vh;
-  right: -820px;
+  width: 5px;
+  height: 5px;
+  right: -350px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.4);
-  box-shadow: -250px 270px 300px 200px rgba(177, 177, 177, 0.4);
-  z-index: -3;
+  box-shadow: -250px 170px 300px 300px rgba(177, 177, 177, 0.7);
+  z-index: 1;
   border: none;
 }
 .main-portfolio_backlight {
   position: absolute;
-  width: 41vw;
-  height: 8vh;
+  width: 5px;
+  height: 5px;
   top: 400px;
   left: -950px;
   border-radius: 50%;
@@ -646,8 +647,8 @@ body {
 }
 .main-contacts_backlight {
   position: absolute;
-  width: 41vw;
-  height: 8vh;
+  width: 5px;
+  height: 5px;
   bottom: 660px;
   left: -950px;
   border-radius: 50%;

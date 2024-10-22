@@ -502,9 +502,9 @@
   position: absolute;
   width: 5px;
   height: 5px;
-  left: -50px;
+  left: -100px;
   bottom: 400px;
-  box-shadow: -100px 150px 400px 300px rgba(107, 107, 107, 0.8);
+  box-shadow: -20px 150px 200px 200px rgba(107, 107, 107, 0.5);
   z-index: 3;
 }
 @media (max-width: 420px) {
