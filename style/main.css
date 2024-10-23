@@ -343,7 +343,7 @@ body {
   font-size: 0.233vw;
 }
 .btn-arror_rigth {
-  width: 36px;
+  width: 1.719vw;
   font-size: 0.238vw;
 }
 .main-content_text {
@@ -1010,7 +1010,9 @@ body {
     height: 150px;
     object-fit: cover;
   }
-
+  .arror-left{
+    width: 8.533vw;
+  } 
   /* footer */
   footer{
     position: relative;

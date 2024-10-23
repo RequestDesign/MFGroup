@@ -28,17 +28,24 @@
   display: flex;
   justify-content: center;
 }
-.table_blur td {
+.content-main_item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 50px 30px;
+  padding: 5vh 1.563vw 5vh 1.563vw;
   position: relative;
   transition: all 0.5s ease;
 }
 .main-item_border {
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
+.padding-no {
+  padding-left: 0.521vw;
+}
+.padding-rigth {
+  padding-right: 0;
+}
 .td-border {
   border-bottom: 0px !important;
+  padding-bottom: 0;
 }
 .services-content_top,
 .services_content_botton {
@@ -48,23 +55,27 @@
 .prortfolio-content_project {
   display: grid;
   gap: 2vh;
-  width: 100%;
+  width: 26.25vw;
   object-fit: fill;
   position: relative;
   text-decoration: none;
 }
 .services-content_main {
   display: grid;
-  gap: 24px;
+  gap: 2.25vw;
+}
+.image-block_project {
+  position: relative;
+  width: 26.25vw;
 }
 .content-main_top {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
+  gap: 2.25vw;
 }
 .content-main_botten {
   display: flex;
-  gap: 24px;
+  gap: 2.25vw;
 }
 .block-white_text {
   width: 100%;
@@ -97,7 +108,10 @@
 }
 .main-services_content {
   display: grid;
-  gap: 60px;
+  gap: 5vh;
+}
+.services-content_project {
+  position: relative;
 }
 /* main-instrumentation */
 .main-instrumentation {
@@ -105,7 +119,6 @@
   position: relative;
 }
 .content-top_title {
-  width: 812px;
   text-align: center;
 }
 .instrumentation-content_botton {
@@ -117,6 +130,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .instrumentation-botton_text {
   font-family: "HelveticaNeueCyr";
   font-size: 16px;
@@ -126,14 +140,139 @@
   color: white;
   width: 750px;
 }
+.image-inst {
+  object-fit: contain;
+  width: 39.063vw;
+}
+@media (max-width: 769px) {
+  .main-item_btn {
+    padding: 0.6vh 0.3vw;
+    margin-top: 0;
+  }
+}
 @media (max-width: 420px) {
   .prortfolio-content_project {
-    width: 100%;
+    width: 91vw;
+    height: 92px;
+    position: relative;
+  }
+  .services-content_project {
+    width: 91vw;
+    height: 92px;
     position: relative;
   }
   .block-white_text {
     font-size: 18px;
-    left: 25%;
-    width: 200px;
+    top: 25%;
+    left: 15%;
+    width: 256px;
   }
+  .text-project {
+    top: 25% !important;
+  }
+  .main-way_block {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn-fil {
+    border: none;
+    background: none;
+    color: white;
+    font-family: "Futura PT";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.95px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .no-flex {
+    display: none;
+  }
+  .main-item_border {
+    border: none;
+    padding: 0;
+  }
+  .padding-no {
+    padding: 0 !important;
+  }
+  .instrumentation-content_top .content-top_title {
+    width: 210px;
+    font-size: 28px;
+    line-height: 33.6px;
+    text-align: left;
+  }
+  .main-instrumentation_content {
+    width: 91vw;
+  }
+  .instrumentation-content_botton {
+    display: grid;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0;
+    margin-top: 16px;
+  }
+  .instrumentation-botton_text {
+    width: 91vw;
+  }
+  .image-inst {
+    width: 100%;
+    height: 180px;
+  }
+  .services-content_top .content-top_title {
+    width: 80%;
+    text-align: center;
+    line-height: 32.4px;
+    font-size: 28px;
+  }
+  .content-main_top {
+    display: grid;
+  }
+  .services-content_main {
+    width: 91vw;
+  }
+  .content-main_botten {
+    display: grid;
+  }
+  .image-block_project {
+    width: 100%;
+    height: 92px;
+  }
+  .image-block_white {
+    width: 91vw;
+    height: 92px;
+    object-fit: cover;
+  }
+  .portfolio-item_btn {
+    width: 190px;
+  }
+  .table_blur,
+  .content-main_block {
+    width: 91vw;
+  }
+  .mar-bot{
+    margin-bottom: 6.667vw;
+  }
+  .mob-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6.667vw;
+  }
+  .content-main_item {
+    border: 0;
+    width: 42.133vw;
+    padding: 0;
+    gap: 12px;
+  }
+  .block-image{
+    width: 100%;
+  }
+  .main-item_img{
+    width: 42.133vw;
+  }
+  .main-item_title{
+    height: 51px;
+  }
+
 }
