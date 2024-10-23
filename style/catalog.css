@@ -144,6 +144,11 @@
   object-fit: contain;
   width: 39.063vw;
 }
+.main-catalog_backlight {
+  top: 250px;
+  left: -240px;
+  box-shadow: -100px 200px 200px 300px rgba(177, 177, 177, 0.4);
+}
 @media (max-width: 769px) {
   .main-item_btn {
     padding: 0.6vh 0.3vw;

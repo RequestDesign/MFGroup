@@ -500,12 +500,13 @@
 }
 .main-story_backlight {
   position: absolute;
-  width: 5px;
-  height: 5px;
-  left: -100px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  left: -200px;
   bottom: 400px;
-  box-shadow: -20px 150px 200px 200px rgba(107, 107, 107, 0.5);
-  z-index: 3;
+  box-shadow: -80px 300px 400px 400px rgba(107, 107, 107, 0.8);
+  z-index: 1;
 }
 .main-form_fon{
   margin-bottom: 18vh;

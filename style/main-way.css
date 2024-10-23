@@ -24,6 +24,7 @@
 .bestproject-top_prev {
   display: none;
 }
+
 @media (max-width: 420px) {
   .main-way_links {
     display: none;
