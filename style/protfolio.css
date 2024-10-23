@@ -505,8 +505,9 @@
   border-radius: 50%;
   left: -200px;
   bottom: 400px;
-  box-shadow: -80px 300px 400px 400px rgba(107, 107, 107, 0.8);
+  box-shadow: 30px 100px 200px 340px rgba(107, 107, 107, 0.8);
   z-index: 1;
+  backdrop-filter: blur(300px);
 }
 .main-form_fon{
   margin-bottom: 18vh;
