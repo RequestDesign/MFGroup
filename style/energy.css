@@ -1,0 +1,19 @@
+.header {
+  height: 93vh;
+}
+.vector {
+  opacity: 0;
+}
+.main-services {
+  margin-top: 16vh;
+}
+.catalog-content_top {
+  display: flex;
+  justify-content: center;
+}
+.block-white_text{
+    top: 45%;
+}
+.text-top {
+  top: 35% !important;
+}

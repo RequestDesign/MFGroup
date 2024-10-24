@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Энергообеспечение</title>
+    <link rel="stylesheet" href="assets/fonts/HelveticaNeueCyr/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/Futura/stylesheet.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/protfolio.css">
+    <link rel="stylesheet" href="style/product-card.css">
+    <link rel="stylesheet" href="style/catalog.css">
+    <link rel="stylesheet" href="style/energy.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        
+        <img class="main_fon" src="assets/images/energy/energy-image.png" alt="">
+        <div class="container-fluid">
+            <div class="header-top">
+                <a href="main.html" class="header-logo">
+                    <img class="Logo" src="assets/images/main/Logo.png" alt="">
+                </a>
+                <button class="burger-btn on-grid">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 15.75V13.1667H22V15.75H0ZM0 9.29167V6.70833H22V9.29167H0ZM0 2.83333V0.25H22V2.83333H0Z" fill="white"/>
+                    </svg>                        
+                </button>
+                <div class="header-top_burger">
+
+                    <div class="header-top">
+                        <div class="header-top_backlight"></div>
+                        <button class="burger-btn burgar-btn_close on-grid">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.3588 19.7802L11.9988 13.4102L5.63875 19.7802L4.21875 18.3602L10.5888 12.0002L4.21875 5.64021L5.63875 4.22021L11.9988 10.5902L18.3588 4.23022L19.7688 5.64021L13.4088 12.0002L19.7688 18.3602L18.3588 19.7802Z" fill="white"/>
+                            </svg>                                                        
+                        </button>
+                        <div class="header-logo on-grid">
+                            <img class="Logo" src="assets/images/main/Logo.png" alt="">
+                        </div>
+                        <a class="number-mobl on-grid" href="tel:+74952100111">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.01128 9.9714C5.34345 15.052 9.48658 19.0789 14.6298 21.2639L15.4557 21.6322C16.3703 22.0397 17.3993 22.1111 18.3613 21.8339C19.3234 21.5566 20.1568 20.9485 20.7147 20.1167L21.7945 18.5076C21.9634 18.2553 22.0318 17.9488 21.9862 17.6485C21.9406 17.3482 21.7842 17.0759 21.5479 16.8852L17.8897 13.932C17.7622 13.8293 17.6154 13.7533 17.4579 13.7087C17.3005 13.6642 17.1356 13.6519 16.9733 13.6727C16.8109 13.6934 16.6545 13.7468 16.5133 13.8296C16.3721 13.9124 16.2491 14.0229 16.1516 14.1544L15.0196 15.6821C12.1139 14.2461 9.76196 11.8923 8.32741 8.98458L9.8529 7.85193C9.98437 7.75441 10.0948 7.63132 10.1775 7.49004C10.2603 7.34875 10.3136 7.1922 10.3344 7.02977C10.3551 6.86734 10.3429 6.70239 10.2983 6.54482C10.2538 6.38725 10.1779 6.24032 10.0752 6.11284L7.12378 2.45237C6.93322 2.21593 6.66108 2.05948 6.36097 2.01381C6.06086 1.96815 5.75454 2.0366 5.50235 2.20566L3.88334 3.29213C3.04699 3.85333 2.4369 4.69339 2.16176 5.66265C1.88662 6.63191 1.96428 7.66743 2.38093 8.58475L3.01128 9.9714Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="burger-content">
+                        <div class="header-menu">
+                            <div class="dropdown">
+                                <button class="dropdown-btn"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg class="svg-image" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.953125" y="0.200195" width="8" height="8" fill="#101010"/>
+                                        <rect x="10.9531" y="0.200195" width="8" height="8" fill="#101010"/>
+                                        <rect x="10.9531" y="10.2002" width="8" height="8" fill="#101010"/>
+                                        <rect x="0.953125" y="10.2002" width="8" height="8" fill="#101010"/>
+                                    </svg>                                
+                                    <div class="sorting_text">Аренда</div>
+                                </button>
+                                <ul class="dropdown-menu">
+                                <li><a href="" class="dropdown-item" href="#">Свет</a></li>
+                                <li><a href="" class="dropdown-item" href="#">Звук</a></li>
+                                <li><a href="" class="dropdown-item" href="#">Сцена</a></li>
+                                <li><a href="" class="dropdown-item" href="#">Энергообеспечение</a></li>
+                                <li><a href="" class="dropdown-item" href="#">Продакшн</a></li>
+                                </ul>
+                            </div>                     
+                        </div>
+                        <div class="header-links">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="header-link">Продакшн</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="header-link">Портфолио</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="header-link">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="header-link">Презентация</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="header-link">Клиенты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="header-link">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-down_backlight"></div>
+                    </div>
+                </div>
+                <div class="header-contacts">
+                    <a class="on-grid" href="tel:+74952100111">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.01128 9.9714C5.34345 15.052 9.48658 19.0789 14.6298 21.2639L15.4557 21.6322C16.3703 22.0397 17.3993 22.1111 18.3613 21.8339C19.3234 21.5566 20.1568 20.9485 20.7147 20.1167L21.7945 18.5076C21.9634 18.2553 22.0318 17.9488 21.9862 17.6485C21.9406 17.3482 21.7842 17.0759 21.5479 16.8852L17.8897 13.932C17.7622 13.8293 17.6154 13.7533 17.4579 13.7087C17.3005 13.6642 17.1356 13.6519 16.9733 13.6727C16.8109 13.6934 16.6545 13.7468 16.5133 13.8296C16.3721 13.9124 16.2491 14.0229 16.1516 14.1544L15.0196 15.6821C12.1139 14.2461 9.76196 11.8923 8.32741 8.98458L9.8529 7.85193C9.98437 7.75441 10.0948 7.63132 10.1775 7.49004C10.2603 7.34875 10.3136 7.1922 10.3344 7.02977C10.3551 6.86734 10.3429 6.70239 10.2983 6.54482C10.2538 6.38725 10.1779 6.24032 10.0752 6.11284L7.12378 2.45237C6.93322 2.21593 6.66108 2.05948 6.36097 2.01381C6.06086 1.96815 5.75454 2.0366 5.50235 2.20566L3.88334 3.29213C3.04699 3.85333 2.4369 4.69339 2.16176 5.66265C1.88662 6.63191 1.96428 7.66743 2.38093 8.58475L3.01128 9.9714Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="+74952100111" class="header-contacts_tel no-grid">+7 (495) 210-01-11</a>
+                    <div class="header-contacts_address no-grid">г. Москва, ул.Бутлерова, 17</div>
+                </div>
+            </div>
+            <div class="header-main">
+                <img class="vector" src="assets/images/main/Vector.png" alt="">
+                <div class="header-main_block">
+                    <div class="header-main_title">энергообеспечение</div>
+                    <div class="header-main_text">MF Group предлагает в аренду профессиональное звуковое, световое и сценическое оборудование, 
+                        а также автономные источники энергоснабжения.</div>
+                </div>
+                
+            </div>
+            <div class="header-down no-grid"></div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-services">
+            <div class="main-services_backlight"></div>
+            <div class="container-fluid">
+                <div class="main-services_content">
+                   
+                    <div class="services-content_main">
+                        <div class="content-main_top">
+                            <a href="#" class="prortfolio-content_project">
+                                <img class="image-block_project"  src="assets/images/contacts/block-gray.png" alt="">
+                                <span class="block-white_text">электрогенераторы</span>
+                            </a>
+                            <a href="#" class="prortfolio-content_project">
+                                <img class="image-block_project"  src="assets/images/contacts/block-top2.png" alt="">
+                                <span class="block-white_text">кабели и защита</span>
+                            </a>
+                            <a href="#" class="prortfolio-content_project">
+                                <img class="image-block_project"  src="assets/images/contacts/block-top3.png" alt="">
+                                <span class="block-white_text">обогреватели</span>
+                            </a>
+                        </div>
+                        <div class="content-main_botten">
+                            <a href="#" class="services-content_project">
+                                <img class="image-block_white"  src="assets/images/contacts/block-botton1.png" alt="">
+                                <span class="block-white_text text-project">Распределительные щиты</span>
+                            </a>
+                            <a href="#" class="services-content_project ">
+                                <img class="image-block_white"  src="assets/images/contacts/block-botton.png" alt="">
+                                <span class="block-white_text text-project text-top">проектирование 
+                                    <br>и разрешительная документация</span>
+                            </a>
+                        </div>
+                       
+                    </div>
+                    <div class="services_content_botton">
+                        <button class="portfolio-item_btn">прайс-лист   
+                            <svg class="arror-left" width="51" height="8" viewBox="0 0 51 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50.3536 4.35355C50.5488 4.15829 50.5488 3.84171 50.3536 3.64645L47.1716 0.464466C46.9763 0.269204 46.6597 0.269204 46.4645 0.464466C46.2692 0.659728 46.2692 0.976311 46.4645 1.17157L49.2929 4L46.4645 6.82843C46.2692 7.02369 46.2692 7.34027 46.4645 7.53553C46.6597 7.7308 46.9763 7.7308 47.1716 7.53553L50.3536 4.35355ZM0 4.5H50V3.5H0V4.5Z" fill="#7C0A4D"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-catalog">
+            <div class="main-catalog_backlight"></div>
+            <div class="container-fluid">
+                <div class="main-catalog_content">
+                    <div class="catalog-content_top">
+                        <div class="portfolio-top_title">оборудование</div>
+                    </div>
+                    <div class="catalog-content_main">
+                        <table class="content-main_block table_blur">
+                            <tr class="mob-block mar-bot">
+                                <td class="main-item_border">
+                                    <div class="content-main_item padding-no">
+                                        <div class="block-image">
+                                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                        </div>
+                                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                        <button class="main-item_btn">арендовать  
+                                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                            </svg> 
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="main-item_border">
+                                    <div class="content-main_item">
+                                        <div class="block-image">
+                                            <img class="main-item_img" src="assets/images/catalog/товар2.png" alt="">
+                                        </div>
+                                        <div class="main-item_title">Зеркальный шар</div>
+                                        <button class="main-item_btn">арендовать  
+                                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                            </svg> 
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="main-item_border">
+                                    <div class="content-main_item">
+                                        <div class="block-image">
+                                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                        </div>
+                                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                        <button class="main-item_btn">арендовать  
+                                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                            </svg> 
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="content-main_item">
+                                        <div class="block-image">
+                                            <img class="main-item_img" src="assets/images/catalog/товар2.png" alt="">
+                                        </div>                                        
+                                        <div class="main-item_title">Зеркальный шар</div>
+                                        <button class="main-item_btn">арендовать  
+                                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                            </svg> 
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="mob-block mar-bot">
+                                <td class="main-item_border">
+                                    <div class="content-main_item padding-no">
+                                        <div class="block-image">
+                                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                        </div>
+                                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                        <button class="main-item_btn">арендовать  
+                                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                            </svg> 
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="main-item_border">
+                                    <div class="content-main_item">
+                                        <div class="block-image">
+                                            <img class="main-item_img" src="assets/images/catalog/товар2.png" alt="">
+                                        </div>                                        <div class="main-item_title">Зеркальный шар</div>
+                                        <button class="main-item_btn">арендовать  
+                                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                            </svg> 
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="main-item_border">
+                                    <div class="content-main_item">
+                                        <div class="block-image">
+                                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                        </div>
+                                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                        <button class="main-item_btn">арендовать  
+                                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                            </svg> 
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="content-main_item">
+                                        <div class="block-image">
+                                            <img class="main-item_img" src="assets/images/catalog/товар2.png" alt="">
+                                        </div>                                        <div class="main-item_title">Зеркальный шар</div>
+                                        <button class="main-item_btn">арендовать  
+                                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                            </svg> 
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="mob-block">
+                                <td class="main-item_border">
+                                    <div class="content-main_item td-border padding-no">
+                                        <div class="block-image">
+                                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                        </div>                                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                        <button class="main-item_btn">арендовать  
+                                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                            </svg> 
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="main-item_border ">
+                                    <div class="content-main_item td-border">
+                                        <div class="block-image">
+                                            <img class="main-item_img" src="assets/images/catalog/товар2.png" alt="">
+                                        </div>                                        <div class="main-item_title">Зеркальный шар</div>
+                                        <button class="main-item_btn">арендовать  
+                                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                            </svg> 
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="main-item_border">
+                                    <div class="content-main_item td-border">
+                                        <div class="block-image">
+                                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                        </div>                                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                        <button class="main-item_btn">арендовать  
+                                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                            </svg> 
+                                        </button>
+                                    </div>
+                                </td>
+                                <td class="td-border">
+                                    <div class="content-main_item td-border">
+                                        <div class="block-image">
+                                            <img class="main-item_img" src="assets/images/catalog/товар2.png" alt="">
+                                        </div>                                        <div class="main-item_title">Зеркальный шар</div>
+                                        <button class="main-item_btn">арендовать  
+                                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                            </svg> 
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="catalog-content_botton">
+                        <button class="portfolio-item_btn">загрузить ещё</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="header-down"></div>
+        <div class="footer-contacts_backlight"></div>
+        <div class="container-fluid">
+            <div class="footer-block">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <a href="main.html">
+                            <img class="fo-Logo" src="assets/images/main/Logo.png" alt="">
+                        </a>
+                        <div class="fo-text">Техническое обеспечение 
+                            и организация мероприятий </div>
+                    </div>
+                    <div class="footer-logo_ages">
+                        <img class="logo-ages" src="assets/images/footer/logo-ages.png" alt="">
+                    </div>
+                    <div class="footer-down_seo on-flex">
+                        <a href="#" class="seo_link">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7212 4.13683C22.9917 4.01567 23.2877 3.97389 23.5786 4.01582C23.8694 4.05775 24.1443 4.18187 24.3748 4.37525C24.6052 4.56863 24.7827 4.8242 24.8889 5.11537C24.995 5.40654 25.0259 5.72266 24.9782 6.03083L22.4957 22.0553C22.2549 23.601 20.6611 24.4875 19.329 23.7175C18.2147 23.0734 16.5597 22.0809 15.0711 21.0454C14.3267 20.5271 12.0467 18.8672 12.3269 17.6861C12.5677 16.6762 16.3988 12.8812 18.588 10.6249C19.4472 9.73847 19.0554 9.22711 18.0407 10.0425C15.5209 12.0669 11.4753 15.1456 10.1377 16.0122C8.95775 16.7763 8.34259 16.9068 7.60702 16.7763C6.26505 16.5387 5.0205 16.1706 4.00471 15.7222C2.63209 15.1165 2.69886 13.1083 4.00362 12.5236L22.7212 4.13683Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="seo_link">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.8749 22.7486H23.8091C22.6496 22.7486 22.3003 21.7606 20.222 19.5727C18.4056 17.731 17.6385 17.502 17.179 17.502C16.5436 17.502 16.3702 17.6858 16.3702 18.6059V21.5062C16.3702 22.2906 16.1284 22.75 14.1804 22.75C12.2905 22.6164 10.4578 22.0124 8.83331 20.9877C7.20879 19.963 5.83891 18.5469 4.83651 16.8561C2.45723 13.739 0.80126 10.0814 0 6.1736C0 5.69022 0.174652 5.25206 1.0506 5.25206H4.11372C4.901 5.25206 5.18447 5.62096 5.49347 6.47324C6.9807 11.0781 9.51852 15.0837 10.549 15.0837C10.9439 15.0837 11.1159 14.9 11.1159 13.8639V9.12055C10.9856 6.95663 9.89335 6.7743 9.89335 5.99127C9.90717 5.78469 9.99699 5.59191 10.1437 5.45389C10.2905 5.31586 10.4826 5.24346 10.6793 5.25206H15.4943C16.1526 5.25206 16.3702 5.59693 16.3702 6.42519V12.8279C16.3702 13.5191 16.6524 13.748 16.8512 13.748C17.2462 13.748 17.5498 13.5191 18.2739 12.7586C19.8255 10.7667 21.0936 8.54799 22.0384 6.17219C22.1346 5.88663 22.3172 5.64215 22.5582 5.47621C22.7991 5.31027 23.0852 5.23203 23.3724 5.25347H26.4369C27.3558 5.25347 27.5506 5.73686 27.3558 6.4266C26.2409 9.05312 24.8618 11.5465 23.2421 13.8639C22.9116 14.394 22.78 14.6696 23.2421 15.2915C23.5457 15.7749 24.6205 16.719 25.342 17.6165C26.3926 18.719 27.2645 19.9939 27.9241 21.3903C28.1874 22.2892 27.7495 22.7486 26.8749 22.7486Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="seo_link">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2 18.2497L18.466 13.9997L11.2 9.74967V18.2497ZM27.384 7.15717C27.566 7.82301 27.692 8.71551 27.776 9.84884C27.874 10.9822 27.916 11.9597 27.916 12.8097L28 13.9997C28 17.1022 27.776 19.383 27.384 20.8422C27.034 22.1172 26.222 22.9388 24.962 23.293C24.304 23.4772 23.1 23.6047 21.252 23.6897C19.432 23.7888 17.766 23.8313 16.226 23.8313L14 23.9163C8.134 23.9163 4.48 23.6897 3.038 23.293C1.778 22.9388 0.966 22.1172 0.616 20.8422C0.434 20.1763 0.308 19.2838 0.224 18.1505C0.126 17.0172 0.0839999 16.0397 0.0839999 15.1897L0 13.9997C0 10.8972 0.224 8.61634 0.616 7.15717C0.966 5.88217 1.778 5.06051 3.038 4.70634C3.696 4.52217 4.9 4.39467 6.748 4.30967C8.568 4.21051 10.234 4.16801 11.774 4.16801L14 4.08301C19.866 4.08301 23.52 4.30967 24.962 4.70634C26.222 5.06051 27.034 5.88217 27.384 7.15717Z" fill="white"/>
+                            </svg>                            
+                        </a>
+                        <a href="#" class="seo_link">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="6" y="4" width="16" height="3" fill="white"/>
+                                <rect x="6" y="12.5" width="16" height="3" fill="white"/>
+                                <rect x="6" y="21" width="16" height="3" fill="white"/>
+                                <rect x="19" y="6" width="3" height="15" fill="white"/>
+                            </svg>                            
+                        </a>
+                    </div>
+                </div>
+                
+                
+                <div class="footer-main">
+                    <div class="footer-main_block">
+                        <div class="btn-links_title">
+                            <div class="footer-links_title">Компания</div>
+                                <svg class="arrow-drop-up on-flex" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 13.5L10 6.5L17 13.5" stroke="white" stroke-opacity="0.8" stroke-width="1.5"/>
+                                </svg>
+                        </div>
+                        <div class="footer-links footer-links_active">
+                            <a href="#" class="footer-links_link">Продакшн</a>
+                            <a href="#" class="footer-links_link">Портфолио</a>
+                            <a href="#" class="footer-links_link">О компании</a>
+                            <a href="#" class="footer-links_link">Аренда</a>
+                            <a href="#" class="footer-links_link">Презентация</a>
+                            <a href="#" class="footer-links_link">Клиенты</a>
+                            <a href="#" class="footer-links_link">Контакты</a>
+                        </div>
+                    </div>
+                    <div class="footer-main_block">
+                        <div class="btn-links_title">
+                            <div class="footer-links_title">Аренда</div>
+                            <svg class="arrow-drop-down on-flex" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 6.5L10 13.5L17 6.5" stroke="white" stroke-opacity="0.8" stroke-width="1.5"/>
+                            </svg>                                
+                        </div>
+                        <div class="footer-links">
+                            <a href="#" class="footer-links_link">Продакшн</a>
+                            <a href="#" class="footer-links_link">Свет</a>
+                            <a href="#" class="footer-links_link">Звук</a>
+                            <a href="#" class="footer-links_link">Сцена</a>
+                            <a href="#" class="footer-links_link">Энергообеспечение</a>
+                        </div>
+                    </div>
+                    <div class="footer-contacts">
+                        <div class="btn-links_title">
+                            <div class="footer-links_title">Контакты</div>
+                            <svg class="arrow-drop-downмon-flex on-flex" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 6.5L10 13.5L17 6.5" stroke="white" stroke-opacity="0.8" stroke-width="1.5"/>
+                            </svg>                                
+                        </div>
+                        <div class="footer-contacts_city">
+                            <div class="city-block">
+                                <div class="city-block_title">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_986_3343)">
+                                            <path d="M10 2.5C11.7239 2.5 13.3772 3.20527 14.5962 4.46066C15.8152 5.71606 16.5 7.41873 16.5 9.19412C16.5 11.4805 15.2896 13.3519 14.0141 14.6945C13.3769 15.358 12.6816 15.9595 11.937 16.4915L11.6293 16.7072L11.4849 16.8061L11.2126 16.9846L10.9699 17.1371L10.6695 17.3171C10.4656 17.437 10.2348 17.5 10 17.5C9.76519 17.5 9.53443 17.437 9.3305 17.3171L9.03006 17.1371L8.6545 16.8991L8.51583 16.8061L8.21972 16.603C7.41649 16.0433 6.66832 15.4041 5.98589 14.6945C4.71044 13.3512 3.5 11.4805 3.5 9.19412C3.5 7.41873 4.18482 5.71606 5.40381 4.46066C6.62279 3.20527 8.27609 2.5 10 2.5ZM10 6.96275C9.71547 6.96275 9.43372 7.02047 9.17085 7.1326C8.90798 7.24474 8.66913 7.4091 8.46794 7.6163C8.26674 7.82351 8.10715 8.06949 7.99826 8.34021C7.88938 8.61094 7.83333 8.9011 7.83333 9.19412C7.83333 9.48715 7.88938 9.77731 7.99826 10.048C8.10715 10.3188 8.26674 10.5647 8.46794 10.7719C8.66913 10.9791 8.90798 11.1435 9.17085 11.2556C9.43372 11.3678 9.71547 11.4255 10 11.4255C10.5746 11.4255 11.1257 11.1904 11.5321 10.7719C11.9384 10.3535 12.1667 9.78592 12.1667 9.19412C12.1667 8.60233 11.9384 8.03477 11.5321 7.6163C11.1257 7.19784 10.5746 6.96275 10 6.96275Z" fill="white" fill-opacity="0.8"/>
+                                            </g><defs><clipPath id="clip0_986_3343">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>Москва
+                                </div>
+                                <a href="tel:+7 (495) 210-01-11" class="city-block_title">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.25846 8.47855C5.00759 12.289 8.11494 15.3092 11.9723 16.9479L12.5918 17.2241C13.2777 17.5298 14.0494 17.5833 14.771 17.3754C15.4926 17.1675 16.1176 16.7114 16.536 16.0875L17.3458 14.8807C17.4726 14.6915 17.5239 14.4616 17.4896 14.2364C17.4554 14.0112 17.3381 13.8069 17.1609 13.6639L14.4172 11.449C14.3217 11.372 14.2116 11.315 14.0934 11.2816C13.9753 11.2481 13.8517 11.2389 13.73 11.2545C13.6082 11.2701 13.4909 11.3101 13.385 11.3722C13.2791 11.4343 13.1868 11.5172 13.1137 11.6158L12.2647 12.7616C10.0855 11.6846 8.32147 9.91923 7.24556 7.73844L8.38968 6.88894C8.48828 6.81581 8.5711 6.72349 8.63315 6.61753C8.6952 6.51157 8.73522 6.39415 8.75079 6.27233C8.76636 6.15051 8.75716 6.02679 8.72375 5.90862C8.69034 5.79044 8.63341 5.68024 8.55638 5.58463L6.34284 2.83927C6.19991 2.66195 5.99581 2.54461 5.77072 2.51036C5.54564 2.47611 5.3159 2.52745 5.12676 2.65425L3.9125 3.4691C3.28524 3.89 2.82768 4.52004 2.62132 5.24699C2.41496 5.97393 2.47321 6.75058 2.78569 7.43856L3.25846 8.47855Z" fill="white" fill-opacity="0.8"/>
+                                        </svg>    
+                                    </span>+7 (495) 210-01-11
+                                </a>
+                                <a href="mailto:mf@mf-group.com" class="city-block_title">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 6.74512V13.6467C17.5 14.2046 17.2808 14.7415 16.887 15.1475C16.4933 15.5535 15.9549 15.7978 15.382 15.8305L15.25 15.8342H4.75C4.17609 15.8342 3.62386 15.621 3.2063 15.2382C2.78874 14.8555 2.53742 14.332 2.50375 13.775L2.5 13.6467V6.74512L9.58375 11.3367L9.67075 11.3848C9.77328 11.4335 9.88589 11.4588 10 11.4588C10.1141 11.4588 10.2267 11.4335 10.3293 11.3848L10.4163 11.3367L17.5 6.74512Z" fill="white" fill-opacity="0.8"/>
+                                            <path d="M15.2483 4.16699C16.0583 4.16699 16.7685 4.58262 17.1645 5.20751L9.99828 9.85231L2.83203 5.20751C3.02013 4.91061 3.2785 4.66173 3.58561 4.48162C3.89272 4.30151 4.23967 4.19538 4.59753 4.1721L4.74828 4.16699H15.2483Z" fill="white" fill-opacity="0.8"/>
+                                        </svg>
+                                    </span>mf@mf-group.com
+                                </a>
+                            </div>
+                            <div class="city-block">
+                                <div class="city-block_title">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_986_3343)">
+                                            <path d="M10 2.5C11.7239 2.5 13.3772 3.20527 14.5962 4.46066C15.8152 5.71606 16.5 7.41873 16.5 9.19412C16.5 11.4805 15.2896 13.3519 14.0141 14.6945C13.3769 15.358 12.6816 15.9595 11.937 16.4915L11.6293 16.7072L11.4849 16.8061L11.2126 16.9846L10.9699 17.1371L10.6695 17.3171C10.4656 17.437 10.2348 17.5 10 17.5C9.76519 17.5 9.53443 17.437 9.3305 17.3171L9.03006 17.1371L8.6545 16.8991L8.51583 16.8061L8.21972 16.603C7.41649 16.0433 6.66832 15.4041 5.98589 14.6945C4.71044 13.3512 3.5 11.4805 3.5 9.19412C3.5 7.41873 4.18482 5.71606 5.40381 4.46066C6.62279 3.20527 8.27609 2.5 10 2.5ZM10 6.96275C9.71547 6.96275 9.43372 7.02047 9.17085 7.1326C8.90798 7.24474 8.66913 7.4091 8.46794 7.6163C8.26674 7.82351 8.10715 8.06949 7.99826 8.34021C7.88938 8.61094 7.83333 8.9011 7.83333 9.19412C7.83333 9.48715 7.88938 9.77731 7.99826 10.048C8.10715 10.3188 8.26674 10.5647 8.46794 10.7719C8.66913 10.9791 8.90798 11.1435 9.17085 11.2556C9.43372 11.3678 9.71547 11.4255 10 11.4255C10.5746 11.4255 11.1257 11.1904 11.5321 10.7719C11.9384 10.3535 12.1667 9.78592 12.1667 9.19412C12.1667 8.60233 11.9384 8.03477 11.5321 7.6163C11.1257 7.19784 10.5746 6.96275 10 6.96275Z" fill="white" fill-opacity="0.8"/>
+                                            </g><defs><clipPath id="clip0_986_3343">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>Краснодар
+                                </div>
+                                <a href="tel:+7 (965) 595-16-17" class="city-block_title">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.25846 8.47855C5.00759 12.289 8.11494 15.3092 11.9723 16.9479L12.5918 17.2241C13.2777 17.5298 14.0494 17.5833 14.771 17.3754C15.4926 17.1675 16.1176 16.7114 16.536 16.0875L17.3458 14.8807C17.4726 14.6915 17.5239 14.4616 17.4896 14.2364C17.4554 14.0112 17.3381 13.8069 17.1609 13.6639L14.4172 11.449C14.3217 11.372 14.2116 11.315 14.0934 11.2816C13.9753 11.2481 13.8517 11.2389 13.73 11.2545C13.6082 11.2701 13.4909 11.3101 13.385 11.3722C13.2791 11.4343 13.1868 11.5172 13.1137 11.6158L12.2647 12.7616C10.0855 11.6846 8.32147 9.91923 7.24556 7.73844L8.38968 6.88894C8.48828 6.81581 8.5711 6.72349 8.63315 6.61753C8.6952 6.51157 8.73522 6.39415 8.75079 6.27233C8.76636 6.15051 8.75716 6.02679 8.72375 5.90862C8.69034 5.79044 8.63341 5.68024 8.55638 5.58463L6.34284 2.83927C6.19991 2.66195 5.99581 2.54461 5.77072 2.51036C5.54564 2.47611 5.3159 2.52745 5.12676 2.65425L3.9125 3.4691C3.28524 3.89 2.82768 4.52004 2.62132 5.24699C2.41496 5.97393 2.47321 6.75058 2.78569 7.43856L3.25846 8.47855Z" fill="white" fill-opacity="0.8"/>
+                                        </svg>    
+                                    </span>+7 (965) 595-16-17
+                                </a>
+                                <a href="mailto:mf@mf-group.com" class="city-block_title">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 6.74512V13.6467C17.5 14.2046 17.2808 14.7415 16.887 15.1475C16.4933 15.5535 15.9549 15.7978 15.382 15.8305L15.25 15.8342H4.75C4.17609 15.8342 3.62386 15.621 3.2063 15.2382C2.78874 14.8555 2.53742 14.332 2.50375 13.775L2.5 13.6467V6.74512L9.58375 11.3367L9.67075 11.3848C9.77328 11.4335 9.88589 11.4588 10 11.4588C10.1141 11.4588 10.2267 11.4335 10.3293 11.3848L10.4163 11.3367L17.5 6.74512Z" fill="white" fill-opacity="0.8"/>
+                                            <path d="M15.2483 4.16699C16.0583 4.16699 16.7685 4.58262 17.1645 5.20751L9.99828 9.85231L2.83203 5.20751C3.02013 4.91061 3.2785 4.66173 3.58561 4.48162C3.89272 4.30151 4.23967 4.19538 4.59753 4.1721L4.74828 4.16699H15.2483Z" fill="white" fill-opacity="0.8"/>
+                                        </svg>
+                                    </span>info.sfd@mf-group.com
+                                </a>
+                            </div>
+                            <div class="city-block">
+                                <div class="city-block_title">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_986_3343)">
+                                            <path d="M10 2.5C11.7239 2.5 13.3772 3.20527 14.5962 4.46066C15.8152 5.71606 16.5 7.41873 16.5 9.19412C16.5 11.4805 15.2896 13.3519 14.0141 14.6945C13.3769 15.358 12.6816 15.9595 11.937 16.4915L11.6293 16.7072L11.4849 16.8061L11.2126 16.9846L10.9699 17.1371L10.6695 17.3171C10.4656 17.437 10.2348 17.5 10 17.5C9.76519 17.5 9.53443 17.437 9.3305 17.3171L9.03006 17.1371L8.6545 16.8991L8.51583 16.8061L8.21972 16.603C7.41649 16.0433 6.66832 15.4041 5.98589 14.6945C4.71044 13.3512 3.5 11.4805 3.5 9.19412C3.5 7.41873 4.18482 5.71606 5.40381 4.46066C6.62279 3.20527 8.27609 2.5 10 2.5ZM10 6.96275C9.71547 6.96275 9.43372 7.02047 9.17085 7.1326C8.90798 7.24474 8.66913 7.4091 8.46794 7.6163C8.26674 7.82351 8.10715 8.06949 7.99826 8.34021C7.88938 8.61094 7.83333 8.9011 7.83333 9.19412C7.83333 9.48715 7.88938 9.77731 7.99826 10.048C8.10715 10.3188 8.26674 10.5647 8.46794 10.7719C8.66913 10.9791 8.90798 11.1435 9.17085 11.2556C9.43372 11.3678 9.71547 11.4255 10 11.4255C10.5746 11.4255 11.1257 11.1904 11.5321 10.7719C11.9384 10.3535 12.1667 9.78592 12.1667 9.19412C12.1667 8.60233 11.9384 8.03477 11.5321 7.6163C11.1257 7.19784 10.5746 6.96275 10 6.96275Z" fill="white" fill-opacity="0.8"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_986_3343">
+                                            <rect width="20" height="20" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>Казань
+                                </div>
+                                <a href="tel:+7 (843) 202-09-28" class="city-block_title">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.25846 8.47855C5.00759 12.289 8.11494 15.3092 11.9723 16.9479L12.5918 17.2241C13.2777 17.5298 14.0494 17.5833 14.771 17.3754C15.4926 17.1675 16.1176 16.7114 16.536 16.0875L17.3458 14.8807C17.4726 14.6915 17.5239 14.4616 17.4896 14.2364C17.4554 14.0112 17.3381 13.8069 17.1609 13.6639L14.4172 11.449C14.3217 11.372 14.2116 11.315 14.0934 11.2816C13.9753 11.2481 13.8517 11.2389 13.73 11.2545C13.6082 11.2701 13.4909 11.3101 13.385 11.3722C13.2791 11.4343 13.1868 11.5172 13.1137 11.6158L12.2647 12.7616C10.0855 11.6846 8.32147 9.91923 7.24556 7.73844L8.38968 6.88894C8.48828 6.81581 8.5711 6.72349 8.63315 6.61753C8.6952 6.51157 8.73522 6.39415 8.75079 6.27233C8.76636 6.15051 8.75716 6.02679 8.72375 5.90862C8.69034 5.79044 8.63341 5.68024 8.55638 5.58463L6.34284 2.83927C6.19991 2.66195 5.99581 2.54461 5.77072 2.51036C5.54564 2.47611 5.3159 2.52745 5.12676 2.65425L3.9125 3.4691C3.28524 3.89 2.82768 4.52004 2.62132 5.24699C2.41496 5.97393 2.47321 6.75058 2.78569 7.43856L3.25846 8.47855Z" fill="white" fill-opacity="0.8"/>
+                                        </svg>    
+                                    </span>+7 (843) 202-09-28
+                                </a>
+                                <a href="mailto:mf@mf-group.com" class="city-block_title">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5 6.74512V13.6467C17.5 14.2046 17.2808 14.7415 16.887 15.1475C16.4933 15.5535 15.9549 15.7978 15.382 15.8305L15.25 15.8342H4.75C4.17609 15.8342 3.62386 15.621 3.2063 15.2382C2.78874 14.8555 2.53742 14.332 2.50375 13.775L2.5 13.6467V6.74512L9.58375 11.3367L9.67075 11.3848C9.77328 11.4335 9.88589 11.4588 10 11.4588C10.1141 11.4588 10.2267 11.4335 10.3293 11.3848L10.4163 11.3367L17.5 6.74512Z" fill="white" fill-opacity="0.8"/>
+                                            <path d="M15.2483 4.16699C16.0583 4.16699 16.7685 4.58262 17.1645 5.20751L9.99828 9.85231L2.83203 5.20751C3.02013 4.91061 3.2785 4.66173 3.58561 4.48162C3.89272 4.30151 4.23967 4.19538 4.59753 4.1721L4.74828 4.16699H15.2483Z" fill="white" fill-opacity="0.8"/>
+                                        </svg>
+                                    </span>us@mf-group.com
+
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-down">
+                <div class="footer-down_seo no-flex">
+                    <a href="" class="seo_link">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7212 4.13683C22.9917 4.01567 23.2877 3.97389 23.5786 4.01582C23.8694 4.05775 24.1443 4.18187 24.3748 4.37525C24.6052 4.56863 24.7827 4.8242 24.8889 5.11537C24.995 5.40654 25.0259 5.72266 24.9782 6.03083L22.4957 22.0553C22.2549 23.601 20.6611 24.4875 19.329 23.7175C18.2147 23.0734 16.5597 22.0809 15.0711 21.0454C14.3267 20.5271 12.0467 18.8672 12.3269 17.6861C12.5677 16.6762 16.3988 12.8812 18.588 10.6249C19.4472 9.73847 19.0554 9.22711 18.0407 10.0425C15.5209 12.0669 11.4753 15.1456 10.1377 16.0122C8.95775 16.7763 8.34259 16.9068 7.60702 16.7763C6.26505 16.5387 5.0205 16.1706 4.00471 15.7222C2.63209 15.1165 2.69886 13.1083 4.00362 12.5236L22.7212 4.13683Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="" class="seo_link">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.8749 22.7486H23.8091C22.6496 22.7486 22.3003 21.7606 20.222 19.5727C18.4056 17.731 17.6385 17.502 17.179 17.502C16.5436 17.502 16.3702 17.6858 16.3702 18.6059V21.5062C16.3702 22.2906 16.1284 22.75 14.1804 22.75C12.2905 22.6164 10.4578 22.0124 8.83331 20.9877C7.20879 19.963 5.83891 18.5469 4.83651 16.8561C2.45723 13.739 0.80126 10.0814 0 6.1736C0 5.69022 0.174652 5.25206 1.0506 5.25206H4.11372C4.901 5.25206 5.18447 5.62096 5.49347 6.47324C6.9807 11.0781 9.51852 15.0837 10.549 15.0837C10.9439 15.0837 11.1159 14.9 11.1159 13.8639V9.12055C10.9856 6.95663 9.89335 6.7743 9.89335 5.99127C9.90717 5.78469 9.99699 5.59191 10.1437 5.45389C10.2905 5.31586 10.4826 5.24346 10.6793 5.25206H15.4943C16.1526 5.25206 16.3702 5.59693 16.3702 6.42519V12.8279C16.3702 13.5191 16.6524 13.748 16.8512 13.748C17.2462 13.748 17.5498 13.5191 18.2739 12.7586C19.8255 10.7667 21.0936 8.54799 22.0384 6.17219C22.1346 5.88663 22.3172 5.64215 22.5582 5.47621C22.7991 5.31027 23.0852 5.23203 23.3724 5.25347H26.4369C27.3558 5.25347 27.5506 5.73686 27.3558 6.4266C26.2409 9.05312 24.8618 11.5465 23.2421 13.8639C22.9116 14.394 22.78 14.6696 23.2421 15.2915C23.5457 15.7749 24.6205 16.719 25.342 17.6165C26.3926 18.719 27.2645 19.9939 27.9241 21.3903C28.1874 22.2892 27.7495 22.7486 26.8749 22.7486Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="" class="seo_link">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2 18.2497L18.466 13.9997L11.2 9.74967V18.2497ZM27.384 7.15717C27.566 7.82301 27.692 8.71551 27.776 9.84884C27.874 10.9822 27.916 11.9597 27.916 12.8097L28 13.9997C28 17.1022 27.776 19.383 27.384 20.8422C27.034 22.1172 26.222 22.9388 24.962 23.293C24.304 23.4772 23.1 23.6047 21.252 23.6897C19.432 23.7888 17.766 23.8313 16.226 23.8313L14 23.9163C8.134 23.9163 4.48 23.6897 3.038 23.293C1.778 22.9388 0.966 22.1172 0.616 20.8422C0.434 20.1763 0.308 19.2838 0.224 18.1505C0.126 17.0172 0.0839999 16.0397 0.0839999 15.1897L0 13.9997C0 10.8972 0.224 8.61634 0.616 7.15717C0.966 5.88217 1.778 5.06051 3.038 4.70634C3.696 4.52217 4.9 4.39467 6.748 4.30967C8.568 4.21051 10.234 4.16801 11.774 4.16801L14 4.08301C19.866 4.08301 23.52 4.30967 24.962 4.70634C26.222 5.06051 27.034 5.88217 27.384 7.15717Z" fill="white"/>
+                        </svg>                            
+                    </a>
+                    <a href="" class="seo_link">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="4" width="16" height="3" fill="white"/>
+                            <rect x="6" y="12.5" width="16" height="3" fill="white"/>
+                            <rect x="6" y="21" width="16" height="3" fill="white"/>
+                            <rect x="19" y="6" width="3" height="15" fill="white"/>
+                        </svg>                            
+                    </a>
+                </div>
+                <div class="footer-down_logord">Разработано в 2024 г. 
+                    <span>
+                        <a class="logord" href="#">
+                            <svg class="logord-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8102 2.1898L2.18978 13.8102C0.980397 15.0196 0.980397 16.9804 2.18978 18.1898L13.8102 29.8102C15.0196 31.0196 16.9804 31.0196 18.1898 29.8102L29.8102 18.1898C31.0196 16.9804 31.0196 15.0196 29.8102 13.8102L18.1898 2.1898C16.9804 0.980415 15.0196 0.980416 13.8102 2.1898Z" fill="white"/>
+                                <path d="M16.0346 25.1629C21.0954 25.1629 25.198 21.0603 25.198 15.9994C25.198 10.9386 21.0954 6.83594 16.0346 6.83594C10.9737 6.83594 6.87109 10.9386 6.87109 15.9994C6.87109 21.0603 10.9737 25.1629 16.0346 25.1629Z" fill="#101010"/>
+                                <path d="M18.7474 10.2734H13.4054C11.6951 10.2734 10.3086 11.6599 10.3086 13.3703V18.7123C10.3086 20.4226 11.6951 21.8091 13.4054 21.8091H18.7474C20.4577 21.8091 21.8442 20.4226 21.8442 18.7123V13.3703C21.8442 11.6599 20.4577 10.2734 18.7474 10.2734Z" fill="white"/>
+                                <path d="M16.0202 19.9778C18.2253 19.9778 20.013 18.1902 20.013 15.985C20.013 13.7798 18.2253 11.9922 16.0202 11.9922C13.815 11.9922 12.0273 13.7798 12.0273 15.985C12.0273 18.1902 13.815 19.9778 16.0202 19.9778Z" fill="#101010"/>
+                                <path d="M15.4203 14.9L15.0502 15.2701C14.6471 15.6732 14.6471 16.3268 15.0502 16.7299L15.4203 17.1C15.8234 17.5031 16.477 17.5031 16.8802 17.1L17.2502 16.7299C17.6534 16.3268 17.6534 15.6732 17.2502 15.2701L16.8802 14.9C16.477 14.4969 15.8234 14.4969 15.4203 14.9Z" fill="white"/>
+                            </svg>   
+                            <div class="logord-text">Request Design</div>                          
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/header.js"></script>
+    <script src="js/form-input.js"></script>
+</body>
+</html>
