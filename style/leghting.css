@@ -1,0 +1,87 @@
+.header {
+  height: 93vh;
+}
+.vector {
+  opacity: 0;
+}
+.ligh_text {
+  width: 90%;
+  left: 5%;
+}
+.main-services {
+  margin-top: 18vh;
+}
+.instrumentation-mar {
+  margin-top: 0;
+  border-top: 0;
+}
+.intr-image {
+  width: 39.063vw;
+  height: 100%;
+}
+.instrumentation-botton_title {
+  font-family: "Futura PT";
+  font-size: 1.667vw;
+  font-weight: 600;
+  line-height: 3.8vh;
+  text-align: left;
+  color: white;
+  margin-bottom: 2vh;
+  width: 35vw;
+  text-transform: uppercase;
+}
+.instrumentation-botton_title-min {
+  font-family: "HelveticaNeueCyr";
+  font-size: 0.938vw;
+  font-weight: 900;
+  line-height: 2.5vh;
+  text-align: left;
+  color: white;
+  margin-bottom: 2.8vh;
+}
+.instrumentation-botton_ul {
+  display: grid;
+  gap: 16px;
+}
+@media (max-width: 420px) {
+  .block-white_text {
+    font-size: 18px;
+    top: 25%;
+    left: 15%;
+    width: 256px;
+  }
+  .main-instrumentation_content{
+    width: 91vw;
+  }
+  .main-services {
+    margin-top: 60px;
+  }
+  .image-inst {
+    order: 2;
+  }
+  .instrumentation-botton_block {
+    order: 1;
+    width: 91vw;
+  }
+  .intr-image {
+    width: 100%;
+    height: 180px;
+    object-fit: all;
+    order: 2;
+  }
+  .instrumentation-botton_title{
+    font-size: 18px;
+    width: 100%;
+  }
+  .instrumentation-botton_title-min{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .instrumentation-mar{
+    margin-top: 32px;
+    width: 91vw;
+  }
+  .instrumentation-botton_ul{
+    width: 100%;
+  }
+}

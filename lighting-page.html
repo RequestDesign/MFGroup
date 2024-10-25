@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог</title>
+    <title>Cветовое оборудование</title>
     <link rel="stylesheet" href="assets/fonts/HelveticaNeueCyr/stylesheet.css">
     <link rel="stylesheet" href="assets/fonts/Futura/stylesheet.css">
-    <link rel="stylesheet" href="style/main-way.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/protfolio.css">
     <link rel="stylesheet" href="style/product-card.css">
     <link rel="stylesheet" href="style/catalog.css">
+    <link rel="stylesheet" href="style/leghting.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <header class="header">   
+    <header class="header">
+        
+        <img class="main_fon" src="assets/images/lighting/lighting-image.png" alt="">
         <div class="container-fluid">
             <div class="header-top">
                 <a href="main.html" class="header-logo">
@@ -47,7 +49,7 @@
                         <div class="header-menu">
                             <div class="dropdown">
                                 <button class="dropdown-btn"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <svg class="svg-image" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.953125" y="0.200195" width="8" height="8" fill="#101010"/>
                                         <rect x="10.9531" y="0.200195" width="8" height="8" fill="#101010"/>
                                         <rect x="10.9531" y="10.2002" width="8" height="8" fill="#101010"/>
@@ -99,33 +101,61 @@
                     <div class="header-contacts_address no-grid">г. Москва, ул.Бутлерова, 17</div>
                 </div>
             </div>
+            <div class="header-main">
+                <img class="vector" src="assets/images/main/Vector.png" alt="">
+                <div class="header-main_block">
+                    <div class="header-main_title">световое оборудование</div>
+                    <div class="header-main_text">MF Group предлагает в аренду профессиональное звуковое, световое и сценическое оборудование, 
+                        а также автономные источники энергоснабжения. </div>
+                </div>
+                
+            </div>
+            <div class="header-down no-grid"></div>
         </div>
     </header>
     <main class="main">
-        <div class="main-way">
+        <div class="main-services">
             <div class="container-fluid">
-                <div class="main-way_links">
-                    <a class="main-link" href="HomePage.html">Главная</a>
-                    <span class="main-way_square">/</span>
-                    <a class="main-link" href="#">Световое оборудование</a>
-                    <span class="main-way_square">/</span>
-                    <a class="main-link" href="#">Дополнительное оборудование</a>
-                    <span class="main-way_square">/</span>
-                    <a class="main-link" href="#">Телескопические подъёмники</a>
-                    <span class="main-way_square">/</span>
-                    <a class="main-link" href="#">Телескопический подъемник Fenix MEGARA 230</a>
-                    
+                <div class="main-services_content">
+                    <div class="services-content_main">
+                        <div class="content-main_top">
+                            <a href="#" class="prortfolio-content_project">
+                                <img class="image-block_project"  src="assets/images/contacts/block-gray.png" alt="">
+                                <span class="block-white_text">аренда динамических приборов</span>
+                            </a>
+                            <a href="#" class="prortfolio-content_project">
+                                <img class="image-block_project"  src="assets/images/contacts/block-top2.png" alt="">
+                                <span class="block-white_text">аренда статических приборов</span>
+                            </a>
+                            <a href="#" class="prortfolio-content_project">
+                                <img class="image-block_project"  src="assets/images/contacts/block-top3.png" alt="">
+                                <span class="block-white_text">аренда архитектурного освещения</span>
+                            </a>
+                        </div>
+                        <div class="content-main_top">
+                            <a href="#" class="prortfolio-content_project">
+                                <img class="image-block_project"  src="assets/images/contacts/block-gray.png" alt="">
+                                <span class="block-white_text">аренда LED и световых эффектов</span>
+                            </a>
+                            <a href="#" class="prortfolio-content_project">
+                                <img class="image-block_project"  src="assets/images/contacts/block-top2.png" alt="">
+                                <span class="block-white_text ligh_text">аренда световых пультов</span>
+                            </a>
+                            <a href="#" class="prortfolio-content_project">
+                                <img class="image-block_project"  src="assets/images/contacts/block-top3.png" alt="">
+                                <span class="block-white_text">Дополнительное оборудование</span>
+                            </a>
+                        </div>
+                       
+                    </div>
+                    <div class="services_content_botton">
+                        <button class="portfolio-item_btn">прайс-лист   
+                            <svg class="arror-left" width="51" height="8" viewBox="0 0 51 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50.3536 4.35355C50.5488 4.15829 50.5488 3.84171 50.3536 3.64645L47.1716 0.464466C46.9763 0.269204 46.6597 0.269204 46.4645 0.464466C46.2692 0.659728 46.2692 0.976311 46.4645 1.17157L49.2929 4L46.4645 6.82843C46.2692 7.02369 46.2692 7.34027 46.4645 7.53553C46.6597 7.7308 46.9763 7.7308 47.1716 7.53553L50.3536 4.35355ZM0 4.5H50V3.5H0V4.5Z" fill="#7C0A4D"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                <div class="main-way_block on-flex">
-                    <a href="" class="bestproject-top_prev">
-                        <svg class="arr-prev" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.646446 7.64644C0.451183 7.8417 0.451183 8.15829 0.646446 8.35355L3.82843 11.5355C4.02369 11.7308 4.34027 11.7308 4.53553 11.5355C4.7308 11.3403 4.7308 11.0237 4.53553 10.8284L1.70711 8L4.53553 5.17157C4.7308 4.97631 4.7308 4.65972 4.53553 4.46446C4.34027 4.2692 4.02369 4.2692 3.82843 4.46446L0.646446 7.64644ZM51 7.5L1 7.5L1 8.5L51 8.5L51 7.5Z" fill="white"/>
-                        </svg>
-                        назад
-                    </a>
-                    <button class="btn-fil">фильтры</button>
-                </div>
-                
             </div>
         </div>
         <div class="main-catalog">
@@ -133,16 +163,7 @@
             <div class="container-fluid">
                 <div class="main-catalog_content">
                     <div class="catalog-content_top">
-                        <div class="portfolio-top_title">аренда динамических приборов</div>
-                        <button class="portfolio-item_btn no-flex">фильтры
-                            <span class="btn_arror-left">
-                                <svg class="arror-left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 7H11M14 17H5" stroke="#7C0A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M17 20C18.6569 20 20 18.6569 20 17C20 15.3431 18.6569 14 17 14C15.3431 14 14 15.3431 14 17C14 18.6569 15.3431 20 17 20Z" stroke="#7C0A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7 10C8.65685 10 10 8.65685 10 7C10 5.34315 8.65685 4 7 4C5.34315 4 4 5.34315 4 7C4 8.65685 5.34315 10 7 10Z" stroke="#7C0A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>     
-                            </span>
-                        </button>
+                        <div class="portfolio-top_title">оборудование</div>
                     </div>
                     <div class="catalog-content_main">
                         <table class="content-main_block table_blur">
@@ -309,65 +330,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main-services">
-            <div class="main-services_backlight"></div>
-            <div class="container-fluid">
-                <div class="main-services_content">
-                    <div class="services-content_top">
-                        <div class="content-top_title">другие услуги аренды</div>
-                    </div>
-                    <div class="services-content_main">
-                        <div class="content-main_top">
-                            <a href="#" class="prortfolio-content_project">
-                                <img class="image-block_project"  src="assets/images/contacts/block-gray.png" alt="">
-                                <span class="block-white_text">аренда статических приборов</span>
-                            </a>
-                            <a href="#" class="prortfolio-content_project">
-                                <img class="image-block_project"  src="assets/images/contacts/block-top2.png" alt="">
-                                <span class="block-white_text">аренда архитектурного освещения</span>
-                            </a>
-                            <a href="#" class="prortfolio-content_project">
-                                <img class="image-block_project"  src="assets/images/contacts/block-top3.png" alt="">
-                                <span class="block-white_text">аренда LED и световых эффектов</span>
-                            </a>
-                        </div>
-                        <div class="content-main_botten">
-                            <a href="#" class="services-content_project">
-                                <img class="image-block_white"  src="assets/images/contacts/block-botton1.png" alt="">
-                                <span class="block-white_text text-project">аренда световых пультов</span>
-                            </a>
-                            <a href="#" class="services-content_project ">
-                                <img class="image-block_white"  src="assets/images/contacts/block-botton.png" alt="">
-                                <span class="block-white_text text-project">Дополнительное оборудование</span>
-                            </a>
-                        </div>
-                       
-                    </div>
-                    <div class="services_content_botton">
-                        <button class="portfolio-item_btn">прайс-лист   
-                            <svg class="arror-left" width="51" height="8" viewBox="0 0 51 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50.3536 4.35355C50.5488 4.15829 50.5488 3.84171 50.3536 3.64645L47.1716 0.464466C46.9763 0.269204 46.6597 0.269204 46.4645 0.464466C46.2692 0.659728 46.2692 0.976311 46.4645 1.17157L49.2929 4L46.4645 6.82843C46.2692 7.02369 46.2692 7.34027 46.4645 7.53553C46.6597 7.7308 46.9763 7.7308 47.1716 7.53553L50.3536 4.35355ZM0 4.5H50V3.5H0V4.5Z" fill="#7C0A4D"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-instrumentation">
-            <div class="main-instrumentation_backlight"></div>
-            <div class="container-fluid">
-                <div class="main-instrumentation_content">
-                    <div class="instrumentation-content_top">
-                        <div class="content-top_title">Динамические приборы освещения в аренду</div>
-                    </div>
-                    <div class="instrumentation-content_botton">
-                        <div class="instrumentation-botton_text">Их основной принцип действия – вращение оптической системы вместе с лампой. Приборы разделяются на 2 класса: рисующие и заливающие. Заливающие используют для заливки светом сцен, объектов, художественной подсветки помещений, декораций и т.д. Рисующими приборами формируют лучи определенной формы, проецируют логотипы, создают художественные световые объекты.</div>
-                        <img class="image-inst" src="assets/images/protfolio/image-prot7.png" alt="">
-                    </div>
-                 
-                </div>
-            </div>
+            <div class="main-advantages_backlight"></div>
+            <div class="main-portfolio_backlight"></div>
         </div>
         <div class="main-portfolio_backlight"></div>
         <div class="main-form_fon">
@@ -415,7 +379,51 @@
             </div>
             <div class="main-story_backlight"></div>
         </div>
-    </main>    
+        <div class="main-instrumentation">
+            <div class="main-instrumentation_backlight"></div>
+            <div class="container-fluid">
+                <div class="main-instrumentation_content">
+                    <div class="instrumentation-content_top">
+                        <div class="content-top_title">аренда светового оборудования</div>
+                    </div>
+                    <div class="instrumentation-content_botton">
+                        <img class="image-inst" src="assets/images/protfolio/image-prot7.png" alt="">
+                        
+                        <div class="instrumentation-botton_block">
+                            <p class="instrumentation-botton_text">При организации серьезного мероприятия в любом случае потребуется провести организацию светового оформления пространства, то есть позаботиться о том, чтобы определенные участки имели определенное освещение. На самом деле, процесс работы со световым оборудованием является достаточно сложным, вследствие чего стоит обратить особое внимание на моменты, связанные с получением сторонней помощи.</p>
+                            <p class="instrumentation-botton_text">Первая проблема, с которой предстоит столкнуться при организации мероприятия – приобретение светового оборудования. Стоимость его достаточно высокая, а потому в некоторых случаях купить все необходимое просто нет возможности. И в этом случае стоит обратить внимание на нашу компанию, которая предоставляет подобную аппаратуру в аренду по привлекательной цене.</p>
+                        </div>
+                    </div>
+                    <div class="instrumentation-content_botton instrumentation-mar">
+                        <div class="instrumentation-botton_block">
+                            <div class="instrumentation-botton_title">Преимущества в использовании арендованной аппаратуры</div>
+                            <p class="instrumentation-botton_text">Зачастую непосредственное приобретать световое оборудование просто нет никакого смысла, так как оно имеет высокую стоимость и используется далеко не на каждом мероприятия. Да и мероприятия могут проводиться достаточно редко. В результате совершение покупки подобной техники просто можно расценивать как глупую трату денежных средств, особенно при учете того, что технику можно будет просто арендовать.</p>
+                        </div>
+
+                        <div class="instrumentation-botton_block">
+                            <div class="instrumentation-botton_title-min">Использование услуги аренды светового оборудования обладает определенными положительными особенностями, в частности:</div>
+                            <ul class="instrumentation-botton_ul">
+                                <li class="instrumentation-botton_text">Значительная экономия денежных средств. Использование предложения аренды позволяет сэкономить значительную часть своих денежных средств, прием не только на непосредственно совершении покупки, но и на обслуживании техники, ремонте, содержании и так далее</li>
+                                <li class="instrumentation-botton_text">Большой ассортимент вариантов. У нас можно будет выбрать буквально любую аппаратуру для проведения того или иного мероприятия. Организация светового сопровождения будет осуществлена наилучшим образом, вследствие чего мероприятия пройдет на ура</li>
+                                <li class="instrumentation-botton_text">Возможность получения профессиональной помощи. Еще одна положительная особенность в работе с нашей компанией. Суть в том, что по мере необходимости каждый клиент может получить помощь в организации освещения на мероприятии. Профессионал не только поможет подобрать наилучшие варианты аппаратуры, но и проконсультирует по ее правильному размещению, использованию и так далее</li>
+                                <li class="instrumentation-botton_text">Нет необходимости тратиться на дополнительные услуги. Мы самостоятельно занимаемся доставкой и установкой оборудования, а также проводим необходимую настройку и обучение использованию техники</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="instrumentation-content_botton instrumentation-mar">
+                        <div class="instrumentation-botton_block">
+                            <div class="instrumentation-botton_title">Какое оборудование можно будет заказать и как?</div>
+                            <p class="instrumentation-botton_text">Наша компания предоставляет возможность взять в аренду практически любое оборудование, которое только может потребоваться для организации того или иного мероприятия. По мере необходимости можно будет проконсультироваться с нашим специалистом по вопросам наличия той или иной техники, однако даже в том случае, если некоторого оборудования у нас не окажется – альтернативные варианты обязательно будут.</p>
+                            <p class="instrumentation-botton_text">Что касается оформления заказа – тут все максимально просто. Пользователю достаточно будет обратить свое внимание на наличие телефона горячей линии на нашем официальном сайте, посредством которого можно будет связаться с нами. Также можно просто произвести заполнение заявки обратной связи, и тогда уже наш специалист перезвонит потенциальному клиенту самостоятельно.</p>
+                            <p class="instrumentation-botton_text">В процессе оформления заявки достаточно будет указать минимальное количество личных данных, а также информацию о том, где и когда будет проводиться определенное мероприятие, какая техника может потребоваться. После предоставления информации останется только подтвердить заказ и ждать предоставление оборудования.</p>
+                        </div>
+                        <img class="intr-image" src="assets/images/lighting/instr-image.png" alt="">
+       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="footer">
         <div class="header-down"></div>
         <div class="footer-contacts_backlight"></div>
@@ -641,5 +649,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/header.js"></script>
+    <script src="js/form-input.js"></script>
 </body>
 </html>
