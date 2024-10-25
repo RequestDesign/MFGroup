@@ -638,11 +638,11 @@ body {
   position: absolute;
   width: 5px;
   height: 5px;
-  top: 400px;
-  left: -950px;
+  top: 2200px;
+  left: -450px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.3);
-  box-shadow: 420px 270px 320px 200px rgba(177, 177, 177, 0.3);
+  box-shadow: 420px 270px 320px 300px rgba(177, 177, 177, 0.3);
   z-index: -3;
   border: none;
 }

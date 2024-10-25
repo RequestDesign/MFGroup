@@ -494,8 +494,8 @@
   position: absolute;
   width: 5px;
   height: 5px;
-  right: -100px;
-  box-shadow: -120px 320px 400px 200px rgba(107, 107, 107, 0.8);
+  right: -500px;
+  box-shadow: -420px 320px 400px 340px rgba(107, 107, 107, 0.8);
   z-index: 3;
 }
 .main-story_backlight {
@@ -702,5 +702,8 @@
   }
   .svg-link {
     width: 17px;
+  }
+  .main-form_backlight {
+    display: none;
   }
 }

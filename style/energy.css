@@ -11,9 +11,17 @@
   display: flex;
   justify-content: center;
 }
-.block-white_text{
-    top: 45%;
+.block-white_text {
+  top: 35%;
 }
 .text-top {
   top: 35% !important;
+}
+@media (max-width:420px) {
+  .energy-image_text{
+    height: 114px;
+  }
+  .text-top{
+    top: 20% !important;
+  }
 }
