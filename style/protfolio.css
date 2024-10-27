@@ -258,10 +258,12 @@
   text-transform: uppercase;
   width: 37.708vw;
   margin-bottom: 4vh;
+  z-index: 2;
 }
 .form {
   display: grid;
   gap: 20px;
+  z-index: 1;
 }
 .form-input {
   border-radius: 0 !important; 

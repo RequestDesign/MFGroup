@@ -627,7 +627,7 @@ body {
   position: absolute;
   width: 5px;
   height: 5px;
-  right: -150px;
+  right: -350px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.4);
   box-shadow: -250px 70px 300px 300px rgba(177, 177, 177, 0.7);
@@ -643,6 +643,18 @@ body {
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.3);
   box-shadow: 420px 270px 320px 300px rgba(177, 177, 177, 0.3);
+  z-index: -3;
+  border: none;
+}
+.main-portfolio .main-portfolio_backlight {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 300px;
+  left: -450px;
+  border-radius: 50%;
+  background-color: rgba(177, 177, 177, 0.3);
+  box-shadow: 420px 270px 320px 400px rgba(177, 177, 177, 0.7);
   z-index: -3;
   border: none;
 }
@@ -666,11 +678,23 @@ body {
   right: -330px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.4);
-  box-shadow: -250px 270px 300px 200px rgba(177, 177, 177, 0.4);
+  box-shadow: -250px 270px 300px 200px rgba(177, 177, 177, 0.7);
   z-index: -3;
   border: none;
 }
 .main-instrumentation_backlight{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 850px;
+  right: -50px;
+  border-radius: 50%;
+  background-color: rgba(177, 177, 177, 0.4);
+  box-shadow: 20px 300px 300px 400px rgba(177, 177, 177, 0.7);
+  z-index: -3;
+  border: none;
+}
+.main-lighting_backlight{
   position: absolute;
   width: 5px;
   height: 5px;
@@ -680,7 +704,6 @@ body {
   background-color: rgba(177, 177, 177, 0.4);
   box-shadow: 0px 300px 300px 300px rgba(177, 177, 177, 0.4);
   z-index: -3;
-  border: none;
 }
 .no-grid {
   display: grid;
@@ -1126,7 +1149,13 @@ body {
   .no-flex {
     display: none;
   }
-
+  .main-portfolio .main-portfolio_backlight{
+    box-shadow: 420px 270px 320px 100px rgba(177, 177, 177, 0.7);
+  }
+  .main-instrumentation_backlight{
+    top: 1100px;
+    box-shadow: 20px 370px 220px 200px rgba(177, 177, 177, 0.7);
+  }
 
   .header-top_backlight{
     position: absolute;

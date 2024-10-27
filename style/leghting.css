@@ -43,6 +43,106 @@
   display: grid;
   gap: 16px;
 }
+/* otherservices*/
+.otherservices {
+  margin: 18vh 0;
+}
+.main-otherservices_content {
+  display: grid;
+  justify-items: center;
+}
+.otherservices-content_top {
+  display: grid;
+  justify-content: center;
+}
+.otherservices-content_main {
+  width: 35.417vw;
+  margin-top: 6vh;
+  display: grid;
+  gap: 2.5vh;
+}
+.otherservices_item {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 16px;
+  text-decoration: none;
+}
+.otherservices_item:hover {
+  .item_link {
+    border: 2px solid rgba(255, 255, 255, 1);
+  }
+}
+.otherservices-item_title {
+  font-family: "HelveticaNeueCyr";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  color: white;
+}
+.item_link {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-customers {
+  margin: 18vh 0;
+}
+.main-customers .content-main_item .block-image {
+  height: 80%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.main-customers .content-main_item .main-item_title {
+  height: 88px;
+  width: 17vw;
+}
+.main-customers .content-main_item .main-item_img {
+  height: 90%;
+}
+.gaz-logo {
+  margin-top: -5px;
+}
+.main-customers .content-main_item {
+  height: 35.5vh;
+  gap: 1vh;
+}
+/* main-awards */
+.main-awards{
+  margin: 18vh 0;
+ 
+}
+.main-awards .content-top_title {
+  width: 100%;
+  z-index: 3;
+}
+.awards-content_botton {
+  display: flex;
+  justify-content: center;
+}
+.awards-content_main {
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  margin: 6vh 0 6vh -3.5vh;
+  gap: 3vh;
+}
+.image-awards {
+  width: 12.5vw;
+  height: 18vmax;
+  filter: grayscale(1);
+}
+.active-image_awards {
+  width: 18.75vw;
+  height: 26.5vmax;
+  filter: grayscale(0);
+}
 @media (max-width: 420px) {
   .block-white_text {
     font-size: 18px;
@@ -50,7 +150,7 @@
     left: 15%;
     width: 256px;
   }
-  .main-instrumentation_content{
+  .main-instrumentation_content {
     width: 91vw;
   }
   .main-services {
@@ -69,19 +169,79 @@
     object-fit: all;
     order: 2;
   }
-  .instrumentation-botton_title{
+  .instrumentation-botton_title {
     font-size: 18px;
     width: 100%;
   }
-  .instrumentation-botton_title-min{
+  .instrumentation-botton_title-min {
     font-size: 14px;
     font-weight: 400;
   }
-  .instrumentation-mar{
+  .instrumentation-mar {
     margin-top: 32px;
     width: 91vw;
   }
-  .instrumentation-botton_ul{
+  .instrumentation-botton_ul {
     width: 100%;
+  }
+  .main-otherservices_content {
+    justify-items: left;
+  }
+  .otherservices-content_main {
+    width: 91vw;
+  }
+  .otherservices-content_top {
+    justify-content: center;
+  }
+  .main-customers .catalog-content_main {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 24px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .main-customers .content-main_block,
+  .main-customers .table_blur tbody {
+    width: 91vw;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .main-customers .mob-block {
+    flex-wrap: nowrap;
+  }
+  .main-customers .main-item_border {
+    width: 91vw;
+  }
+  .main-customers .content-main_item {
+    width: 91vw;
+    height: 23vh;
+  }
+  .main-customers .content-main_item .main-item_title {
+    width: 100%;
+    font-size: 14px;
+  }
+  .main-content_btn {
+    display: flex;
+    gap: 20px;
+  }
+  .btn-arror_rigth,
+  .btn-arror_left {
+    width: 43px;
+  }
+  .main-awards .awards-content_main{
+    margin-left: 0;
+  }
+  .main-awards .otherservices-content_top {
+    justify-content: center;
+  }
+  .main-awards .content-top_title {
+    text-align: center;
+  }
+  .image-awards ,.active-image_awards{
+    width: 220px;
+    height: 311px;
+
   }
 }
