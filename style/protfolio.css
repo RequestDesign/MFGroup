@@ -6,6 +6,7 @@
 }
 .main {
   margin-top: 3vmax;
+  position: relative;
 }
 .portfolio-top_projects {
   width: 46.354vw;
@@ -507,7 +508,7 @@
   border-radius: 50%;
   left: -200px;
   bottom: 400px;
-  box-shadow: 30px 100px 200px 340px rgba(107, 107, 107, 0.8);
+  box-shadow: 20px 70px 300px 280px rgba(107, 107, 107, 0.8);
   z-index: 1;
   backdrop-filter: blur(300px);
 }

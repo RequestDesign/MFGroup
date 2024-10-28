@@ -111,8 +111,9 @@
         </div>
     </header>
     <main class="main">
-        
+        <div class="main-portfolio_backlight"></div>
         <div class="container-fluid">
+            
             <div class="main-portfolio">
                 <div class="main-bestproject_top">
                     <a href="" class="bestproject-top_prev">
@@ -176,18 +177,26 @@
                 </div>
             </div>
         </div>
-        <div class="main-portfolio_backlight"></div>
+     
         <div class="main-form_fon">
-            <div class="main-form_backlight"></div>
+            <div class="main-advantages_backlight"></div>
             <div class="main-form">
                 <div class="main-form_title">Рассчитайте стоимость проекта</div>
                 <form class="form" action="" method="post">
                     <input class="form-input" type="text" name="name" id="name" placeholder="Ваше имя">
                     <div class="form-block">
-                        <input  class="form-input" type="email" name="email" id="email" placeholder="E-mail*" required>
-                        <input  class="form-input" type="tel" pattern="\d*" maxlength="12" minlength="11" name="phone" id="phone" placeholder="Телефон*" required>
+                        <div class="input-container">
+                            <input class="form-input" type="email" name="email" id="email" placeholder=" " required>
+                            <label for="email" class="input-label">E-mail<span class="required"> *</span></label>
+                            <span class="error-message" id="email-error">error</span>
+                        </div>
+                        <div class="input-container">
+                            <input class="form-input" type="tel" pattern="\d*" maxlength="12" minlength="11" name="phone" id="phone" placeholder=" " required>
+                            <label for="phone" class="input-label">Телефон<span class="required"> *</span></label>
+                            <span class="error-message" id="phone-error">error</span>
+                        </div>
                     </div>
-                    <textarea  class="form-text" name="tx-text" id="tx-text" rows="10"placeholder="Техническое задание*" ></textarea>
+                    <textarea class="form-text" name="tx-text" id="tx-text" rows="10" placeholder="Техническое задание*"></textarea>
                     <div class="input__wrapper">
                         <input name="file" type="file" id="input__file" class="input input__file" multiple>
                         <label for="input__file" class="input__file-button">
@@ -202,7 +211,7 @@
                         </label>
                      </div>
                      <div class="form-down">
-                        <input class="down-btn form-btn_active" type="submit" value="оставить заявку">
+                        <input class="down-btn" type="submit" value="оставить заявку">
                         <div class="form-down_statement">
                             <input class="down-statement_checkbox" type="checkbox" name="agreement" id="agreement" required>
                             <div class="down_statement">Нажимая на кнопку, вы подтверждаете <span class="down-statement_text"> согласие на обработку персональных данных</span></div>
@@ -214,7 +223,7 @@
             </div>
             <div class="main-story_backlight"></div>
         </div>
-        <div class="main-advantages_backlight"></div>
+        <!-- <div class="main-advantages_backlight"></div> -->
     </main>
     <footer class="footer">
         <div class="header-down"></div>

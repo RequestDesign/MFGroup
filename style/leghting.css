@@ -46,6 +46,7 @@
 /* otherservices*/
 .otherservices {
   margin: 18vh 0;
+  position: relative;
 }
 .main-otherservices_content {
   display: grid;

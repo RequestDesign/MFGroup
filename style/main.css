@@ -176,6 +176,7 @@ body {
   object-fit: cover;
 }
 .main-catalog {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 18vh;
@@ -421,6 +422,9 @@ body {
   width: 100%;
 }
 /* advantages */
+.main-advantages{
+  z-index: 2;
+}
 .main-advantages_items {
   height: 51vh;
   overflow: hidden;
@@ -443,6 +447,7 @@ body {
 .image-advan {
   width: 39.271vw;
   height: 100%;
+  z-index: 3;
 }
 .item_title {
   width: 18vw;
@@ -630,7 +635,7 @@ body {
   right: -350px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.4);
-  box-shadow: -250px 70px 300px 300px rgba(177, 177, 177, 0.7);
+  box-shadow: -350px 70px 300px 200px rgba(177, 177, 177, 0.7);
   z-index: 1;
   border: none;
 }
@@ -638,11 +643,11 @@ body {
   position: absolute;
   width: 5px;
   height: 5px;
-  top: 2200px;
+  top: 1800px;
   left: -450px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.3);
-  box-shadow: 420px 270px 320px 300px rgba(177, 177, 177, 0.3);
+  box-shadow: 320px 270px 320px 200px rgba(177, 177, 177, 0.3);
   z-index: -3;
   border: none;
 }
@@ -650,11 +655,11 @@ body {
   position: absolute;
   width: 5px;
   height: 5px;
-  top: 300px;
+  top: 100px;
   left: -450px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.3);
-  box-shadow: 420px 270px 320px 400px rgba(177, 177, 177, 0.7);
+  box-shadow: 420px 70px 300px 200px rgba(177, 177, 177, 0.7);
   z-index: -3;
   border: none;
 }
@@ -690,7 +695,7 @@ body {
   right: -50px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.4);
-  box-shadow: 20px 300px 300px 400px rgba(177, 177, 177, 0.7);
+  box-shadow: 20px 70px 300px 200px rgba(177, 177, 177, 0.7);
   z-index: -3;
   border: none;
 }
@@ -940,6 +945,7 @@ body {
   /* advantages */
   .main-advantages{
     margin-bottom: 80px;
+
   }
   .main-advantages .portfolio-top_title{
     text-align: center;
