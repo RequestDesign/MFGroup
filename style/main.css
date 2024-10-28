@@ -636,7 +636,7 @@ body {
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.4);
   box-shadow: -350px 70px 300px 200px rgba(177, 177, 177, 0.7);
-  z-index: 1;
+  z-index: -3;
   border: none;
 }
 .main-portfolio_backlight {
@@ -683,7 +683,7 @@ body {
   right: -330px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.4);
-  box-shadow: -250px 270px 300px 200px rgba(177, 177, 177, 0.7);
+  box-shadow: -250px 270px 250px 160px rgba(177, 177, 177, 0.7);
   z-index: -3;
   border: none;
 }
@@ -695,7 +695,7 @@ body {
   right: -50px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.4);
-  box-shadow: 20px 70px 300px 200px rgba(177, 177, 177, 0.7);
+  box-shadow: 20px 70px 300px 250px rgba(177, 177, 177, 0.7);
   z-index: -3;
   border: none;
 }
@@ -703,11 +703,11 @@ body {
   position: absolute;
   width: 5px;
   height: 5px;
-  top: -650px;
-  left: -150px;
+  top: -80px;
+  left: -100px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.4);
-  box-shadow: 0px 300px 300px 300px rgba(177, 177, 177, 0.4);
+  box-shadow: 0px 180px 350px 250px rgba(177, 177, 177, 0.4);
   z-index: -3;
 }
 .no-grid {

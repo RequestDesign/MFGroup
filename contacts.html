@@ -13,7 +13,6 @@
 </head>
 <body>
     <header class="header">
-        
         <div class="container-fluid">
             <div class="header-top">
                 <a href="main.html" class="header-logo">
@@ -99,10 +98,10 @@
                 </div>
             </div>
         </div>
+        <div class="main-lighting_backlight"></div>
     </header>
 
     <main class="main">
-        <div class="main-catalog_backlight"></div>
         <div class="container-fluid">
             <div class="main-portfolio">
                 <div class="main-contact_top">
@@ -192,12 +191,10 @@
                 </div>
             </div>
         </div>
-        <div class="main-portfolio_backlight"></div>
         <div class="main-form_fon">
-            <div class="main-form_backlight"></div>
+            <div class="main-advantages_backlight"></div>
             <div class="main-form">
-                <div class="main-form_title">остались вопросы?</div>
-                <div class="main-form_text">Оставьте свои контактные данные и наши менеджеры с вами свяжутся</div>
+                <div class="main-form_title">Рассчитайте стоимость проекта</div>
                 <form class="form" action="" method="post">
                     <input class="form-input" type="text" name="name" id="name" placeholder="Ваше имя">
                     <div class="form-block">
@@ -212,6 +209,20 @@
                             <span class="error-message" id="phone-error">error</span>
                         </div>
                     </div>
+                    <textarea class="form-text" name="tx-text" id="tx-text" rows="10" placeholder="Техническое задание*"></textarea>
+                    <div class="input__wrapper">
+                        <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                        <label for="input__file" class="input__file-button">
+                           <span class="input__file-icon-wrapper">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3164 12.9082L12.906 19.3187" stroke="#7C0A4D" stroke-width="1.7" stroke-linecap="square"/>
+                                <path d="M13.5936 8.55484L16.1119 6.03656C18.8935 3.25495 23.4034 3.25494 26.185 6.03656V6.03656C28.9666 8.81817 28.9666 13.3281 26.185 16.1097L23.6667 18.628" stroke="#7C0A4D" stroke-width="1.7" stroke-linecap="square"/>
+                                <path d="M18.6291 23.6688L16.1108 26.1871C13.3292 28.9687 8.81927 28.9687 6.03766 26.1871V26.1871C3.25604 23.4055 3.25604 18.8956 6.03766 16.114L8.55594 13.5957" stroke="#7C0A4D" stroke-width="1.7" stroke-linecap="square"/>
+                                </svg>
+                            </span>
+                           <span class="input__file-button-text">Выберите файл (Max 3Mb)</span>
+                        </label>
+                     </div>
                      <div class="form-down">
                         <input class="down-btn" type="submit" value="оставить заявку">
                         <div class="form-down_statement">
