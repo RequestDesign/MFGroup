@@ -1,0 +1,23 @@
+.main-catalog-area {
+  position: relative;
+  margin-top: 8vh;
+  margin-bottom: 18vh;
+}
+.main-catalog-area .catalog-content_top {
+  display: flex;
+  justify-content: center;
+}
+.header {
+  height: 10.2vh;
+}
+.area-item_img {
+  width: 17.969vw;
+  height: 26vh;
+  object-fit: cover;
+}
+@media (max-width: 420px) {
+  .area-item_img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
