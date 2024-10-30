@@ -659,7 +659,7 @@ body {
   left: -450px;
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.3);
-  box-shadow: 420px 70px 350px 270px rgba(177, 177, 177, 0.7);
+  box-shadow: 420px 70px 350px 200px rgba(177, 177, 177, 0.7);
   z-index: -3;
   border: none;
 }
