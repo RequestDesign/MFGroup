@@ -232,7 +232,7 @@
     overflow: hidden;
   }
   .story-main_text::after {
-    content: ""; /* Создаем псевдоэлемент */
+    content: ""; 
     position: absolute; /* Абсолютное позиционирование */
     bottom: -10px; /* Прикрепляем к нижней части блока */
     left: 0; /* Прикрепляем к левой стороне блока */
@@ -271,9 +271,6 @@
     display: flex;
     align-items: center;
     justify-items: center;
-  }
-  .content-section_items {
-    height: 100%;
   }
   .marker {
     width: 24px;

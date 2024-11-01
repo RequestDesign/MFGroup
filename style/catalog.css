@@ -1,6 +1,11 @@
 .catalog-content_top {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.catalog-content_top-block{
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .main-catalog {

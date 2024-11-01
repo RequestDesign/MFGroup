@@ -41,7 +41,9 @@
 .plus-svg {
   display: none;
 }
-
+.border-no{
+  border-right: none;
+}
 @media (max-width: 420px) {
   .main-catalog {
     margin-top: 60px;

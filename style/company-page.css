@@ -1,0 +1,342 @@
+.header {
+  height: 93vh;
+}
+.vector {
+  opacity: 0;
+}
+.main-about_content {
+  display: flex;
+  justify-content: space-between;
+}
+.about-content_info {
+  width: 35.156vw;
+  display: grid;
+}
+.main-about {
+  margin: 18vh 0;
+}
+.content-info_title {
+  font-family: "Futura PT";
+  font-size: 1.667vw;
+  font-weight: 600;
+  line-height: 3.8vh;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 2vh;
+}
+.content-info_text {
+  font-family: "HelveticaNeueCyr";
+  font-size: 1.042vw;
+  font-weight: 400;
+  text-align: left;
+  color: white;
+}
+.main-banner {
+  margin: 18vh 0;
+}
+.main-banner_content {
+  height: 40.277vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/images/main/banner-image.jpg);
+  background-position: 60% -500px;
+}
+.main-portfolio_backlight {
+  top: 0;
+}
+.banner-content_title {
+  font-family: "Futura PT";
+  font-size: 2.708vw;
+  font-weight: 600;
+  line-height: 6.2vh;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  width: 49.792vw;
+}
+.main-customers {
+  margin: 18vh 0;
+}
+.main-item_title {
+  font-family: "Futura PT";
+  font-size: 2.083vw;
+  font-weight: 600;
+  line-height: 4.8vh;
+  text-align: center;
+  color: white;
+}
+.main-item_text {
+  color: white;
+  font-family: "HelveticaNeueCyr";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: 2.3vh;
+  text-align: center;
+  width: 16vw;
+}
+
+.content_main-video {
+  width: 53.333vw;
+}
+.catalog-content_main {
+  display: flex;
+  justify-content: center;
+}
+.content-top_title {
+  width: 100%;
+}
+.main-awards {
+  margin: 18vh 0;
+}
+.main-awards_content {
+  display: grid;
+  gap: 6vh;
+}
+.awards-content_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.083vw;
+}
+.image-awards_text {
+  font-family: "HelveticaNeueCyr";
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: 1.9vh;
+  text-align: center;
+  color: white;
+}
+.image-awards {
+  width: 12.5vw;
+}
+.active-image_awards {
+  display: grid;
+  justify-items: center;
+  gap: 4vh;
+}
+.awards-content_item .image-awards_text {
+  display: none;
+}
+.active-image_awards .image-awards_text {
+  display: grid;
+}
+.active-image_awards .image-awards {
+  width: 18.75vw;
+}
+.awards-content_botton {
+  display: grid;
+  justify-content: center;
+}
+.main-family {
+  background-color: white;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  margin: 18vh 0;
+}
+.main-family_content {
+  display: flex;
+  padding: 5vmax 9.792vw;
+  gap: 3.125vw;
+}
+.image-family {
+  width: 39.219vw;
+  position: relative;
+}
+.family-content_image {
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  align-content: space-between;
+}
+.family-content_info {
+  display: grid;
+  gap: 6vh;
+}
+.family-info_text {
+  font-family: "HelveticaNeueCyr";
+  font-size: 0.938vw;
+  font-weight: 400;
+  text-align: left;
+  color: #313131;
+}
+.family-info_title {
+  font-family: "Futura PT";
+  font-size: 2.708vw;
+  font-weight: 600;
+  line-height: 6.2vh;
+  text-align: left;
+  color: #313131;
+  text-transform: uppercase;
+}
+.toggle-button {
+  display: none;
+}
+.main-item_title {
+  position: relative;
+}
+.smail-num {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  font-size: 0.729vw;
+}
+@media (max-width: 420px) {
+  .main-family {
+    background-color: rgba(160, 160, 160, 0.6);
+  }
+  .main-family_content {
+    padding: 60px 16px;
+    display: grid;
+    gap: 20px;
+  }
+  .portfolio-item_btn {
+    order: 2;
+  }
+  .image-family {
+    order: 1;
+    width: 100%;
+  }
+  .family-content_image {
+    justify-items: left;
+    gap: 20px;
+  }
+  .toggle-button {
+    display: flex;
+    height: 24px;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 6px;
+    font-family: "Futura PT";
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    letter-spacing: 3px;
+  }
+  .family-info_text {
+    height: 173px;
+    font-size: 16px;
+    overflow: hidden;
+    color: white;
+  }
+  .family-info_title {
+    color: white;
+    font-size: 28px;
+    line-height: 33.6px;
+    margin-bottom: 16px;
+  }
+  .family-content_info {
+    gap: 0;
+  }
+  .catalog-content_top {
+    display: grid;
+    width: 100%;
+  }
+  .content_main-video {
+    width: 100%;
+  }
+  .portfolio-item_btn {
+    width: 43vw;
+  }
+  .main-content_btn {
+    display: flex;
+    gap: 20px;
+  }
+  .awards-content_botton {
+    height: 86px;
+  }
+  /* main-awards */
+  .main-awards {
+    margin: 80px 0;
+  }
+  .awards-content_main {
+    width: 91vw;
+  }
+  .main-awards_content {
+    gap: 20px;
+  }
+  .image-awards {
+    width: 220px;
+  }
+  .btn-arror_left,
+  .btn-arror_rigth {
+    width: 40px;
+  }
+  .main-about_content {
+    display: grid;
+    gap: 12px;
+  }
+  .content-info_title {
+    font-size: 4.8vw;
+    width: 91vw;
+  }
+  .about-content_info {
+    width: 91vw;
+  }
+  .content-info_text {
+    font-size: 4.267vw;
+  }
+  .main-banner_content {
+    height: 424px;
+    object-fit: cover;
+    background-position: 50% 70%;
+  }
+  .banner-content_title {
+    font-size: 7.467vw;
+    width: 91vw;
+    text-align: left;
+  }
+  .main-about,
+  .main-banner,
+  .main-customers {
+    margin: 80px 0;
+  }
+  .main-customers .catalog-content_main {
+    width: 100%;
+    height: 142px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 24px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .main-customers .content-main_block,
+  .main-customers .table_blur tbody {
+    width: 91vw;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .mob-block {
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6.667vw;
+  }
+  .main-item_title {
+    font-size: 5.867vw;
+    margin-top: 0;
+  }
+  .main-item_text {
+    font-size: 3.733vw;
+    display: grid;
+    align-items: center;
+    width: 33.6vw;
+  }
+  .main-item_border {
+    height: 100%;
+  }
+  .content-main_item {
+    gap: 8px;
+  }
+  .smail-num{
+    font-size: 14px;
+  }
+}
