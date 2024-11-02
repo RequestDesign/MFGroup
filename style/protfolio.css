@@ -484,6 +484,7 @@
   text-transform: uppercase;
   color: rgba(31, 31, 31, 0.5);
   cursor: no-drop !important;
+  filter: grayscale(0);
 }
 .down-btn:disabled {
   background-color: rgba(230, 230, 230, 1);
