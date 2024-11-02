@@ -88,6 +88,7 @@
 }
 .content-main_botten {
   display: flex;
+  justify-content: space-between;
   gap: 2.25vw;
 }
 .block-white_text {

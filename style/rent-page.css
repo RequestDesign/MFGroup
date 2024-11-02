@@ -1,0 +1,127 @@
+.main-rent {
+  margin-bottom: 6vh;
+}
+.main-rent_content {
+  display: grid;
+  justify-content: center;
+}
+.content-top_title {
+  font-family: "Futura PT";
+  font-size: 2.708vw;
+  font-weight: 600;
+  line-height: 62.4px;
+  text-align: center;
+  color: white;
+  width: 35vw;
+  text-transform: uppercase;
+}
+.content-top_text {
+  font-family: "HelveticaNeueCyr";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: center;
+  width: 23.177vw;
+  color: white;
+}
+.otherservices-content_top {
+  display: grid;
+  justify-items: center;
+  gap: 40px;
+}
+.main-rent_content {
+  gap: 6vh;
+}
+.block-white_text {
+  width: 80%;
+  left: 9%;
+}
+.block-input {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25vw;
+}
+.input-equipment {
+  width: 18.333vw;
+  height: 100%;
+  padding: 10px 16px !important;
+  border-radius: 0 !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "HelveticaNeueCyr";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17.91px;
+  text-align: left;
+}
+.input-equipment_text {
+  color: rgba(218, 35, 46, 1);
+  font-family: "HelveticaNeueCyr";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15.92px;
+  text-align: left;
+}
+.view-block_select {
+  height: 100%;
+  width: 18.333vw;
+  padding: 10px 16px !important;
+  border-radius: 0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: none;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 16px;
+  font-family: "HelveticaNeueCyr";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17.91px;
+  text-align: left;
+}
+
+.down-btn {
+  height: 50px;
+}
+.rent-content_main {
+  display: grid;
+  gap: 12px;
+}
+.input-equipment_text {
+  display: none;
+}
+/* .input-equipment_active{
+    display: flex;
+} */
+.view-block_option {
+  width: 372px;
+  height: 200px;
+  background-color: #313131;
+  border-radius: 0 !important;
+  border-width: 1px, 1px, 0px, 1px;
+  border-color: rgba(255, 255, 255, 0.6);
+  font-family: "HelveticaNeueCyr";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17.91px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
