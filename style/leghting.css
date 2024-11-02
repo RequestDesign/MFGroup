@@ -234,6 +234,9 @@
   .main-awards .awards-content_main{
     margin-left: 0;
   }
+  .awards-content_main{
+    margin-bottom: 16px;
+  }
   .main-awards .otherservices-content_top {
     justify-content: center;
   }

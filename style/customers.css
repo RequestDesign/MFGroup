@@ -1,0 +1,219 @@
+.main {
+  margin-top: 0;
+}
+.reward-image {
+  width: 18.75vw;
+}
+.reward-content_main {
+  display: flex;
+  justify-content: space-around;
+  gap: 2.083vw;
+  margin-top: 6vh;
+}
+.main-partners {
+  margin: 18vh 0;
+}
+.partners-content_main {
+  display: grid;
+  gap: 8vmax;
+  margin-top: 5vmax;
+}
+.partners-content_line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.sennhe {
+  width: 12.917vw;
+}
+.shure {
+  width: 10.156vw;
+}
+.yamaha {
+  width: 11.354vw;
+}
+.atals {
+  width: 8.021vw;
+}
+.agen {
+  width: 8.594vw;
+}
+.fbt {
+  width: 8.125vw;
+}
+.lacou {
+  width: 11.458vw;
+}
+.martin {
+  width: 7.552vw;
+}
+.nexo {
+  width: 6.563vw;
+}
+.robert {
+  width: 7.917vw;
+}
+.robe {
+  width: 8.073vw;
+}
+.prolve {
+  width: 8.802vw;
+}
+.fenix {
+  width: 11.042vw;
+}
+.doughty {
+  width: 9.688vw;
+}
+.stage {
+  width: 9.688vw;
+}
+.allen {
+  width: 11.25vw;
+}
+.clay {
+  width: 8.125vw;
+}
+.kazan {
+  width: 5vw;
+}
+.sochi {
+  width: 12.5vw;
+}
+.ltgfcul {
+  width: 15.99vw;
+}
+.citymocs {
+  width: 20.052vw;
+}
+.main-form {
+  height: 100%;
+  padding-top: 11vh;
+  padding-bottom: 13vh;
+}
+.main-form_title {
+  width: 61.667vw;
+  line-height: 5.7vh;
+  margin-bottom: 7vh;
+}
+.institutions-content_main {
+  width: 64.531vw;
+  display: grid;
+  gap: 7vh;
+}
+.content-main_line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16.667vw;
+  margin-left: -4.167vw;
+}
+.content-main_linee {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.no-flex {
+  display: none;
+}
+@media (max-width: 420px) {
+  .reward-image {
+    width: 58.667vw;
+  }
+  .no-flex {
+    display: flex;
+    margin-top: 16px;
+  }
+  .main-form_title {
+    font-size: 7.467vw;
+  }
+  .content-main_linee {
+    display: grid;
+    gap: 39px;
+  }
+  .content-main_line {
+    display: grid;
+    justify-content: left;
+    gap: 39px;
+    margin-left: 0;
+  }
+  .main-form {
+    width: 100%;
+    justify-content: left;
+  }
+  .ltgfcul {
+    width: 65.6vw;
+  }
+  .citymocs {
+    width: 83vw;
+  }
+  .sochi {
+    width: 40.533vw;
+  }
+  .kazan {
+    width: 25.867vw;
+  }
+  .institutions-content_main {
+    width: 100%;
+    padding: 0 0 0 6.933vw;
+  }
+
+  .sennhe {
+    width: 191px;
+    order: 5;
+  }
+  .shure {
+    width: 110px;
+  }
+  .yamaha {
+    width: 120px;
+  }
+  .atals {
+    width: 83px;
+  }
+  .agen {
+    width: 108px;
+    order: 1;
+  }
+  .fbt {
+    width: 105px;
+  }
+  .lacou {
+    width: 130px;
+  }
+  .martin {
+    width: 106px;
+  }
+  .nexo {
+    width: 82px;
+  }
+  .robert {
+    width: 111px;
+  }
+  .robe {
+    width: 98px;
+  }
+  .prolve {
+    width: 119px;
+  }
+  .fenix {
+    width: 117px;
+  }
+  .doughty {
+    width: 127px;
+  }
+  .stage {
+    width: 126px;
+  }
+  .allen {
+    width: 126px;
+  }
+  .clay {
+    width: 90px;
+  }
+  .partners-content_line{
+    justify-content: space-around;
+    gap: 36px;
+  }
+}
