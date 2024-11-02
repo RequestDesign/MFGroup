@@ -94,9 +94,9 @@
 .input-equipment_text {
   display: none;
 }
-/* .input-equipment_active{
+.input-equipment_active{
     display: flex;
-} */
+}
 .view-block_option {
   width: 372px;
   height: 200px;
@@ -110,18 +110,47 @@
   line-height: 17.91px;
   text-align: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 420px) {
+  .content-top_title {
+    width: 230px;
+    font-size: 28px;
+    text-align: left;
+    line-height: 33.6px;
+  }
+  .content-top_text {
+    font-size: 16px;
+    text-align: left;
+    width: 91vw;
+  }
+  .main-rent_content {
+    width: 91vw;
+    gap: 24px;
+  }
+  .otherservices-content_top {
+    justify-content: left;
+    justify-items: left;
+    gap: 16px;
+  }
+  .block-input {
+    display: grid;
+    height: 100%;
+    gap: 12px;
+  }
+  .input-equipment{
+    width: 100%;
+  }
+  .view-block_select{
+    width: 100%;
+  }
+  .input-equipment_text{
+    display: grid;
+    justify-content: center;
+  }
+  .prortfolio-content_project,.image-block_project,.services-content_project,.image-block_white{
+    height: 208px;
+  }
+  .block-white_text{
+    top: 43% !important;
+  }
+  
+}
