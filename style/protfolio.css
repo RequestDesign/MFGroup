@@ -386,6 +386,7 @@
 .input__file-button-text {
   line-height: 1;
   margin-top: 4px;
+  
 }
 
 
@@ -503,7 +504,7 @@
   padding: 0 2.083vw;
   background-color: rgba(230, 230, 230, 1);
   font-family: "Futura PT";
-  font-size: 18px;
+  font-size: 0.938vw;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.05em;
