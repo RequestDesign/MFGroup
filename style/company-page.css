@@ -90,6 +90,10 @@
 }
 .main-awards {
   margin: 18vh 0;
+  position: relative;
+}
+.main-awards .main-portfolio_backlight{
+  top: -160px;
 }
 .main-awards_content {
   display: grid;

@@ -637,7 +637,7 @@ body {
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.4);
   box-shadow: -350px 70px 310px 220px rgba(177, 177, 177, 0.7);
-  z-index: 0;
+  z-index: -3;
   border: none;
 }
 .main-portfolio_backlight {

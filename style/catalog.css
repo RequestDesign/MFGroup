@@ -134,7 +134,7 @@
 }
 .content-top_title {
   text-align: center;
-  width: 586px;
+  /* width: 586px; */
 }
 .instrumentation-content_top {
   display: grid;
