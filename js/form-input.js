@@ -23,26 +23,51 @@ document.querySelectorAll(".form-input").forEach((input) => {
     checkInputs(); // Проверяем состояние инпутов при вводе текста
   });
 
-  // Add event listener to label to make it disappear when clicked
   label.addEventListener("click", function () {
     this.classList.add("clicked"); // Add class to make label disappear
   });
 });
 
-// Функция для проверки всех инпутов
+
+
 function checkInputs() {
   const inputs = document.querySelectorAll(".form-input");
   const submitButton = document.querySelector(".down-btn");
   const allFilled = Array.from(inputs).every(
     (input) => input.value.trim() !== ""
-  ); // Проверяем, заполнены ли все инпуты
+  );
   if (allFilled) {
-    submitButton.classList.add("form-btn_active"); // Добавляем класс активной кнопки
-    submitButton.disabled = false; // Разрешаем отправку
-    submitButton.style.cursor = "pointer"; // Изменяем курсор
+    submitButton.classList.add("form-btn_active");
+    submitButton.disabled = false;
+    submitButton.style.cursor = "pointer";
   } else {
-    submitButton.classList.remove("form-btn_active"); // Убираем класс активной кнопки
-    submitButton.disabled = true; // Блокируем кнопку
-    submitButton.style.cursor = "no-drop"; // Изменяем курсор
+    submitButton.classList.remove("form-btn_active");
+    submitButton.disabled = true;
+    submitButton.style.cursor = "no-drop";
   }
 }
+
+const fileInput = document.getElementById("input__file");
+const fileNameDisplay = document.getElementById("file-name");
+const removeFileButton = document.getElementById("remove-file");
+const fileText = document.getElementById("file-text");
+
+fileInput.addEventListener("change", () => {
+  if (fileInput.files.length > 0) {
+    const fileName = fileInput.files[0].name;
+    fileNameDisplay.textContent = fileName;
+    removeFileButton.style.display = "inline";
+    fileText.style.display = "none";
+  } else {
+    fileNameDisplay.textContent = "";
+    removeFileButton.style.display = "none";
+    fileText.style.display = "inline";
+  }
+});
+
+removeFileButton.addEventListener("click", () => {
+  fileInput.value = "";
+  fileNameDisplay.textContent = "";
+  removeFileButton.style.display = "none";
+  fileText.style.display = "inline";
+});

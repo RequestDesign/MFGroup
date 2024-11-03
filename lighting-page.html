@@ -352,19 +352,17 @@
                     <input class="form-input" type="text" name="name" id="name" placeholder="Ваше имя">
                     <div class="form-block">
                         <div class="input-container">
-                            <input class="form-input" type="email" name="email" id="email" placeholder=" " required>
-                            <label for="email" class="input-label">E-mail<span class="required"> *</span></label>
+                            <input class="form-input" type="email" name="email" id="email" placeholder="E-mail *" required>
                             <span class="error-message" id="email-error">error</span>
                         </div>
                         <div class="input-container">
-                            <input class="form-input" type="tel" pattern="\d*" maxlength="12" minlength="11" name="phone" id="phone" placeholder=" " required>
-                            <label for="phone" class="input-label">Телефон<span class="required"> *</span></label>
+                            <input class="form-input" type="tel" pattern="\d*" maxlength="12" minlength="11" name="phone" id="phone" placeholder="Телефон *" required>
                             <span class="error-message" id="phone-error">error</span>
                         </div>
                     </div>
-                    <textarea class="form-text" name="tx-text" id="tx-text" rows="10" placeholder="Техническое задание*"></textarea>
+                    <textarea class="form-text" name="tx-text" id="tx-text" rows="10" placeholder="Техническое задание *"></textarea>
                     <div class="input__wrapper">
-                        <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                        <input name="file" type="file" id="input__file" class="input input__file" accept=".jpg, .jpeg, .png, .pdf">
                         <label for="input__file" class="input__file-button">
                            <span class="input__file-icon-wrapper">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -373,9 +371,17 @@
                                 <path d="M18.6291 23.6688L16.1108 26.1871C13.3292 28.9687 8.81927 28.9687 6.03766 26.1871V26.1871C3.25604 23.4055 3.25604 18.8956 6.03766 16.114L8.55594 13.5957" stroke="#7C0A4D" stroke-width="1.7" stroke-linecap="square"/>
                                 </svg>
                             </span>
-                           <span class="input__file-button-text">Выберите файл (Max 3Mb)</span>
+                          
+                            <span class="input__file-button-text" id="file-text">Выберите файл (Max 3Mb)</span>
+                            <span class="input__file-filename" id="file-name"></span>
+                            <button type="button" id="remove-file" class="remove-file-button" style="display: none;">
+                                <svg class="remove-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4L8 8M12 12L8 8M8 8L4 12M8 8L12 4" stroke="#1F1F1F" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button> 
                         </label>
-                     </div>
+                        <span class="input__file-button-err">Файл весит более 3Mb </span>
+                    </div>
                      <div class="form-down">
                         <input class="down-btn" type="submit" value="оставить заявку">
                         <div class="form-down_statement">
@@ -1020,5 +1026,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/header.js"></script>
     <script src="js/form-input.js"></script>
+    <script src="js/svg-rev.js"></script>
 </body>
 </html>

@@ -55,12 +55,11 @@
   background-color: rgba(255, 255, 255, 0.5);
   transition: width 0.4s ease-in-out;
 }
-.prortfolio-block_white:hover{
-  .border-link{
+.prortfolio-block_white:hover {
+  .border-link {
     border: 2px solid rgba(218, 218, 218, 0.696);
     transition: border 0.5s ease;
   }
-  
 }
 .portfolio-top_arror {
   display: grid;
@@ -120,7 +119,6 @@
   margin-bottom: 3vmax;
 }
 
-
 .prortfolio-content_project {
   display: grid;
   gap: 2vh;
@@ -152,7 +150,6 @@
   display: grid;
   gap: 2vh;
 }
-
 
 .prortfolio-block_white {
   background-color: white;
@@ -277,7 +274,8 @@
   z-index: 1;
 }
 .form-input {
-  border-radius: 0 !important; 
+  outline: none;
+  border-radius: 0 !important;
   width: 100%;
   padding: 14px 16px;
   color: rgba(31, 31, 31, 1) !important;
@@ -293,6 +291,7 @@
 }
 .form-input:focus {
   color: rgba(31, 31, 31, 1);
+  border: 1px solid rgba(31, 31, 31, 0.4);
 }
 .form-input:disabled {
   background: rgba(255, 255, 255, 0.8);
@@ -301,7 +300,7 @@
 .form-input:disabled + .input-label {
   color: rgba(31, 31, 31, 0.2);
 }
-.input-label {
+/* .input-label {
   font-size: 18px;
   font-weight: 400;
   font-family: "HelveticaNeueCyr";
@@ -311,10 +310,10 @@
   transition: 0.2s ease all;
   color: rgba(31, 31, 31, 0.6);
   pointer-events: none;
-}
+} */
 
 .required {
-  color: red; 
+  color: red;
 }
 .error-message {
   display: none;
@@ -323,9 +322,10 @@
   margin-top: 6px;
 }
 .form-text {
-  width: 100%; 
-  height: 120px; 
-  border-radius: 0 !important; 
+  width: 100%;
+  height: 120px;
+  outline: none;
+  border-radius: 0 !important;
   padding: 14px 16px;
   border: 1px solid rgba(31, 31, 31, 0.2);
   transition: border-color 0.3s, color 0.3s, background-color 0.3s;
@@ -366,7 +366,6 @@
   width: 100%;
   position: relative;
   margin: 15px 0;
-  text-align: center;
 }
 .input__file {
   opacity: 0;
@@ -388,6 +387,25 @@
   line-height: 1;
   margin-top: 4px;
 }
+
+
+
+.input__file-filename {
+  margin-left: 4px; 
+  color: rgba(31, 31, 31, 1);
+  margin-top: 4px;
+}
+.remove-file-button {
+  margin-left: 10px; /* Отступ между именем файла и кнопкой удаления */
+  background: none; /* Убираем фон */
+  border: none; /* Убираем рамку */
+  color: #7C0A4D; /* Цвет крестика */
+  cursor: pointer; /* Указатель на курсор */
+  font-size: 16px; /* Размер шрифта */
+}
+.remove-svg{
+  width: 16px;
+}
 .input__file-button {
   width: 100%;
   height: 60px;
@@ -398,6 +416,15 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.input__file-button-err {
+  font-family: "HelveticaNeueCyr";
+  font-size: 0.729vw;
+  font-weight: 400;
+  line-height: 13.93px;
+  text-align: left;
+  color: rgba(218, 35, 46, 1);
 }
 /* btn-form */
 .form-down {
@@ -452,8 +479,8 @@
   width: 10px;
   height: 7px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 7'%3e%3cpath d='M3.41445 5.47216L8.88627 0.187083C9.0154 0.0623609 9.16884 0 9.34661 0C9.52438 0 9.67761 0.0623609 9.80631 0.187083C9.93544 0.311804 10 0.460015 10 0.631715C10 0.803415 9.93544 0.951418 9.80631 1.07572L3.8664 6.81292C3.73727 6.93764 3.58662 7 3.41445 7C3.24228 7 3.09163 6.93764 2.9625 6.81292L0.186243 4.1314C0.0571146 4.00668 -0.00486715 3.85847 0.000297988 3.68677C0.00546312 3.51507 0.0728249 3.36707 0.202384 3.24276C0.331512 3.11804 0.48496 3.05568 0.662727 3.05568C0.840493 3.05568 0.993726 3.11804 1.12242 3.24276L3.41445 5.47216Z' fill='white'/%3e%3c/svg%3e ");
-  opacity: 1; 
-  transition: opacity 0.3s ease; 
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 .down-statement_checkbox:checked::after {
   transition: 500ms;
@@ -461,7 +488,7 @@
   opacity: 1;
 }
 .down-statement_checkbox:not(:checked)::after {
-  opacity: 0; 
+  opacity: 0;
 }
 .down-statement_checkbox:disabled {
   background: #ccc;
@@ -523,12 +550,13 @@
   z-index: 1;
   backdrop-filter: blur(300px);
 }
-.main-form_fon{
+.main-form_fon {
   margin-bottom: 18vh;
   position: relative;
 }
 @media (max-width: 420px) {
-  .main-advantages_backlight,.main-story_backlight{
+  .main-advantages_backlight,
+  .main-story_backlight {
     display: none;
   }
   .main {
@@ -701,6 +729,9 @@
   .input__file-button-text {
     color: white;
   }
+  .input__file-button-err{
+    font-size: 14px;
+  }
   .input__file-icon-wrapper {
     width: 24px;
     height: 24px;
@@ -708,6 +739,9 @@
   .input__file-button {
     gap: 8px;
     height: 28px;
+  }
+  .input__file-filename{
+    color: white;
   }
   .border-link {
     top: 12px;

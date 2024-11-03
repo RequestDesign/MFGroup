@@ -195,11 +195,11 @@
   justify-content: center;
   background: white;
   color: rgba(31, 31, 31, 1);
-  .btn-arror_rigth{
+  .btn-arror_rigth {
     /* color: rgba(31, 31, 31, 1); */
-    margin-top: 0.7vmin;
-    /* height: 3vh; */
-   
+    margin-top: 0.88vmin;
+    /* height: 1.3vh; */
+    /* width: 46px; */
   }
 }
 .main-content_btn {
