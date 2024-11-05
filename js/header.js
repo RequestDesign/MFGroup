@@ -1,4 +1,3 @@
-
 const dropdown = document.querySelector('.dropdown');
 const dropdownMenu = dropdown.querySelector('.dropdown-menu');
 

@@ -1,34 +1,29 @@
 document.querySelectorAll(".form-input").forEach((input) => {
-  const label = input.nextElementSibling; // Получаем метку один раз
+  const label = input.nextElementSibling; 
 
   input.addEventListener("focus", function () {
-    label.classList.add("active"); // Добавляем класс активной метки
+    label.classList.add("active"); 
   });
 
   input.addEventListener("blur", function () {
-    // Проверяем, пустое ли поле, и если да, убираем класс активной метки
     if (!this.value) {
       label.classList.remove("active");
     }
-    checkInputs(); // Проверяем состояние инпутов при потере фокуса
+    checkInputs(); 
   });
-
   input.addEventListener("input", function () {
-    // Добавляем класс active при вводе текста
     if (this.value) {
-      label.classList.add("active"); // Добавляем класс активной метки
+      label.classList.add("active"); 
     } else {
-      label.classList.remove("active"); // Убираем класс, если пусто
+      label.classList.remove("active"); 
     }
-    checkInputs(); // Проверяем состояние инпутов при вводе текста
+    checkInputs(); 
   });
 
   label.addEventListener("click", function () {
-    this.classList.add("clicked"); // Add class to make label disappear
+    this.classList.add("clicked"); 
   });
 });
-
-
 
 function checkInputs() {
   const inputs = document.querySelectorAll(".form-input");
@@ -46,7 +41,6 @@ function checkInputs() {
     submitButton.style.cursor = "no-drop";
   }
 }
-
 const fileInput = document.getElementById("input__file");
 const fileNameDisplay = document.getElementById("file-name");
 const removeFileButton = document.getElementById("remove-file");
@@ -64,7 +58,6 @@ fileInput.addEventListener("change", () => {
     fileText.style.display = "inline";
   }
 });
-
 removeFileButton.addEventListener("click", () => {
   fileInput.value = "";
   fileNameDisplay.textContent = "";

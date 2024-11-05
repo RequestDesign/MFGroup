@@ -180,8 +180,9 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-top: 18vh;
-  margin-bottom: 18vh;
+  margin-top: 28vh;
+  margin-bottom: 25vh;
+  height: 100%;
 }
 .image-catalog {
   display: none;
@@ -190,10 +191,11 @@ body {
   object-fit: cover;
 }
 .image-active {
-  display: flex;
+  display: flex !important;
 }
 .image-btn {
   position: relative;
+  display: none;
 }
 .main-catalog_item {
   position: relative;
@@ -1171,7 +1173,7 @@ body {
     display: grid;
   }
   .on-flex {
-    display: flex !important;
+    display: flex !;
   }
   .no-flex {
     display: none;
