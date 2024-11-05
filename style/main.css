@@ -87,6 +87,7 @@ body {
   font-family: "HelveticaNeueCyr";
   font-weight: 400;
   font-size: 0.938vw;
+  color: rgba(16, 16, 16, 1);
 }
 .dropdown-item {
   color: rgba(16, 16, 16, 1);
@@ -1183,7 +1184,7 @@ body {
     height: 38.125vh;
     background-color: rgba(124, 10, 77, 0.6);
     box-shadow: -120px 20px 170px 40px rgba(124, 10, 77, 0.6);
-    right: -100px;
+    right: -150px;
     bottom: 0;
     z-index: -1;
   }
