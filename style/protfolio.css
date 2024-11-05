@@ -132,8 +132,8 @@
 } */
 .border-link {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 2.083vw;
+  height: 2.083vw;
   right: 20px;
   top: 20px;
   border: 2px solid rgba(255, 255, 255, 1);
@@ -154,6 +154,8 @@
 .prortfolio-block_white {
   background-color: white;
   height: 100%;
+  position: relative;
+  width: 25.729vw;
 }
 .prortfolio-block_white:hover {
   .block-white_text:hover:after,
@@ -386,13 +388,10 @@
 .input__file-button-text {
   line-height: 1;
   margin-top: 4px;
-  
 }
 
-
-
 .input__file-filename {
-  margin-left: 4px; 
+  margin-left: 4px;
   color: rgba(31, 31, 31, 1);
   margin-top: 4px;
 }
@@ -400,11 +399,11 @@
   margin-left: 10px; /* Отступ между именем файла и кнопкой удаления */
   background: none; /* Убираем фон */
   border: none; /* Убираем рамку */
-  color: #7C0A4D; /* Цвет крестика */
+  color: #7c0a4d; /* Цвет крестика */
   cursor: pointer; /* Указатель на курсор */
   font-size: 16px; /* Размер шрифта */
 }
-.remove-svg{
+.remove-svg {
   width: 16px;
 }
 .input__file-button {
@@ -615,6 +614,36 @@
     width: 91vw;
     object-fit: cover;
   }
+  .prortfolio-content_project::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(
+      to bottom,
+      rgba(101, 100, 100, 0.037) 0%,
+      rgb(0, 0, 0) 100%
+    );
+    pointer-events: none;
+  }
+  .prortfolio-content_item::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(
+      to bottom,
+      rgba(101, 100, 100, 0.037) 0%,
+      rgb(0, 0, 0) 100%
+    );
+    pointer-events: none;
+  }
   .prortfolio-content_project {
     width: 100%;
     position: relative;
@@ -649,6 +678,7 @@
     left: 12px;
     width: 276px;
     line-height: 20px;
+    z-index: 2;
   }
   .main-form_fon {
     background-color: white;
@@ -731,7 +761,7 @@
   .input__file-button-text {
     color: white;
   }
-  .input__file-button-err{
+  .input__file-button-err {
     font-size: 14px;
   }
   .input__file-icon-wrapper {
@@ -742,7 +772,7 @@
     gap: 8px;
     height: 28px;
   }
-  .input__file-filename{
+  .input__file-filename {
     color: white;
   }
   .border-link {
