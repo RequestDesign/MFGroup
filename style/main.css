@@ -15,14 +15,14 @@ body {
   margin-left: 9.375vw;
 }
 .header {
-  overflow:visible;
+  overflow: visible;
   margin-top: 2vh;
   height: 93vh;
 }
 .Logo {
   width: 10.313vw;
 }
-.svg-image{
+.svg-image {
   width: 0.99vw;
 }
 .header-top {
@@ -192,7 +192,7 @@ body {
 .image-active {
   display: flex;
 }
-.image-btn{
+.image-btn {
   position: relative;
 }
 .main-catalog_item {
@@ -228,7 +228,7 @@ body {
 .catalog-item_btn:hover {
   box-shadow: 4.5px 0px 15px 3px rgba(255, 255, 255, 0.178);
 }
-.dropdown-btn:hover{
+.dropdown-btn:hover {
   box-shadow: 4.5px 0px 15px 3px rgba(255, 255, 255, 0.178);
 }
 .btn_arror-left {
@@ -423,7 +423,7 @@ body {
   width: 100%;
 }
 /* advantages */
-.main-advantages{
+.main-advantages {
   position: relative;
   z-index: 2;
 }
@@ -585,6 +585,7 @@ body {
   font-weight: 400;
   text-decoration: none;
 }
+
 .footer-main {
   display: flex;
   gap: 7.083vw;
@@ -615,7 +616,7 @@ body {
   border: none;
   background: none;
   height: 26px;
-  margin-bottom: 3.6vh;
+  margin-bottom: 2vmax;
 }
 /*backlight*/
 .main-catalog_backlight {
@@ -677,7 +678,7 @@ body {
   z-index: -3;
   border: none;
 }
-.main-services_backlight{
+.main-services_backlight {
   position: absolute;
   width: 10vw;
   height: 15vh;
@@ -689,7 +690,7 @@ body {
   z-index: -3;
   border: none;
 }
-.main-instrumentation_backlight{
+.main-instrumentation_backlight {
   position: absolute;
   width: 5px;
   height: 5px;
@@ -701,7 +702,7 @@ body {
   z-index: -3;
   border: none;
 }
-.main-lighting_backlight{
+.main-lighting_backlight {
   position: absolute;
   width: 5px;
   height: 5px;
@@ -721,8 +722,8 @@ body {
 .no-flex {
   display: flex;
 }
-.on-flex{
-  display: none;
+.on-flex {
+  display: none !important;
 }
 @media (max-width: 420px) {
   .container-fluid {
@@ -777,7 +778,7 @@ body {
     z-index: 5;
     overflow-y: auto;
   }
-  .dropdown{
+  .dropdown {
     width: 100%;
   }
   .dropdown-btn {
@@ -786,16 +787,16 @@ body {
     gap: 12px;
     width: 91vw;
   }
-  .dropdown-item{
+  .dropdown-item {
     font-size: 14px !important;
   }
-  .sorting_text{
+  .sorting_text {
     font-size: 16px;
   }
   .header-top_burger.open {
     left: 0; /* Показываем меню */
   }
-  .burger-content{
+  .burger-content {
     display: grid;
     align-content: space-between;
     width: 91vw;
@@ -806,7 +807,7 @@ body {
   .header-logo {
     order: 2;
   }
-  .number-mobl{
+  .number-mobl {
     order: 3;
   }
   .header-top {
@@ -839,7 +840,6 @@ body {
     display: grid !important;
     gap: 2vh;
     text-align: center;
-
   }
   .header-link {
     font-size: 4.267vw;
@@ -854,7 +854,7 @@ body {
     height: 100vh;
   }
   /* portfolio */
-  .main-portfolio{
+  .main-portfolio {
     margin-bottom: 80px;
   }
   .main-portfolio_main {
@@ -862,17 +862,17 @@ body {
     margin-top: 20px;
     gap: 0;
   }
-  
+
   .portfolio-main_content {
     order: 3;
     display: flex;
     justify-content: space-between;
     height: 36px;
   }
-  .portfolio-item_btn{
-   font-size: 14px;
-   padding: 9px 14px;
-   gap: 12px;
+  .portfolio-item_btn {
+    font-size: 14px;
+    padding: 9px 14px;
+    gap: 12px;
   }
   .portfolio_main-image {
     order: 2;
@@ -885,7 +885,7 @@ body {
     width: 100%;
     height: 202px;
   }
-  .main-content_text{
+  .main-content_text {
     position: absolute;
     bottom: 148px;
     left: 28px;
@@ -928,7 +928,7 @@ body {
     width: 100%;
     margin-top: 16px;
   }
-  .image-catalog .catalog-item_btn{
+  .image-catalog .catalog-item_btn {
     bottom: -50px;
   }
   .catalog-item_btn {
@@ -945,51 +945,50 @@ body {
     width: 100%;
   }
   /* advantages */
-  .main-advantages{
+  .main-advantages {
     margin-bottom: 80px;
-
   }
-  .main-advantages .portfolio-top_title{
+  .main-advantages .portfolio-top_title {
     text-align: center;
     line-height: 33.6px;
   }
-  .main-advantages_items{
+  .main-advantages_items {
     display: flex;
     width: 100%;
     height: 355px;
   }
-  .main-advantages_item{
+  .main-advantages_item {
     width: 91vw;
     display: grid;
     height: 100%;
   }
-  .image-advan{
+  .image-advan {
     orphans: 1;
     width: 91vw;
   }
-  .advantages-item_title{
+  .advantages-item_title {
     order: 2;
     justify-content: center;
   }
-  .item_title{
+  .item_title {
     text-align: center;
     font-size: 18px;
     width: 100%;
     margin-top: 16px;
   }
-  .advantages-item_content{
+  .advantages-item_content {
     order: 3;
   }
-  .item-content_text{
+  .item-content_text {
     text-align: center;
     font-size: 14px;
     width: 100%;
     margin-top: 12px;
   }
-  .catalog-btns{
-    transform: rotate(90deg) ;
+  .catalog-btns {
+    transform: rotate(90deg);
   }
-  .main-advantages_btn{
+  .main-advantages_btn {
     display: grid;
     justify-content: center;
     margin-top: 0px;
@@ -998,7 +997,7 @@ body {
     font-size: 16px;
     margin-top: -40px;
   }
-  .numder-small{
+  .numder-small {
     font-size: 16px;
   }
   /* contacts */
@@ -1046,11 +1045,11 @@ body {
     height: 150px;
     object-fit: cover;
   }
-  .arror-left{
+  .arror-left {
     width: 8.533vw;
-  } 
+  }
   /* footer */
-  footer{
+  footer {
     position: relative;
     overflow: hidden;
   }
@@ -1061,7 +1060,6 @@ body {
   }
   .footer-block {
     display: grid;
-    
   }
   .footer-links_title {
     cursor: pointer;
@@ -1120,6 +1118,14 @@ body {
     font-size: 14px;
     cursor: pointer;
   }
+  .city-block_title {
+    font-size: 14px;
+  }
+  .footer-contacts_city {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    gap: 18px;
+  }
   .footer-links_link {
     font-size: 14px;
   }
@@ -1128,12 +1134,21 @@ body {
     margin-top: 16px;
     margin-bottom: 40px;
     display: none;
+    transition: opacity 1s ease, max-height 0.8s ease;
+    max-height: 0;
+    opacity: 0;
   }
-  .footer-contacts_city{
+  .arrow-icon {
+    cursor: pointer;
+  }
+  .footer-contacts_city {
     display: none;
   }
-  .footer-links_active{
+
+  .footer-links_active {
     display: grid;
+    opacity: 1;
+    max-height: 500px;
   }
   .btn-links_title {
     margin-bottom: 0;
@@ -1155,21 +1170,21 @@ body {
   .on-grid {
     display: grid;
   }
-  .on-flex{
-    display: flex;
+  .on-flex {
+    display: flex !important;
   }
   .no-flex {
     display: none;
   }
-  .main-portfolio .main-portfolio_backlight{
+  .main-portfolio .main-portfolio_backlight {
     box-shadow: 420px 270px 320px 100px rgba(177, 177, 177, 0.7);
   }
-  .main-instrumentation_backlight{
+  .main-instrumentation_backlight {
     top: 1100px;
     box-shadow: 20px 370px 220px 200px rgba(177, 177, 177, 0.7);
   }
 
-  .header-top_backlight{
+  .header-top_backlight {
     position: absolute;
     width: 13vw;
     height: 38.125vh;
@@ -1178,7 +1193,7 @@ body {
     left: -50px;
     z-index: -1;
   }
-  .header-down_backlight{
+  .header-down_backlight {
     position: absolute;
     width: 13vw;
     height: 38.125vh;
@@ -1189,26 +1204,26 @@ body {
     z-index: -1;
   }
 
-  .main-catalog_backlight{
+  .main-catalog_backlight {
     right: -350px;
     top: -265px;
   }
-  .main-portfolio_backlight{
+  .main-portfolio_backlight {
     left: -200px;
-    box-shadow: -0px 220px 200px 120px rgba(177, 177, 177, 0.4) ;
+    box-shadow: -0px 220px 200px 120px rgba(177, 177, 177, 0.4);
   }
-  .main-advantages_backlight{
+  .main-advantages_backlight {
     right: -420px;
     box-shadow: -250px 0px 300px 200px rgba(177, 177, 177, 0.4);
   }
-  .main-contacts_backlight{
+  .main-contacts_backlight {
     left: -720px;
   }
-  .footer-contacts_backlight{
+  .footer-contacts_backlight {
     position: absolute;
     width: 41vw;
     height: 8vh;
-    bottom:  760px;
+    bottom: 760px;
     right: -480px;
     border-radius: 50%;
     background-color: rgba(177, 177, 177, 0.4);
