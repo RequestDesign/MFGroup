@@ -41,7 +41,7 @@
 .plus-svg {
   display: none;
 }
-.border-no{
+.border-no {
   border-right: none;
 }
 @media (max-width: 420px) {
@@ -55,7 +55,7 @@
   .td-border {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
   }
- 
+
   .content-main_item {
     width: 91vw;
     margin-top: 0;
@@ -70,9 +70,16 @@
     font-size: 14px;
     width: 91vw;
     display: none;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  }
+  .icon {
+    transition: transform 0.3s ease; 
   }
   .active-item_text {
     display: block;
+    max-height: 500px;
+    opacity: 1;
   }
   .main-item_block {
     display: flex;

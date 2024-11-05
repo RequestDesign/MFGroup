@@ -230,20 +230,29 @@
     position: relative;
     max-height: 129px;
     overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .story-main_text.expanded {
+    max-height: 500px; 
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 100%,
+      rgb(14, 14, 14) 100%
+    ); 
   }
   .story-main_text::after {
     content: ""; 
-    position: absolute; /* Абсолютное позиционирование */
-    bottom: -10px; /* Прикрепляем к нижней части блока */
-    left: 0; /* Прикрепляем к левой стороне блока */
-    right: 0; /* Прикрепляем к правой стороне блока */
-    height: 50px; /* Высота затемнения */
+    position: absolute; 
+    bottom: -10px; 
+    left: 0; 
+    right: 0; 
+    height: 50px; 
     background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0) 0%,
       rgb(14, 14, 14) 100%
-    ); /* Затемнение */
-    pointer-events: none; /* Игнорируем события мыши */
+    ); 
+    pointer-events: none; 
   }
   .main-text {
     width: 91vw;

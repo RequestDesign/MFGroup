@@ -677,6 +677,7 @@
   }
   .down-btn {
     width: 91vw;
+    font-size: 14px;
   }
   .form-block {
     display: grid;
