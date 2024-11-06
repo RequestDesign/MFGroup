@@ -409,8 +409,6 @@ body {
   transition: opacity 0.5s ease;
 }
 
-
-
 /* contacts */
 .main-contacts {
   margin: 18vh 0;
@@ -462,9 +460,6 @@ body {
   align-content: space-between;
   justify-items: right;
 }
-.item-content_text {
-  width: 18.385vw;
-}
 .image-advan {
   width: 39.271vw;
   height: 100%;
@@ -483,6 +478,7 @@ body {
   align-items: center;
 }
 .item-content_text {
+  width: 18.385vw;
   color: white;
   font-family: "HelveticaNeueCyr";
   font-weight: 400;
@@ -883,7 +879,7 @@ body {
     margin-top: 2vh;
   }
   .portfolio-main_block {
-  width: 91vw;
+    width: 91vw;
   }
   .portfolio-main_content {
     order: 3;
@@ -902,7 +898,7 @@ body {
     gap: 0.447vw;
   }
   .portfolio-image {
-    width:90.933vw;
+    width: 90.933vw;
     height: 250px;
     position: relative;
     object-fit: fill;
