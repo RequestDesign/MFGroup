@@ -10,9 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let offset = -currentIndex * totalWidth;
         portfolioContainer.style.transform = `translateX(${offset}vw)`;
     }
-
     updateSlider();
-
     document.getElementById('nextBtn').addEventListener('click', () => {
         if (currentIndex < images.length - 1) {
             currentIndex++;
