@@ -331,9 +331,10 @@ body {
 .main-portfolio_main {
   margin-top: 6vh;
   height: 52.7vh;
+  width: 100%;
   display: flex;
-  gap: 4.9vh;
   overflow: hidden;
+  position: relative;
 }
 .btn-arror {
   border: none;
@@ -361,10 +362,7 @@ body {
   width: 18.333vw;
   line-height: 3.84vh;
 }
-.portfolio-main_content {
-  display: grid;
-  align-content: space-between;
-}
+
 .main-content_more {
   display: flex;
   align-items: center;
@@ -384,16 +382,35 @@ body {
 .btn-arror_rigth:hover {
   color: rgba(255, 255, 255, 0.5);
 }
+.portfolio-main_block {
+  width: 100%;
+}
+.portfolio-main_content {
+  display: grid;
+  align-content: space-between;
+  position: relative;
+  background: #101010;
+  border: 0.408vw solid #101010;
+  margin-left: -2px;
+}
 .portfolio_main-image {
   display: flex;
-  gap: 4.9vh;
-  overflow: hidden;
+  width: 100%;
+  gap: 2vw;
+  position: relative;
+  transition: transform 0.5s ease;
+  z-index: -3;
 }
 .portfolio-image {
   width: 39.323vw;
   height: 52.7vh;
   object-fit: cover;
+  flex-shrink: 0;
+  transition: opacity 0.5s ease;
 }
+
+
+
 /* contacts */
 .main-contacts {
   margin: 18vh 0;
@@ -665,7 +682,7 @@ body {
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.3);
   box-shadow: 420px 70px 350px 200px rgba(177, 177, 177, 0.7);
-  z-index: -3;
+  z-index: 1;
   border: none;
 }
 .main-contacts_backlight {
@@ -865,7 +882,9 @@ body {
     height: 100%;
     margin-top: 2vh;
   }
-
+  .portfolio-main_block {
+  width: 91vw;
+  }
   .portfolio-main_content {
     order: 3;
     display: flex;
@@ -878,11 +897,12 @@ body {
     gap: 12px;
   }
   .portfolio_main-image {
+    width: 91vw;
     order: 2;
-    gap: 0;
+    gap: 0.447vw;
   }
   .portfolio-image {
-    width: 100%;
+    width:90.933vw;
     height: 250px;
     position: relative;
     object-fit: fill;
