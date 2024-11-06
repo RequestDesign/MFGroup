@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateSlider() {
         const isMobile = window.innerWidth <= 420; 
-        const imageWidth = isMobile ? 90.933 + 0.447 : 39.323 + 2; 
+        const imageWidth = isMobile ? 90.933 + 0.447 : 29.323 + 2; 
         const totalWidth = imageWidth;
         let offset = -currentIndex * totalWidth;
         portfolioContainer.style.transform = `translateX(${offset}vw)`;

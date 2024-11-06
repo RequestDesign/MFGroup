@@ -18,7 +18,6 @@
 .top-projects {
   display: flex;
   gap: 0.625vw;
-  width: 1700px;
 }
 .portfolio-top_project {
   display: grid;
@@ -26,6 +25,7 @@
   white-space: nowrap;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #131313;
   color: white;
   font-family: "HelveticaNeueCyr";
   font-weight: 400;
@@ -33,9 +33,24 @@
   line-height: 15.92px;
   padding: 0 1.042vw;
   text-decoration: none;
+  z-index: -1;
 }
 .portfolio-top_all {
   border: 1px solid rgba(255, 255, 255, 1);
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #131313;
+  color: white;
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+  font-size: 0.833vw;
+  line-height: 15.92px;
+  padding: 0 1.042vw;
+  text-decoration: none;
+  z-index: 2;
 }
 .block-white_text {
   position: absolute;
@@ -55,6 +70,11 @@
   background-color: rgba(255, 255, 255, 0.5);
   transition: width 0.4s ease-in-out;
 }
+.top-projects_block {
+  display: flex;
+  gap: 0.625vw;
+  transition: transform 0.3s ease; 
+}
 .prortfolio-block_white:hover {
   .border-link {
     border: 2px solid rgba(218, 218, 218, 0.696);
@@ -72,6 +92,7 @@
   width: 32px;
   height: 32px;
   border: none;
+  z-index: 2;
 }
 .portfolio-top_btns {
   padding: 4px;
