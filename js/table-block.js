@@ -1,21 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const container = document.querySelector('.content-main_block');
+    const containers = document.querySelectorAll('.content-main_block'); 
     const prevButton = document.getElementById('prev-button');
     const nextButton = document.getElementById('next-button');
     
     const itemsPerPage = 1; 
     const itemWidth = 350; 
 
-    nextButton.addEventListener('click', () => {
+    const scrollContainer = (container, direction) => {
         const currentScroll = container.scrollLeft;
         const maxScroll = container.scrollWidth - container.clientWidth;
-        const newScroll = Math.min(currentScroll + itemWidth * itemsPerPage, maxScroll);
+        const newScroll = direction === 'next' 
+            ? Math.min(currentScroll + itemWidth * itemsPerPage, maxScroll)
+            : Math.max(currentScroll - itemWidth * itemsPerPage, 0);
         container.scrollTo({ left: newScroll, behavior: 'smooth' });
-    });
+    };
 
-    prevButton.addEventListener('click', () => {
-        const currentScroll = container.scrollLeft;
-        const newScroll = Math.max(currentScroll - itemWidth * itemsPerPage, 0);
-        container.scrollTo({ left: newScroll, behavior: 'smooth' });
+    containers.forEach(container => {
+        nextButton.addEventListener('click', () => scrollContainer(container, 'next'));
+        prevButton.addEventListener('click', () => scrollContainer(container, 'prev'));
     });
 });

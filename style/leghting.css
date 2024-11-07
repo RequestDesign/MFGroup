@@ -197,6 +197,9 @@
   .otherservices-content_main {
     width: 91vw;
   }
+  .main-customers{
+    margin: 80px 0;
+  }
   .otherservices-content_top {
     justify-content: center;
   }
@@ -229,11 +232,16 @@
   }
   .main-customers .content-main_item {
     width: 91vw;
-    height: 23vh;
+    height: 173px;
+    gap: 0;
+  }
+  .main-customers .content-main_item .main-item_img {
+    width: 90%;
   }
   .main-customers .content-main_item .main-item_title {
     width: 100%;
     font-size: 14px;
+    margin-top: 0;
   }
   .main-content_btn {
     display: flex;
@@ -264,5 +272,28 @@
   .active-image_awards {
     width: 220px;
     height: 311px;
+  }
+  .main-customers .content-main_block {
+    height: 173px !important;
+    width: 91vw; 
+    overflow: hidden; 
+    position: relative; 
+  }
+  #catalog-table {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  #catalog-table tr {
+    display: flex !important; 
+    flex-direction: row !important; 
+    gap: 3vw;
+  }
+  #catalog-table td {
+    width: 100% !important; 
+    height: 173px !important; 
+    position: relative;
+  }
+  .main-customers .content-main_item .block-image,.yo-logo{
+    height: 62px;
   }
 }
