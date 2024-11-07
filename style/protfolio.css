@@ -581,7 +581,7 @@
     display: none;
   }
   .main {
-    margin-top: 30px;
+    margin-top: 0;
   }
   .top-projects {
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -614,9 +614,16 @@
     font-size: 3.733vw;
     border: none;
     color: rgba(255, 255, 255, 0.5);
+    background: none;
   }
   .portfolio-top_all {
     color: white;
+    border: none;
+    background: none;
+    font-size: 14px;
+  }
+  .prortfolio-block_white{
+    width: 91vw;
   }
   .portfolio-top_btns {
     width: 100%;
@@ -635,7 +642,7 @@
     width: 91vw;
     object-fit: cover;
   }
-  .prortfolio-content_project::after {
+  .main-portfolio .prortfolio-content_project::after {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -675,7 +682,7 @@
   .block-white_text {
     font-size: 18px;
     left: 25%;
-    width: 200px;
+    width: 180px;
   }
   .main-form_fon {
     margin-bottom: 80px;
@@ -797,6 +804,8 @@
     color: white;
   }
   .border-link {
+    width: 40px;
+    height: 40px;
     top: 12px;
     right: 12px;
     border: 1.5px solid rgba(255, 255, 255, 1);

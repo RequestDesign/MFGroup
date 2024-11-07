@@ -47,6 +47,7 @@
   }
   .stage-content_project-all  .stage-white_text{
     top: 17%;
+    width: 62.933vw;
   }
   .stage-white_text {
     font-size: 16px;
@@ -60,5 +61,12 @@
   }
   .stage-content_project-all{
     height: 70px;
+  }
+  .catalog-content_top{
+    display: flex;
+    justify-content: center;
+  }
+  .portfolio-top_title{
+    text-align: center;
   }
 }

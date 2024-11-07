@@ -313,6 +313,16 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    order: 2;
+  }
+  .main-catalog .portfolio-top_title{
+    font-size: 5.8vw;
+  }
+  .main-catalog .portfolio-item_btn{
+    background: none;
+    color: white;
+    padding: 0;
+    width: 21.5vw;
   }
   .content-top_title {
     width: 100%;
