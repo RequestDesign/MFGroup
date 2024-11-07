@@ -115,6 +115,7 @@
 }
 .image-awards {
   width: 12.5vw;
+  transition: width 0.3s ease;
 }
 .active-image_awards {
   display: grid;
@@ -129,6 +130,7 @@
 }
 .active-image_awards .image-awards {
   width: 18.75vw;
+  transition: width 0.3s ease;
 }
 .awards-content_botton {
   display: grid;
