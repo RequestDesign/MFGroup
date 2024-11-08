@@ -178,7 +178,7 @@
   }
   .portfolio-main_items {
     height: 176px;
-    gap:0.447vw;
+    gap: 0.447vw;
     margin-left: 0;
   }
   .image-item {
@@ -257,6 +257,9 @@
       rgb(14, 14, 14) 100%
     );
     pointer-events: none;
+  }
+  .no-after::after {
+    content: none;
   }
   .main-text {
     width: 91vw;

@@ -144,7 +144,7 @@
   height: 26.5vmax;
   filter: grayscale(0);
 }
-@media (max-width: 420px) {
+@media (max-width: 48em) {
   .block-white_text {
     font-size: 18px;
     top: 25%;

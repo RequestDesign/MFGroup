@@ -117,13 +117,14 @@
 /* .no-flex {
   display: flex;
 } */
-@media (max-width: 420px) {
+@media (max-width: 48em) {
   .content-top_title {
     width: 100%;
     text-align: center;
   }
   .reward-image {
-    width: 58.667vw;
+    width: 220px;
+    height: 311px;
   }
   /* .no-flex {
     display: none;

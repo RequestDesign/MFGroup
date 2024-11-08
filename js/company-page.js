@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         awardsItems.forEach((item, index) => {
             const textElement = item.querySelector('.image-awards_text'); 
             
-            if (window.innerWidth <= 420) {
+            if (window.innerWidth <= 48 * 16) {
                 if (index === currentIndex) {
                     item.classList.remove('active-image_awards');
                     item.style.display = 'grid'; 

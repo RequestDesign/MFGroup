@@ -740,10 +740,10 @@ body {
 .on-flex {
   display: none !important;
 }
-.on-flexs{
+.on-flexs {
   display: none;
 }
-@media (max-width: 420px) {
+@media (max-width: 48em) {
   .container-fluid {
     margin: 0;
     margin-left: 4.267vw !important;
@@ -792,7 +792,7 @@ body {
     height: 100%;
     background-color: rgba(16, 16, 16, 1);
     transition: left 0.3s ease;
-    padding: 2vh 14px 40px 14px;
+    padding: 2vh 4.267vw 40px 4.267vw;
     z-index: 5;
     overflow-y: auto;
   }
@@ -1119,7 +1119,6 @@ body {
     display: grid;
     font-size: 4.375vw;
     justify-items: center;
-    line-height: 19.6px;
     text-align: center;
   }
   .logord {
@@ -1193,7 +1192,7 @@ body {
   .on-grid {
     display: grid;
   }
-  .on-flexs{
+  .on-flexs {
     display: flex;
   }
   .on-flex {
@@ -1225,7 +1224,7 @@ body {
     height: 38.125vh;
     background-color: rgba(124, 10, 77, 0.6);
     box-shadow: -120px 20px 170px 40px rgba(124, 10, 77, 0.6);
-    right: -150px;
+    right: -180px;
     bottom: 0;
     z-index: -1;
   }

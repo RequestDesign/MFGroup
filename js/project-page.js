@@ -1,13 +1,14 @@
 document.querySelector('.toggle-button').addEventListener('click', function() {
     const storyText = document.querySelector('.story-main_text');
     storyText.classList.toggle('expanded');
-
+    storyText.classList.toggle('no-after'); 
     if (storyText.classList.contains('expanded')) {
         this.textContent = 'Скрыть';
     } else {
         this.textContent = 'читать полностью';
     }
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('.image-item');
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateSlider(); 
 
     function updateSlider() {
-        const isMobile = window.innerWidth <= 420; 
+        const isMobile = window.innerWidth <= 48 * 16; 
         const imageWidth = isMobile ? 90.933 + 0.447 : 19.323 + 0; 
         const totalWidth = imageWidth;
         let offset = -ImageIndex * totalWidth;

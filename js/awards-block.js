@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         awardsItems.forEach((item, index) => {
             const imageElement = item.querySelector('.image-awards'); 
 
-            if (window.innerWidth <= 420) {
+            if (window.innerWidth <= 48* 16) {
                 if (index === currentIndex) {
                     imageElement.classList.add('active-image_awards'); 
                     item.style.display = 'grid'; 

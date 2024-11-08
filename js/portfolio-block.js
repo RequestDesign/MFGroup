@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
 
     function updateSlider() {
-        const isMobile = window.innerWidth <= 420; 
+        const isMobile = window.innerWidth <= 48 * 16; 
         const imageWidth = isMobile ? 90.933 + 0.447 : 29.323 + 2; 
         const totalWidth = imageWidth;
         let offset = -currentIndex * totalWidth;
