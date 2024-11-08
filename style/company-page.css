@@ -1,5 +1,5 @@
 .header {
-  height: 93vh;
+  height: 98vh;
 }
 .vector {
   opacity: 0;
@@ -191,9 +191,10 @@
   top: 0;
   font-size: 0.729vw;
 }
-@media (max-width: 420px) {
+@media (max-width: 48em) {
   .main-family {
     background-color: rgba(160, 160, 160, 0.6);
+    margin: 80px 0;
   }
   .main-family_content {
     padding: 60px 16px;
@@ -226,12 +227,6 @@
     text-align: left;
     letter-spacing: 3px;
   }
-  .family-info_text {
-    height: 173px;
-    font-size: 16px;
-    overflow: hidden;
-    color: white;
-  }
   .family-info_title {
     color: white;
     font-size: 28px;
@@ -249,7 +244,21 @@
     width: 100%;
   }
   .portfolio-item_btn {
-    width: 43vw;
+    width: 20.422vmax;
+  }
+  .family-info_text {
+    margin-top: 3vh;
+  }
+  .family-info_text {
+    color: white;
+    font-size: 16px;
+    position: relative;
+    max-height: 18.15vmin;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  .family-info_text.expanded {
+    max-height: 83.215vh;
   }
   .main-content_btn {
     display: flex;
@@ -269,7 +278,7 @@
     gap: 20px;
   }
   .image-awards {
-    width: 220px;
+    width: 320px;
   }
   .btn-arror_left,
   .btn-arror_rigth {
@@ -282,6 +291,7 @@
   .content-info_title {
     font-size: 4.8vw;
     width: 91vw;
+    line-height: normal;
   }
   .about-content_info {
     width: 91vw;
@@ -298,6 +308,7 @@
     font-size: 7.467vw;
     width: 91vw;
     text-align: left;
+    line-height: normal;
   }
   .main-about,
   .main-banner,
@@ -306,7 +317,7 @@
   }
   .main-customers .catalog-content_main {
     width: 100%;
-    height: 152px;
+    height: 100%;
     overflow: hidden;
     padding-top: 24px;
     padding-bottom: 28px;
@@ -315,7 +326,7 @@
   }
   .main-customers .content-main_block,
   .main-customers .table_blur tbody {
-    height: 100px;
+    height: 30vmin;
     width: 91vw;
     display: flex;
     flex-wrap: nowrap;
@@ -326,7 +337,7 @@
   }
   .awards-content_item {
     gap: 16px;
-    height: 365px;
+    height: 465px;
     justify-items: center;
   }
   .mob-block {
@@ -343,27 +354,29 @@
     font-size: 2.7vw;
     display: grid;
     align-items: center;
-    width: 150px;
-    line-height: 10px;
+    width: 44vw;
+    height: 100%;
+    line-height: normal;
   }
   .main-customers .content-main_block {
-    height: 100px; 
-    width: 91vw; 
-    overflow: hidden; 
-    position: relative; 
+    height: 30vmin;
+    width: 91vw;
+    overflow: hidden;
+    position: relative;
   }
   #catalog-table {
     display: flex;
     transition: transform 0.5s ease;
   }
   #catalog-table tr {
-    display: flex; 
-    flex-direction: row; 
+    display: flex;
+    flex-direction: row;
     gap: 3vw;
+    height: 30vmin;
   }
   #catalog-table td {
-    width: 165px; 
-    height: 100px; 
+    width: 44vw;
+    height: 15.643vmin;
     position: relative;
   }
   .main-item_border {
@@ -375,7 +388,8 @@
     transition: transform 0.5s ease;
   }
   .smail-num {
-    font-size: 12px;
-    right: 40px;
+    top: -5px;
+    font-size: 2vw;
+    right: 10.667vw;
   }
 }

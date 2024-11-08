@@ -1,5 +1,5 @@
 .header {
-  height: 93vh;
+  height: 98vh;
 }
 .vector {
   opacity: 0;
@@ -44,13 +44,13 @@
 .border-no {
   border-right: none;
 }
-@media (max-width: 420px) {
+@media (max-width: 48em) {
   .main-catalog {
     margin-top: 60px;
     margin-bottom: 80px;
   }
   .mob-block {
-    gap: 20px;
+    gap: 5.333vw;
   }
   .td-border {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;

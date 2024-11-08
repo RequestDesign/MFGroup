@@ -14,7 +14,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Futura PT";
-  font-size: 0.938vw;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.05em;
@@ -158,7 +158,7 @@
   display: none;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 48em) {
   .main {
     margin-top: 20px;
   }
@@ -167,23 +167,24 @@
     gap: 28px;
   }
   .bestproject-top_prev {
-    font-size: 14px;
+    font-size: 16px;
   }
   .main-portfolio_main {
-    width: 91vw !important;
-    height: 204px;
+    margin-left: 4.267vw !important;
+    margin-right: 4.267vw !important;
+    width: 91.467vw !important;
+    height: 35.498vh;
     margin-top: 20px;
-    margin: 0 16px;
-    margin-top: 18px;
   }
   .portfolio-main_items {
-    height: 176px;
+    height: 31.498vmax;
     gap: 0.447vw;
     margin-left: 0;
   }
   .image-item {
     width: 91vw;
-    height: 176px;
+    height: 32.498vmax;
+    object-fit: cover;
   }
   .main-btn_block {
     display: flex;
@@ -232,12 +233,12 @@
   }
   .story-main_text {
     position: relative;
-    max-height: 129px;
+    max-height: 28.15vmin;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.5s ease;
   }
   .story-main_text.expanded {
-    max-height: 500px;
+    max-height: 83.215vh;
     background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0) 100%,
@@ -264,7 +265,7 @@
   .main-text {
     width: 91vw;
     font-size: 3.9vw;
-    line-height: 17px;
+    line-height: 4.533vw;
     letter-spacing: 0.2px;
   }
   .toggle-button {
@@ -305,7 +306,7 @@
   }
   .main-catalog_backlight {
     top: 420px;
-    left: -60px;
+    left: -260px;
     box-shadow: -120px 120px 400px 100px rgba(177, 177, 177, 0.4);
   }
 }

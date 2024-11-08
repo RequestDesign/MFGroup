@@ -19,7 +19,7 @@
   display: flex;
   gap: 16px;
 }
-@media (max-width: 420px) {
+@media (max-width: 48em) {
   .main-bestproject_top {
     display: grid;
     gap: 26px;

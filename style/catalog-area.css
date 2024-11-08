@@ -15,7 +15,7 @@
   height: 26vh;
   object-fit: cover;
 }
-@media (max-width: 420px) {
+@media (max-width: 48em) {
   .area-item_img {
     width: 100%;
     object-fit: cover;

@@ -17,11 +17,20 @@
 .text-top {
   top: 35% !important;
 }
-@media (max-width:420px) {
-  .energy-image_text{
-    height: 114px;
+@media (max-width: 48em) {
+  .energy-image_text {
+    height: 15vmin;
   }
-  .text-top{
+  .block-white_text {
+    top: 35%;
+    width: 62vw;
+    left: 16vmin;
+  }
+  .text-top {
     top: 20% !important;
   }
+  .text-project_model{
+    top: 35% !important;
+  }
+  
 }

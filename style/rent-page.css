@@ -170,7 +170,7 @@
 .down-btn .arror-left {
   filter: grayscale(1);
 }
-@media (max-width: 420px) {
+@media (max-width: 48em) {
   .content-top_title {
     width: 230px;
     font-size: 28px;
@@ -198,6 +198,7 @@
   }
   .input-equipment {
     width: 100%;
+    font-size: 16px;
   }
   .view-block_select {
     width: 100%;

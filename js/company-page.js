@@ -44,3 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.querySelector('.toggle-button').addEventListener('click', function() {
+    const storyText = document.querySelector('.family-info_text');
+    storyText.classList.toggle('expanded');
+    storyText.classList.toggle('no-after'); 
+    if (storyText.classList.contains('expanded')) {
+        this.textContent = 'Скрыть';
+    } else {
+        this.textContent = 'читать полностью';
+    }
+});
