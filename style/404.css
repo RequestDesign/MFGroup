@@ -43,7 +43,7 @@
   margin-top: 0;
   left: 26.823vw;
 }
-@media (max-width: 420px) {
+@media (max-width: 48em) {
   .header{
     margin-bottom: 80px;
   }
@@ -55,11 +55,12 @@
     width: 60vw;
   }
   .catalog-item_btn {
-    padding: 9px 14px;
-    width: 145px;
+    padding: 9px 3.733vw;
+    width: 24.667vmax;
     height: 36px;
     font-size: 14px;
     gap: 12px;
+    justify-content: center;
   }
   .vector{
     width: 100%;

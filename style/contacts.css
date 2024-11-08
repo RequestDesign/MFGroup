@@ -73,7 +73,7 @@
   top: 27px;
   box-shadow: -250px 300px 260px 120px rgba(177, 177, 177, 0.4);
 }
-@media (max-width: 420px) {
+@media (max-width: 48em) {
   .main {
     margin-top: 15px;
   }
@@ -101,7 +101,7 @@
     width: 288px;
   }
   .main-content_block {
-    width: 100%;
+    width: 91vw;
   }
   .content_block_city {
     gap: 10px;
