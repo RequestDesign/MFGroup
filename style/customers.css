@@ -123,8 +123,8 @@
     text-align: center;
   }
   .reward-image {
-    width: 220px;
-    height: 311px;
+    width: 25.333vmax;
+    height: 32.412vmax;
   }
   /* .no-flex {
     display: none;

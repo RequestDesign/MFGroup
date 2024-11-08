@@ -278,7 +278,8 @@
     gap: 20px;
   }
   .image-awards {
-    width: 320px;
+    width: 25.333vmax;
+    height: 32.412vmax;
   }
   .btn-arror_left,
   .btn-arror_rigth {

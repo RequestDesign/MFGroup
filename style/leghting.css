@@ -271,8 +271,8 @@
   }
   .image-awards,
   .active-image_awards {
-    width: 320px;
-    height: 100%;
+    width: 25.333vmax;
+    height: 32.412vmax;
   }
   .main-customers .content-main_block {
     height: 173px !important;

@@ -51,7 +51,7 @@
 .input-equipment {
   width: 18.333vw;
   height: 5vh;
-  padding: 0.521vw 0.833vw !important;
+  padding: 0.521vw 0.833vw;
   border-radius: 0 !important;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -97,11 +97,11 @@
 }
 .select-items::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.8);
-  border-radius: 10px; 
-  height: 6.05vh; 
+  border-radius: 10px;
+  height: 6.05vh;
 }
 .select-items::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 1); 
+  background: rgba(255, 255, 255, 1);
 }
 
 .select-item {
@@ -127,7 +127,7 @@
 .view-block_select {
   height: 5vh;
   width: 18.333vw;
-  padding: 0.521vh 0.833vw !important;
+  padding: 0.521vh 0.833vw;
   border-radius: 0 !important;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
@@ -199,6 +199,20 @@
   .input-equipment {
     width: 100%;
     font-size: 16px;
+    padding-left: 16px;
+  }
+  .view-block_select {
+    font-size: 16px;
+    padding-left: 16px;
+    background: none;
+  }
+  .select-items {
+    width: 91vw;
+    max-height: 20vmin;
+  }
+  .select-item {
+    font-size: 16px;
+    height: 5vh;
   }
   .view-block_select {
     width: 100%;
