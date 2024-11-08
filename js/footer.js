@@ -4,35 +4,26 @@ function initFooterLinks() {
             const currentLinks = title.nextElementSibling; 
             const arrowUp = title.querySelector('.arrow-drop-up');
             const arrowDown = title.querySelector('.arrow-drop-down');
-
             document.querySelectorAll('.footer-links, .footer-contacts_city').forEach(links => {
                 if (links !== currentLinks) {
                     links.style.display = 'none';
                     links.classList.remove('footer-links_active'); 
-                    const otherArrowUp = links.previousElementSibling.querySelector('.arrow-drop-up');
-                    const otherArrowDown = links.previousElementSibling.querySelector('.arrow-drop-down');
-                    otherArrowUp.style.display = 'none'; 
-                    otherArrowDown.style.display = 'block'; 
+                    const otherArrows = links.previousElementSibling.querySelectorAll('.arrow-drop-up, .arrow-drop-down');
+                    otherArrows[0].style.display = 'none'; 
+                    otherArrows[1].style.display = 'block'; 
                 }
             });
             const isActive = currentLinks.classList.toggle('footer-links_active');
-            if (isActive) {
-                currentLinks.style.display = 'grid'; 
-                arrowUp.style.display = 'block'; 
-                arrowDown.style.display = 'none'; 
-            } else {
-                currentLinks.style.display = 'none'; 
-                arrowUp.style.display = 'none'; 
-                arrowDown.style.display = 'block'; 
-            }
+            currentLinks.style.display = isActive ? 'grid' : 'none'; 
+            arrowUp.style.display = isActive ? 'block' : 'none'; 
+            arrowDown.style.display = isActive ? 'none' : 'block'; 
         });
     });
 }
 function checkWidth() {
-    if (window.innerWidth <= 48 * 16) {
+    if (window.innerWidth <= 768) { 
         initFooterLinks(); 
     }
 }
 checkWidth();
-
 window.addEventListener('resize', checkWidth);
