@@ -77,21 +77,19 @@
   transition: transform 0.5s ease; 
 }
 #projectsBlock {
-  transition: transform 0.5s ease; /* Плавный переход для перемещения */
-  cursor: grab; /* Изменение курсора при наведении */
-  display: flex; /* Используем flex для размещения элементов в строку */
+  transition: transform 0.5s ease; 
+  cursor: grab; 
+  display: flex; 
 }
 #projectsBlock:active {
-  cursor: grabbing; /* Изменение курсора при перетаскивании */
+  cursor: grabbing; 
 }
-
 .prortfolio-block_white:hover {
   .border-link {
     border: 2px solid rgba(218, 218, 218, 0.696);
     transition: border 0.5s ease;
   }
 }
-
 .portfolio-top_arror {
   display: grid;
   align-items: center;
