@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
+    <link rel="stylesheet" href="https://api-maps.yandex.ru/2.1/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=5f2fb3bc-4f36-4af2-b420-52b267e41a89" type="text/javascript"></script>
+
     <link rel="stylesheet" href="assets/fonts/HelveticaNeueCyr/stylesheet.css">
     <link rel="stylesheet" href="assets/fonts/Futura/stylesheet.css">
     <link rel="stylesheet" href="style/main.css">
@@ -144,7 +147,7 @@
                                 </div>
                                 
                             </div>
-                            <img class="map-cont" src="assets/images/footer/map1.png" alt="">
+                            <div id="map" class="map"></div>
                         </div>
                         <div class="main-content_border"></div>
                     </div>
@@ -163,14 +166,14 @@
                                                 </clipPath>
                                                 </defs>
                                             </svg>
-                                        </span>117342, г. Москва, ул. Бутлерова, дом 17, БЦ Neo Geo, 5 этаж, офис 5082
+                                        </span>420030, г. Казань, ул. Адмиралтейская, дом 3, корпус 4, офис 12
                                     </div>
                                     <a href="tel:+7 (495) 210-01-11" class="city-block_title">
                                         <span>
                                             <svg class="city-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M3.25846 8.47855C5.00759 12.289 8.11494 15.3092 11.9723 16.9479L12.5918 17.2241C13.2777 17.5298 14.0494 17.5833 14.771 17.3754C15.4926 17.1675 16.1176 16.7114 16.536 16.0875L17.3458 14.8807C17.4726 14.6915 17.5239 14.4616 17.4896 14.2364C17.4554 14.0112 17.3381 13.8069 17.1609 13.6639L14.4172 11.449C14.3217 11.372 14.2116 11.315 14.0934 11.2816C13.9753 11.2481 13.8517 11.2389 13.73 11.2545C13.6082 11.2701 13.4909 11.3101 13.385 11.3722C13.2791 11.4343 13.1868 11.5172 13.1137 11.6158L12.2647 12.7616C10.0855 11.6846 8.32147 9.91923 7.24556 7.73844L8.38968 6.88894C8.48828 6.81581 8.5711 6.72349 8.63315 6.61753C8.6952 6.51157 8.73522 6.39415 8.75079 6.27233C8.76636 6.15051 8.75716 6.02679 8.72375 5.90862C8.69034 5.79044 8.63341 5.68024 8.55638 5.58463L6.34284 2.83927C6.19991 2.66195 5.99581 2.54461 5.77072 2.51036C5.54564 2.47611 5.3159 2.52745 5.12676 2.65425L3.9125 3.4691C3.28524 3.89 2.82768 4.52004 2.62132 5.24699C2.41496 5.97393 2.47321 6.75058 2.78569 7.43856L3.25846 8.47855Z" fill="white" fill-opacity="0.8"/>
                                             </svg>    
-                                        </span>+7 (495) 210-01-11
+                                        </span>+7 (843) 202-09-28
                                     </a>
                                     <a href="mailto:mf@mf-group.com" class="city-block_title">
                                         <span>
@@ -178,13 +181,13 @@
                                                 <path d="M17.5 6.74512V13.6467C17.5 14.2046 17.2808 14.7415 16.887 15.1475C16.4933 15.5535 15.9549 15.7978 15.382 15.8305L15.25 15.8342H4.75C4.17609 15.8342 3.62386 15.621 3.2063 15.2382C2.78874 14.8555 2.53742 14.332 2.50375 13.775L2.5 13.6467V6.74512L9.58375 11.3367L9.67075 11.3848C9.77328 11.4335 9.88589 11.4588 10 11.4588C10.1141 11.4588 10.2267 11.4335 10.3293 11.3848L10.4163 11.3367L17.5 6.74512Z" fill="white" fill-opacity="0.8"/>
                                                 <path d="M15.2483 4.16699C16.0583 4.16699 16.7685 4.58262 17.1645 5.20751L9.99828 9.85231L2.83203 5.20751C3.02013 4.91061 3.2785 4.66173 3.58561 4.48162C3.89272 4.30151 4.23967 4.19538 4.59753 4.1721L4.74828 4.16699H15.2483Z" fill="white" fill-opacity="0.8"/>
                                             </svg>
-                                        </span>mf@mf-group.com
+                                        </span>us@mf-group.com
                                     </a>
                                 
                                 </div>
                                 
                             </div>
-                            <img class="map-cont" src="assets/images/footer/map1.png" alt="">
+                            <div id="map3" class="map"></div>
                         </div>
                         <div class="main-content_border"></div>
                     </div>
@@ -461,6 +464,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/map.js"></script>
     <script src="js/form-input.js"></script>
 </body>
 </html>

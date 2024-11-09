@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
+    <link rel="stylesheet" href="https://api-maps.yandex.ru/2.1/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=5f2fb3bc-4f36-4af2-b420-52b267e41a89" type="text/javascript"></script>
     <link rel="stylesheet" href="assets/fonts/HelveticaNeueCyr/stylesheet.css">
     <link rel="stylesheet" href="assets/fonts/Futura/stylesheet.css">
     <link rel="stylesheet" href="style/main.css">
@@ -352,7 +354,7 @@
                         </a>
                     </div>
                     <div class="main-contacts_down">
-                        <img class="map" src="assets/images/contacts/map.png" alt="">
+                        <div id="map"></div>
                     </div>
                 </div>
             </div>
@@ -598,6 +600,7 @@
     <script src="js/services-block.js"></script>
     <script src="js/portfolio-block.js"></script>
     <script src="js/advantages-block.js"></script>
+    <script src="js/map.js"></script>
     <script src="js/footer.js"></script>
 </body>
 </html>

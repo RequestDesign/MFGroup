@@ -436,8 +436,17 @@ body {
 .main-contacts_main .city-block_title {
   width: 18.49vw;
 }
-.map {
+#map{
   width: 100%;
+  height: 350px;
+}
+#map3{
+  width: 100%;
+  height: 350px;
+}
+.map{
+  width: 53.281vw !important;
+  object-fit: cover;
 }
 /* advantages */
 .main-advantages {
@@ -745,6 +754,15 @@ body {
   display: none;
 }
 @media (max-width: 48em) {
+  #map {
+    width: 91vw;
+    height: 350px;
+    object-fit: contain;
+  }
+  .map{
+    width: 91vw !important;
+    object-fit: cover;
+  }
   .container-fluid {
     margin: 0;
     margin-left: 4.267vw !important;
@@ -1066,11 +1084,7 @@ body {
   .main-contacts_down {
     order: 2;
   }
-  .map {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
+  
   .arror-left {
     width: 56px;
   }
