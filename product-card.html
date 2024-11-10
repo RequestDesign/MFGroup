@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Карточка товара</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/fonts/HelveticaNeueCyr/stylesheet.css">
     <link rel="stylesheet" href="assets/fonts/Futura/stylesheet.css">
     <link rel="stylesheet" href="style/main.css">
@@ -131,7 +132,7 @@
                     <div class="product-content_image">
                         <img class="image-content" src="assets/images/product-card/image-content.png" alt="">
                         <img class="image-content" src="assets/images/product-card/image-content.png" alt="">
-                        <img class="image-content" src="assets/images/product-card/image-content.png" alt="">
+                        <img class="image-content" src="assets/images/sound/image-sound.png" alt="">
                         <div class="content-image_block">
                             <button class="left-arr">
                                 <img class="btn-arr_image" src="assets/images/product-card/arr-left.png" alt="">
@@ -212,12 +213,12 @@
                             похожие товары
                         </div>
                         <div class="main-content_btn">
-                            <button class="btn-arror" id="arror_left_top">
+                            <button class="btn-arror arror_left_top">
                                 <svg class="btn-arror_left" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.646446 7.64644C0.451183 7.8417 0.451183 8.15829 0.646446 8.35355L3.82843 11.5355C4.02369 11.7308 4.34027 11.7308 4.53553 11.5355C4.7308 11.3403 4.7308 11.0237 4.53553 10.8284L1.70711 8L4.53553 5.17157C4.7308 4.97631 4.7308 4.65972 4.53553 4.46446C4.34027 4.2692 4.02369 4.2692 3.82843 4.46446L0.646446 7.64644ZM51 7.5L1 7.5L1 8.5L51 8.5L51 7.5Z" fill="white"/>
                                 </svg>                              
                             </button>
-                            <button class="btn-arror" id="arror_rigth_top">
+                            <button class="btn-arror arror_rigth_top">
                                 <svg class="btn-arror_rigth" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
                                 </svg>                                  
@@ -225,106 +226,134 @@
                         </div>
                     </div>
                 </div>
-                <div class="similar-content_main">
-                    <div class="content-main_item">
-                        <div class="block-image">
-                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                <div class="swiper mySwiper">
+                    <div class="similar-content_main swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content-main_item">
+                                <div class="block-image">
+                                    <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                </div>
+                                <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                <button class="main-item_btn">арендовать  
+                                    <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                    </svg> 
+                                </button>
+                            </div>
                         </div>
-                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
-                        <button class="main-item_btn">арендовать  
-                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
-                            </svg> 
-                        </button>
-                    </div>
-                    <div class="content-main_item">
-                        <div class="block-image">
-                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="content-main_item">
+                                <div class="block-image">
+                                    <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                </div>
+                                <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                <button class="main-item_btn">арендовать  
+                                    <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                    </svg> 
+                                </button>
+                            </div>
                         </div>
-                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
-                        <button class="main-item_btn">арендовать  
-                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
-                            </svg> 
-                    </button>
-                    </div>
-                    <div class="content-main_item">
-                        <div class="block-image">
-                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="content-main_item">
+                                <div class="block-image">
+                                    <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                </div>
+                                <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                <button class="main-item_btn">арендовать  
+                                    <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                    </svg> 
+                                </button>
+                            </div>
                         </div>
-                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
-                        <button class="main-item_btn">арендовать  <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
-                        </svg> </button>
-                    </div>
-                    <div class="content-main_item">
-                        <div class="block-image">
-                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="content-main_item">
+                                <div class="block-image">
+                                    <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                </div>
+                                <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                <button class="main-item_btn">арендовать  
+                                    <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                    </svg> 
+                                </button>
+                            </div>
                         </div>
-                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
-                        <button class="main-item_btn">арендовать  <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
-                        </svg> </button>
-                    </div>
-                    <div class="content-main_item">
-                        <div class="block-image">
-                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="content-main_item">
+                                <div class="block-image">
+                                    <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                </div>
+                                <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                <button class="main-item_btn">арендовать  
+                                    <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                    </svg> 
+                                </button>
+                            </div>
                         </div>
-                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
-                        <button class="main-item_btn">арендовать  <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
-                        </svg> </button>
-                    </div>
-                    <div class="content-main_item">
-                        <div class="block-image">
-                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="content-main_item">
+                                <div class="block-image">
+                                    <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                </div>
+                                <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                <button class="main-item_btn">арендовать  
+                                    <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                    </svg> 
+                                </button>
+                            </div>
                         </div>
-                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
-                        <button class="main-item_btn">арендовать  <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
-                        </svg> </button>
-                    </div>
-                    <div class="content-main_item">
-                        <div class="block-image">
-                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="content-main_item">
+                                <div class="block-image">
+                                    <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                </div>
+                                <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                <button class="main-item_btn">арендовать  
+                                    <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                    </svg> 
+                                </button>
+                            </div>
                         </div>
-                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
-                        <button class="main-item_btn">арендовать  
-                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
-                            </svg> 
-                        </button>
-                    </div>
-                    <div class="content-main_item">
-                        <div class="block-image">
-                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="content-main_item">
+                                <div class="block-image">
+                                    <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                </div>
+                                <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                <button class="main-item_btn">арендовать  
+                                    <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                    </svg> 
+                                </button>
+                            </div>
                         </div>
-                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
-                        <button class="main-item_btn">арендовать  
-                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
-                            </svg> 
-                        </button>
-                    </div>
-                    <div class="content-main_item">
-                        <div class="block-image">
-                            <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                        <div class="swiper-slide">
+                            <div class="content-main_item">
+                                <div class="block-image">
+                                    <img class="main-item_img" src="assets/images/product-card/товар.png" alt="">
+                                </div>
+                                <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
+                                <button class="main-item_btn">арендовать  
+                                    <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                                    </svg> 
+                                </button>
+                            </div>
                         </div>
-                        <div class="main-item_title">Телескопический подъёмник Fenix MIGARA 230</div>
-                        <button class="main-item_btn">арендовать  
-                            <svg class="btn-arror_rigth no-flex" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
-                            </svg> 
-                        </button>
                     </div>
                 </div>
                 <div class="product-content_btn">
-                    <button class="btn-arror " id="arror_left_bottom">
+                    <button class="btn-arror arror_left_top">
                         <svg class="btn-arror_left" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.646446 7.64644C0.451183 7.8417 0.451183 8.15829 0.646446 8.35355L3.82843 11.5355C4.02369 11.7308 4.34027 11.7308 4.53553 11.5355C4.7308 11.3403 4.7308 11.0237 4.53553 10.8284L1.70711 8L4.53553 5.17157C4.7308 4.97631 4.7308 4.65972 4.53553 4.46446C4.34027 4.2692 4.02369 4.2692 3.82843 4.46446L0.646446 7.64644ZM51 7.5L1 7.5L1 8.5L51 8.5L51 7.5Z" fill="white"/>
                         </svg>                              
                     </button>
-                    <button class="btn-arror" id="arror_rigth_bottom">
+                    <button class="btn-arror arror_rigth_top">
                         <svg class="btn-arror_rigth" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
                         </svg>                                  
@@ -625,6 +654,7 @@
     <script src="js/footer.js"></script>
     <script src="js/form-input.js"></script>
     <script src="js/svg-rev.js"></script>
-    <script src="js/similar-block.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 </html>
