@@ -1,12 +1,12 @@
 // JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper(".swiper", {
-        slidesPerView: 4, // Значение по умолчанию
-        spaceBetween: 15, // Пробел между слайдами по умолчанию
-        loop: false, // Убедитесь, что здесь false
+        slidesPerView: 4, 
+        spaceBetween: 15,
+        loop: false, 
         pagination: {
             el: ".swiper-pagination",
-            clickable: true, // Делаем пагинацию кликабельной
+            clickable: true,
         },
         navigation: {
             nextEl: ".arror_rigth_top",
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         allowTouchMove: true,
         grabCursor: true,
-        slidesPerGroup: 1, // Значение по умолчанию
+        slidesPerGroup: 1, 
         breakpoints: {
             1920: {
                 slidesPerView: 4,
@@ -22,24 +22,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 spaceBetween: 15,
             },
             768: {
-                slidesPerView: 2, // Увеличиваем количество слайдов
-                slidesPerGroup: 1, // Прокручиваем 2 слайда за раз
-                spaceBetween: 10, // Увеличиваем пробел
+                slidesPerView: 2, 
+                slidesPerGroup: 1,
+                spaceBetween: 10, 
             },
             425: {
-                slidesPerView: 2, // Увеличиваем количество слайдов
-                slidesPerGroup: 1, // Прокручиваем 2 слайда за раз
-                spaceBetween: 5, // Увеличиваем пробел
+                slidesPerView: 2, 
+                slidesPerGroup: 1, 
+                spaceBetween: 5, 
             },
             320: {
-                slidesPerView: 2, // Увеличиваем количество слайдов
-                slidesPerGroup: 1, // Прокручиваем 1 слайд за раз
-                spaceBetween: 5, // Увеличиваем пробел
+                slidesPerView: 2,
+                slidesPerGroup: 1, 
+                spaceBetween: 5, 
             },
         },
     });
-
-    // Функция для обновления состояния навигации
     function updateNavigation() {
         const totalSlides = swiper.slides.length;
         const slidesPerView = swiper.params.slidesPerView;
@@ -51,9 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Вызываем функцию при инициализации
     updateNavigation();
 
-    // Также можно вызывать при изменении размера окна
     window.addEventListener('resize', updateNavigation);
 });
