@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 slidesPerGroup: 1,
                 spaceBetween: 15,
             },
+            1440: {
+                slidesPerView: 4,
+                slidesPerGroup: 1,
+                spaceBetween: 15,
+            },
             768: {
                 slidesPerView: 2, 
                 slidesPerGroup: 1,
