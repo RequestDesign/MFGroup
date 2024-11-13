@@ -9,50 +9,40 @@ document.querySelector('.toggle-button').addEventListener('click', function() {
     }
 });
 
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 0,
+    centeredSlides: true, 
+    loop: true,
+    initialSlide: 1,
+    navigation: {
+        nextEl: "#nextBtn",
+        prevEl: "#prevBtn",
+    },
+    grabCursor: true,
+    breakpoints: {
+        769: {
+          slidesPerView: "auto",
+          spaceBetween: 0,
+        },
+        0:{
+          slidesPerView: "auto", 
+          spaceBetween: 5, 
+        },
+    }
+});
+function updateImageIndex() {
+    var currentIndex = swiper.realIndex + 1; 
+    var totalImages = swiper.slides.length; 
+    document.getElementById('currentImageIndex').textContent = currentIndex.toString().padStart(2, '0');
+    document.getElementById('totalImages').textContent = totalImages.toString().padStart(2, '0');
+}
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const images = document.querySelectorAll('.image-item');
-//     const portfolioContainer = document.querySelector('.portfolio-main_items');
-//     const currentImageIndexDisplay = document.getElementById('currentImageIndex');
-//     const totalImagesDisplay = document.getElementById('totalImages');
-//     const prevBtnImage = document.getElementById('prevBtnImage');
-//     const nextBtnImage = document.getElementById('nextBtnImage');
-//     let ImageIndex = 0;
-//     let forwardClickCount = 0; 
+updateImageIndex();
 
-//     const totalImagesCount = images.length;
-//     totalImagesDisplay.textContent = String(totalImagesCount).padStart(2, '0');
-//     updateSlider(); 
-
-//     function updateSlider() {
-//         const isMobile = window.innerWidth <= 48 * 16; 
-//         const imageWidth = isMobile ? 90.933 + 0.447 : 19.323 + 0; 
-//         const totalWidth = imageWidth;
-//         let offset = -ImageIndex * totalWidth;
-//         portfolioContainer.style.transform = `translateX(${offset}vw)`;
-//         currentImageIndexDisplay.textContent = String(ImageIndex + 1).padStart(2, '0'); 
-//     }
-//     nextBtnImage.addEventListener('click', () => {
-//         if (forwardClickCount < 2) {
-//             forwardClickCount++;
-//             if (ImageIndex < totalImagesCount - 1) {
-//                 ImageIndex++;
-//                 updateSlider();
-//             }
-//         }
-//     });
-//     prevBtnImage.addEventListener('click', () => {
-//         if (ImageIndex > 0) {
-//             ImageIndex--;
-//             updateSlider();
-//             forwardClickCount = 0; 
-//         }
-//     });
-//     setInterval(() => {
-//         forwardClickCount = 0;
-//     }, 1);
-// });
-
+swiper.on('slideChange', function () {
+    updateImageIndex();
+});
 
 
 

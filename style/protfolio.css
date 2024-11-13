@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 .portfolio-top_project {
-  display: grid;
+  display: grid !important;
   align-items: center;
   white-space: nowrap;
   text-align: center;
@@ -603,6 +603,9 @@
     display: grid;
     gap: 16px;
     width: 91vw;
+  }
+  .top-projects_block{
+    width: 60vw;
   }
   .portfolio-top_arror {
     display: none;

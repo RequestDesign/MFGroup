@@ -1,3 +1,9 @@
+.swiper-main{
+  display: none !important;
+}
+.table-main{
+  display: table !important;
+}
 .catalog-content_top {
   display: flex;
   align-items: center;
@@ -234,6 +240,12 @@
   }
 }
 @media (max-width: 48em) {
+  .swiper-main{
+    display: block !important;
+  }
+  .table-main{
+    display: none !important;
+  }
   .otherservices-content_top{
     display: grid;
     justify-content: left;
@@ -361,7 +373,7 @@
     object-fit: cover;
   }
   .portfolio-item_btn {
-    width: 20.422vmax;
+    width: 24.422vmax;
   }
   .table_blur,
   .content-main_block {
@@ -377,7 +389,7 @@
   }
   .content-main_item {
     border: 0;
-    width: 42.133vw;
+    width: 40.8vw;
     padding: 0;
     gap: 12px;
   }

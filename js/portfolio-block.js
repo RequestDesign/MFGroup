@@ -1,27 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('.portfolio-image');
-    const portfolioContainer = document.querySelector('.portfolio_main-image');
-    let currentIndex = 0;
-
-    function updateSlider() {
-        const isMobile = window.innerWidth <= 48 * 16; 
-        const imageWidth = isMobile ? 90.933 + 0.447 : 29.323 + 2; 
-        const totalWidth = imageWidth;
-        let offset = -currentIndex * totalWidth;
-        portfolioContainer.style.transform = `translateX(${offset}vw)`;
-    }
-    updateSlider();
-    document.getElementById('nextBtn').addEventListener('click', () => {
-        if (currentIndex < images.length - 1) {
-            currentIndex++;
-            updateSlider();
-        }
-    });
-
-    document.getElementById('prevBtn').addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateSlider();
-        }
-    });
+var swiper = new Swiper(".mySwiper1", {
+  slidesPerView: "auto",
+  spaceBetween: 50,
+  // slidesOffsetAfter: 380,
+  navigation: {
+    nextEl: "#nextBtn",
+    prevEl: "#prevBtn",
+  },
+  grabCursor: true,
+  breakpoints: {
+    1025: {
+      slidesPerView: "auto",
+      spaceBetween: 50,
+      // slidesOffsetAfter: 380,
+    },
+    0: {
+      spaceBetween: 30,
+      slidesOffsetAfter: 0,
+    },
+  },
 });

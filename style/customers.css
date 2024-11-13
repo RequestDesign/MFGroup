@@ -2,11 +2,11 @@
   margin-top: 0;
 }
 .reward-image {
-  width: 18.75vw;
+  width: 28.75vmin;
 }
 .reward-content_main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 2.083vw;
   margin-top: 6vh;
 }
@@ -123,8 +123,8 @@
     text-align: center;
   }
   .reward-image {
-    width: 25.333vmax;
-    height: 32.412vmax;
+    width: 37.333vmax;
+    height: 48.412vmax;
   }
   /* .no-flex {
     display: none;

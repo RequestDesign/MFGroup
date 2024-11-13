@@ -77,7 +77,9 @@
   text-align: center;
   width: 16vw;
 }
-
+.main-awards .services-content_top {
+  justify-content: center;
+}
 .content_main-video {
   width: 53.333vw;
 }
@@ -112,9 +114,11 @@
   line-height: 1.9vh;
   text-align: center;
   color: white;
+  margin-top: 2vh;
 }
 .image-awards {
-  width: 12.5vw;
+  width: auto;
+  height: 18vmax;
   transition: width 0.3s ease;
 }
 .active-image_awards {
@@ -130,6 +134,7 @@
 }
 .active-image_awards .image-awards {
   width: 18.75vw;
+  height: 26.5vmax;
   transition: width 0.3s ease;
 }
 .awards-content_botton {
@@ -188,7 +193,7 @@
 .smail-num {
   position: absolute;
   right: 20px;
-  top: 0;
+  top: -10px;
   font-size: 0.729vw;
 }
 @media (max-width: 48em) {
@@ -243,8 +248,11 @@
   .content_main-video {
     width: 100%;
   }
+  .main-family .portfolio-item_btn {
+    width: 23vmax;
+  }
   .portfolio-item_btn {
-    width: 20.422vmax;
+    width: 35.422vmax;
   }
   .family-info_text {
     margin-top: 3vh;
@@ -272,7 +280,8 @@
     margin: 80px 0;
   }
   .awards-content_main {
-    width: 91vw;
+    width: 100vw;
+    align-items: normal;
   }
   .main-awards_content {
     gap: 20px;
@@ -316,6 +325,12 @@
   .main-customers {
     margin: 80px 0;
   }
+
+  .active-image_awards .image-awards {
+    width: 25.333vmax;
+    height: 32.412vmax;
+    transition: width 0.3s ease;
+  }
   .main-customers .catalog-content_main {
     width: 100%;
     height: 100%;
@@ -332,9 +347,14 @@
     display: flex;
     flex-wrap: nowrap;
   }
+  tbody {
+    display: flex;
+    /* gap: 2vw;  */
+  }
   .image-awards_text {
-    width: 220px;
-    font-size: 16px;
+    width: 28.646vw;
+    font-size: 2.33vw;
+    /* line-height: 2.659vh; */
   }
   .awards-content_item {
     gap: 16px;
@@ -372,7 +392,7 @@
   #catalog-table tr {
     display: flex;
     flex-direction: row;
-    gap: 3vw;
+    gap: 2vw;
     height: 30vmin;
   }
   #catalog-table td {

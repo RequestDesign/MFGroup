@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="style/catalog.css">
     <link rel="stylesheet" href="style/protfolio.css">
     <link rel="stylesheet" href="style/company-page.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/swiper.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
@@ -154,44 +157,208 @@
             <div class="container-fluid">
                 <div class="portfolio-top_title">Почему нас выбирают</div>  
                 <div class="main-advantages_items">
-
-                    <div class="main-advantages_item">
-                        <div class="advantages-item_title">
-                            <div class="item_title">Организуем проекты мирового масштаба</div>
-                        </div>
-                        <img class="image-advan" src="assets/images/advantages/image-advan.png" alt="">
-                        <div class="advantages-item_content">
-                            <div class="item-content_numder no-flex">01<span class="numder-small">/08</span></div>
-                            <div class="item-content_text">Мы обладаем большим опытом организации проектов мирового масштаба</div>
-                            <div class="catalog-btns no-grid">
-                                <button class="catalog-btn" onclick="scrollContent(this, 'up')">
-                                    <svg class="arr-up" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.35356 0.646446C8.1583 0.451183 7.84172 0.451183 7.64645 0.646446L4.46447 3.82843C4.26921 4.02369 4.26921 4.34027 4.46447 4.53553C4.65973 4.7308 4.97632 4.7308 5.17158 4.53553L8.00001 1.70711L10.8284 4.53553C11.0237 4.7308 11.3403 4.7308 11.5355 4.53553C11.7308 4.34027 11.7308 4.02369 11.5355 3.82843L8.35356 0.646446ZM8.5 51L8.50001 1L7.50001 1L7.5 51L8.5 51Z" fill="white"/>
-                                    </svg>                                
-                                </button>
-                                <button class="catalog-btn" onclick="scrollContent(this, 'down')">
-                                    <svg class="arr-down" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.64644 50.3536C7.84171 50.5488 8.15829 50.5488 8.35355 50.3536L11.5355 47.1716C11.7308 46.9763 11.7308 46.6597 11.5355 46.4645C11.3403 46.2692 11.0237 46.2692 10.8284 46.4645L8 49.2929L5.17157 46.4645C4.97631 46.2692 4.65973 46.2692 4.46446 46.4645C4.2692 46.6597 4.2692 46.9763 4.46446 47.1716L7.64644 50.3536ZM7.5 -2.18557e-08L7.5 50L8.5 50L8.5 2.18557e-08L7.5 -2.18557e-08Z" fill="white"/>
-                                    </svg>
-                                </button>
+                    <div class="swiper mySwiper7">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide main-advantages_item">
+                                <div class="advantages-item_title">
+                                    <div class="item_title">Организуем проекты мирового масштаба</div>
+                                </div>
+                                    <img class="image-advan" src="assets/images/advantages/image-advan.png" alt="">
+                                    <div class="advantages-item_content">
+                                        <div class="item-content_numder no-flex" id="current-slide">01<span class="numder-small" id="total-slides">/08</span></div>
+                                        <div class="item-content_text">Мы обладаем большим опытом организации проектов мирового масштаба</div>
+                                        <div class="catalog-btns no-grid">
+                                            <button class="catalog-btn" id="catalog-btn_prev">
+                                                <svg class="arr-up" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.35356 0.646446C8.1583 0.451183 7.84172 0.451183 7.64645 0.646446L4.46447 3.82843C4.26921 4.02369 4.26921 4.34027 4.46447 4.53553C4.65973 4.7308 4.97632 4.7308 5.17158 4.53553L8.00001 1.70711L10.8284 4.53553C11.0237 4.7308 11.3403 4.7308 11.5355 4.53553C11.7308 4.34027 11.7308 4.02369 11.5355 3.82843L8.35356 0.646446ZM8.5 51L8.50001 1L7.50001 1L7.5 51L8.5 51Z" fill="white"/>
+                                                </svg>                                
+                                            </button>
+                                            <button class="catalog-btn" id="catalog-btn_next">
+                                                <svg class="arr-down" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.64644 50.3536C7.84171 50.5488 8.15829 50.5488 8.35355 50.3536L11.5355 47.1716C11.7308 46.9763 11.7308 46.6597 11.5355 46.4645C11.3403 46.2692 11.0237 46.2692 10.8284 46.4645L8 49.2929L5.17157 46.4645C4.97631 46.2692 4.65973 46.2692 4.46446 46.4645C4.2692 46.6597 4.2692 46.9763 4.46446 47.1716L7.64644 50.3536ZM7.5 -2.18557e-08L7.5 50L8.5 50L8.5 2.18557e-08L7.5 -2.18557e-08Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="swiper-slide main-advantages_item">
+                                <div class="advantages-item_title">
+                                    <div class="item_title">широкий спектр услуг 
+                                        по доступным ценам</div>
+                                </div>
+                                <img class="image-advan" src="assets/images/advantages/image-advan2.png" alt="">
+                                <div class="advantages-item_content">
+                                    <div class="item-content_numder no-flex" id="current-slide">02<span class="numder-small" id="total-slides">/08</span></div>
+                                    <div class="item-content_text">Мы предлагаем широкий спектр сценических и продакшн услуг по выгодным ценам</div>
+                                    <div class="catalog-btns no-grid">
+                                        <button class="catalog-btn" id="catalog-btn_prev">
+                                            <svg class="arr-up" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.35356 0.646446C8.1583 0.451183 7.84172 0.451183 7.64645 0.646446L4.46447 3.82843C4.26921 4.02369 4.26921 4.34027 4.46447 4.53553C4.65973 4.7308 4.97632 4.7308 5.17158 4.53553L8.00001 1.70711L10.8284 4.53553C11.0237 4.7308 11.3403 4.7308 11.5355 4.53553C11.7308 4.34027 11.7308 4.02369 11.5355 3.82843L8.35356 0.646446ZM8.5 51L8.50001 1L7.50001 1L7.5 51L8.5 51Z" fill="white"/>
+                                            </svg>                                
+                                        </button>
+                                        <button class="catalog-btn" id="catalog-btn_next">
+                                            <svg class="arr-down" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.64644 50.3536C7.84171 50.5488 8.15829 50.5488 8.35355 50.3536L11.5355 47.1716C11.7308 46.9763 11.7308 46.6597 11.5355 46.4645C11.3403 46.2692 11.0237 46.2692 10.8284 46.4645L8 49.2929L5.17157 46.4645C4.97631 46.2692 4.65973 46.2692 4.46446 46.4645C4.2692 46.6597 4.2692 46.9763 4.46446 47.1716L7.64644 50.3536ZM7.5 -2.18557e-08L7.5 50L8.5 50L8.5 2.18557e-08L7.5 -2.18557e-08Z" fill="white"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-advantages_item">
+                                <div class="advantages-item_title">
+                                    <div class="item_title">работаем 
+                                        с оборудованием передовых международных брендов</div>
+                                </div>
+                                <img class="image-advan" src="assets/images/catalog/image-catalog.png" alt="">
+                                <div class="advantages-item_content">
+                                    <div class="item-content_numder no-flex" id="current-slide">03<span class="numder-small" id="total-slides">/08</span></div>
+                                    <div class="item-content_text">Prolyte, Fenix, Layher, Doughty; звуковое оборудование — Allen&Heath, FBT, Yamaha, L-Acoustics, Pioneer, Nexo, ElectroVoice, Sennheiser, Shure;
+                                        световое оборудование — Robe, Martin, Clay Paky</div>
+                                    <div class="catalog-btns no-grid">
+                                        <button class="catalog-btn" id="catalog-btn_prev">
+                                            <svg class="arr-up" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.35356 0.646446C8.1583 0.451183 7.84172 0.451183 7.64645 0.646446L4.46447 3.82843C4.26921 4.02369 4.26921 4.34027 4.46447 4.53553C4.65973 4.7308 4.97632 4.7308 5.17158 4.53553L8.00001 1.70711L10.8284 4.53553C11.0237 4.7308 11.3403 4.7308 11.5355 4.53553C11.7308 4.34027 11.7308 4.02369 11.5355 3.82843L8.35356 0.646446ZM8.5 51L8.50001 1L7.50001 1L7.5 51L8.5 51Z" fill="white"/>
+                                            </svg>                                
+                                        </button>
+                                        <button class="catalog-btn" id="catalog-btn_next">
+                                            <svg class="arr-down" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.64644 50.3536C7.84171 50.5488 8.15829 50.5488 8.35355 50.3536L11.5355 47.1716C11.7308 46.9763 11.7308 46.6597 11.5355 46.4645C11.3403 46.2692 11.0237 46.2692 10.8284 46.4645L8 49.2929L5.17157 46.4645C4.97631 46.2692 4.65973 46.2692 4.46446 46.4645C4.2692 46.6597 4.2692 46.9763 4.46446 47.1716L7.64644 50.3536ZM7.5 -2.18557e-08L7.5 50L8.5 50L8.5 2.18557e-08L7.5 -2.18557e-08Z" fill="white"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-advantages_item">
+                                <div class="advantages-item_title">
+                                    <div class="item_title">одна из самых крупных технических баз 
+                                        в россии </div>
+                                </div>
+                                <img class="image-advan" src="assets/images/advantages/image-advant4.png" alt="">
+                                <div class="advantages-item_content">
+                                    <div class="item-content_numder no-flex" id="current-slide">04<span class="numder-small" id="total-slides">/08</span></div>
+                                    <div class="item-content_text">Одна из самых крупных технических баз в России </div>
+                                    <div class="catalog-btns no-grid">
+                                        <button class="catalog-btn" id="catalog-btn_prev">
+                                            <svg class="arr-up" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.35356 0.646446C8.1583 0.451183 7.84172 0.451183 7.64645 0.646446L4.46447 3.82843C4.26921 4.02369 4.26921 4.34027 4.46447 4.53553C4.65973 4.7308 4.97632 4.7308 5.17158 4.53553L8.00001 1.70711L10.8284 4.53553C11.0237 4.7308 11.3403 4.7308 11.5355 4.53553C11.7308 4.34027 11.7308 4.02369 11.5355 3.82843L8.35356 0.646446ZM8.5 51L8.50001 1L7.50001 1L7.5 51L8.5 51Z" fill="white"/>
+                                            </svg>                                
+                                        </button>
+                                        <button class="catalog-btn" id="catalog-btn_next">
+                                            <svg class="arr-down" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.64644 50.3536C7.84171 50.5488 8.15829 50.5488 8.35355 50.3536L11.5355 47.1716C11.7308 46.9763 11.7308 46.6597 11.5355 46.4645C11.3403 46.2692 11.0237 46.2692 10.8284 46.4645L8 49.2929L5.17157 46.4645C4.97631 46.2692 4.65973 46.2692 4.46446 46.4645C4.2692 46.6597 4.2692 46.9763 4.46446 47.1716L7.64644 50.3536ZM7.5 -2.18557e-08L7.5 50L8.5 50L8.5 2.18557e-08L7.5 -2.18557e-08Z" fill="white"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-advantages_item">
+                                <div class="advantages-item_title">
+                                    <div class="item_title">организуем проекты по всему миру</div>
+                                </div>
+                                <img class="image-advan" src="assets/images/advantages/image-advant5.png" alt="">
+                                <div class="advantages-item_content">
+                                    <div class="item-content_numder no-flex" id="current-slide">05<span class="numder-small" id="total-slides">/08</span></div>
+                                    <div class="item-content_text">Широкая география реализованных проектов</div>
+                                    <div class="catalog-btns no-grid">
+                                        <button class="catalog-btn" id="catalog-btn_prev">
+                                            <svg class="arr-up" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.35356 0.646446C8.1583 0.451183 7.84172 0.451183 7.64645 0.646446L4.46447 3.82843C4.26921 4.02369 4.26921 4.34027 4.46447 4.53553C4.65973 4.7308 4.97632 4.7308 5.17158 4.53553L8.00001 1.70711L10.8284 4.53553C11.0237 4.7308 11.3403 4.7308 11.5355 4.53553C11.7308 4.34027 11.7308 4.02369 11.5355 3.82843L8.35356 0.646446ZM8.5 51L8.50001 1L7.50001 1L7.5 51L8.5 51Z" fill="white"/>
+                                            </svg>                                
+                                        </button>
+                                        <button class="catalog-btn" id="catalog-btn_next">
+                                            <svg class="arr-down" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.64644 50.3536C7.84171 50.5488 8.15829 50.5488 8.35355 50.3536L11.5355 47.1716C11.7308 46.9763 11.7308 46.6597 11.5355 46.4645C11.3403 46.2692 11.0237 46.2692 10.8284 46.4645L8 49.2929L5.17157 46.4645C4.97631 46.2692 4.65973 46.2692 4.46446 46.4645C4.2692 46.6597 4.2692 46.9763 4.46446 47.1716L7.64644 50.3536ZM7.5 -2.18557e-08L7.5 50L8.5 50L8.5 2.18557e-08L7.5 -2.18557e-08Z" fill="white"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-advantages_item">
+                                <div class="advantages-item_title">
+                                    <div class="item_title">Сотрудничаем 
+                                        с европейскими компаниями</div>
+                                </div>
+                                <img class="image-advan" src="assets/images/advantages/image-advant6.png" alt="">
+                                <div class="advantages-item_content">
+                                    <div class="item-content_numder no-flex" id="current-slide">06<span class="numder-small" id="total-slides">/08</span></div>
+                                    <div class="item-content_text">Мы сотрудничаем с такими компаниями, как Nussli, ETC, 
+                                        AED group, PRG, Neumann&Müller и Adunic</div>
+                                    <div class="catalog-btns no-grid">
+                                        <button class="catalog-btn" id="catalog-btn_prev">
+                                            <svg class="arr-up" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.35356 0.646446C8.1583 0.451183 7.84172 0.451183 7.64645 0.646446L4.46447 3.82843C4.26921 4.02369 4.26921 4.34027 4.46447 4.53553C4.65973 4.7308 4.97632 4.7308 5.17158 4.53553L8.00001 1.70711L10.8284 4.53553C11.0237 4.7308 11.3403 4.7308 11.5355 4.53553C11.7308 4.34027 11.7308 4.02369 11.5355 3.82843L8.35356 0.646446ZM8.5 51L8.50001 1L7.50001 1L7.5 51L8.5 51Z" fill="white"/>
+                                            </svg>                                
+                                        </button>
+                                        <button class="catalog-btn" id="catalog-btn_next">
+                                            <svg class="arr-down" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.64644 50.3536C7.84171 50.5488 8.15829 50.5488 8.35355 50.3536L11.5355 47.1716C11.7308 46.9763 11.7308 46.6597 11.5355 46.4645C11.3403 46.2692 11.0237 46.2692 10.8284 46.4645L8 49.2929L5.17157 46.4645C4.97631 46.2692 4.65973 46.2692 4.46446 46.4645C4.2692 46.6597 4.2692 46.9763 4.46446 47.1716L7.64644 50.3536ZM7.5 -2.18557e-08L7.5 50L8.5 50L8.5 2.18557e-08L7.5 -2.18557e-08Z" fill="white"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-advantages_item">
+                                <div class="advantages-item_title">
+                                    <div class="item_title">более 300 специалистов</div>
+                                </div>
+                                <img class="image-advan" src="assets/images/advantages/image-advant7.png" alt="">
+                                <div class="advantages-item_content">
+                                    <div class="item-content_numder no-flex" id="current-slide">07<span class="numder-small" id="total-slides">/08</span></div>
+                                    <div class="item-content_text">Наши специалисты регулярно проходят аттестацию в сертифицированных органах надзора</div>
+                                    <div class="catalog-btns no-grid">
+                                        <button class="catalog-btn" id="catalog-btn_prev">
+                                            <svg class="arr-up" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.35356 0.646446C8.1583 0.451183 7.84172 0.451183 7.64645 0.646446L4.46447 3.82843C4.26921 4.02369 4.26921 4.34027 4.46447 4.53553C4.65973 4.7308 4.97632 4.7308 5.17158 4.53553L8.00001 1.70711L10.8284 4.53553C11.0237 4.7308 11.3403 4.7308 11.5355 4.53553C11.7308 4.34027 11.7308 4.02369 11.5355 3.82843L8.35356 0.646446ZM8.5 51L8.50001 1L7.50001 1L7.5 51L8.5 51Z" fill="white"/>
+                                            </svg>                                
+                                        </button>
+                                        <button class="catalog-btn" id="catalog-btn_next">
+                                            <svg class="arr-down" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.64644 50.3536C7.84171 50.5488 8.15829 50.5488 8.35355 50.3536L11.5355 47.1716C11.7308 46.9763 11.7308 46.6597 11.5355 46.4645C11.3403 46.2692 11.0237 46.2692 10.8284 46.4645L8 49.2929L5.17157 46.4645C4.97631 46.2692 4.65973 46.2692 4.46446 46.4645C4.2692 46.6597 4.2692 46.9763 4.46446 47.1716L7.64644 50.3536ZM7.5 -2.18557e-08L7.5 50L8.5 50L8.5 2.18557e-08L7.5 -2.18557e-08Z" fill="white"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-advantages_item">
+                                <div class="advantages-item_title">
+                                    <div class="item_title">обладаем свидетельством 
+                                        сро</div>
+                                </div>
+                                <img class="image-advan" src="assets/images/advantages/image-advant8.png" alt="">
+                                <div class="advantages-item_content">
+                                    <div class="item-content_numder no-flex">08<span class="numder-small">/08</span></div>
+                                    <div class="item-content_text">Обладаем свидетельством саморегулируемой организации о праве ведения строительной и проектировочной деятельности</div>
+                                    <div class="catalog-btns no-grid">
+                                        <button class="catalog-btn" id="catalog-btn_prev">
+                                            <svg class="arr-up" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.35356 0.646446C8.1583 0.451183 7.84172 0.451183 7.64645 0.646446L4.46447 3.82843C4.26921 4.02369 4.26921 4.34027 4.46447 4.53553C4.65973 4.7308 4.97632 4.7308 5.17158 4.53553L8.00001 1.70711L10.8284 4.53553C11.0237 4.7308 11.3403 4.7308 11.5355 4.53553C11.7308 4.34027 11.7308 4.02369 11.5355 3.82843L8.35356 0.646446ZM8.5 51L8.50001 1L7.50001 1L7.5 51L8.5 51Z" fill="white"/>
+                                            </svg>                                
+                                        </button>
+                                        <button class="catalog-btn" id="catalog-btn_next">
+                                            <svg class="arr-down" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.64644 50.3536C7.84171 50.5488 8.15829 50.5488 8.35355 50.3536L11.5355 47.1716C11.7308 46.9763 11.7308 46.6597 11.5355 46.4645C11.3403 46.2692 11.0237 46.2692 10.8284 46.4645L8 49.2929L5.17157 46.4645C4.97631 46.2692 4.65973 46.2692 4.46446 46.4645C4.2692 46.6597 4.2692 46.9763 4.46446 47.1716L7.64644 50.3536ZM7.5 -2.18557e-08L7.5 50L8.5 50L8.5 2.18557e-08L7.5 -2.18557e-08Z" fill="white"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="main-advantages_btn on-grid">
-                    <div class="catalog-btns">
-                        <button class="catalog-btn" onclick="scrollContent(this, 'left')">
-                            <svg class="arr-left" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.35356 0.646446C8.1583 0.451183 7.84172 0.451183 7.64645 0.646446L4.46447 3.82843C4.26921 4.02369 4.26921 4.34027 4.46447 4.53553C4.65973 4.7308 4.97632 4.7308 5.17158 4.53553L8.00001 1.70711L10.8284 4.53553C11.0237 4.7308 11.3403 4.7308 11.5355 4.53553C11.7308 4.34027 11.7308 4.02369 11.5355 3.82843L8.35356 0.646446ZM8.5 51L8.50001 1L7.50001 1L7.5 51L8.5 51Z" fill="white"/>
-                            </svg>                                
+                <div class="main-advantages_botton">
+                    <div class="advantages-botton_btn">
+                        <button class="btn-arror" id="catalog-btn_prev">
+                            <svg class="btn-arror_left" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.646446 7.64644C0.451183 7.8417 0.451183 8.15829 0.646446 8.35355L3.82843 11.5355C4.02369 11.7308 4.34027 11.7308 4.53553 11.5355C4.7308 11.3403 4.7308 11.0237 4.53553 10.8284L1.70711 8L4.53553 5.17157C4.7308 4.97631 4.7308 4.65972 4.53553 4.46446C4.34027 4.2692 4.02369 4.2692 3.82843 4.46446L0.646446 7.64644ZM51 7.5L1 7.5L1 8.5L51 8.5L51 7.5Z" fill="white"/>
+                            </svg>                              
                         </button>
-                        <button class="catalog-btn" onclick="scrollContent(this, 'right')">
-                            <svg class="arr-right" width="16" height="51" viewBox="0 0 16 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.64644 50.3536C7.84171 50.5488 8.15829 50.5488 8.35355 50.3536L11.5355 47.1716C11.7308 46.9763 11.7308 46.6597 11.5355 46.4645C11.3403 46.2692 11.0237 46.2692 10.8284 46.4645L8 49.2929L5.17157 46.4645C4.97631 46.2692 4.65973 46.2692 4.46446 46.4645C4.2692 46.6597 4.2692 46.9763 4.46446 47.1716L7.64644 50.3536ZM7.5 -2.18557e-08L7.5 50L8.5 50L8.5 2.18557e-08L7.5 -2.18557e-08Z" fill="white"/>
-                            </svg>
+                        <button class="btn-arror" id="catalog-btn_next">
+                            <svg class="btn-arror_rigth" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
+                            </svg>                                  
                         </button>
                     </div>
-                    <div class="item-content_numder">01<span class="numder-small">/08</span></div>
+                    <div class="advantages-botton_numder" id="current-slide">01<span class="numder-small" id="total-slides">/ 08</span></div>
                 </div>
             </div>
         </div>
@@ -203,7 +370,84 @@
                         <div class="content-top_title">MF Group в цифрах</div>
                     </div>
                     <div class="catalog-content_main">
-                        <table class="content-main_block table_blur" id="catalog-table">
+                        <!-- Слайдер для мобильных устройств -->
+                        <div class="swiper mySwiper2 swiper-main" >
+                            
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="content-main_item">
+                                            <div class="main-item_title">12 000 м <span class="smail-num">2</span></div>
+                                            <div class="main-item_text">собственных складов</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content-main_item">
+                                            <div class="main-item_title">1 500 тон</div>
+                                            <div class="main-item_text">сценических конструкций</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content-main_item">
+                                            <div class="main-item_title">20 000</div>
+                                            <div class="main-item_text">зрительских мест на трибунах</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content-main_item">
+                                            <div class="main-item_title">250 кВт</div>
+                                            <div class="main-item_text">звука</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content-main_item">
+                                            <div class="main-item_title">15 000 м<span class="smail-num">2</span></div>
+                                            <div class="main-item_text">профессионального сценического покрытия</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content-main_item">
+                                            <div class="main-item_title">8 500 м</div>
+                                            <div class="main-item_text">алюминиевых ферм различного сечения и назначения</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content-main_item">
+                                            <div class="main-item_title">4</div>
+                                            <div class="main-item_text">представительства в России: Москва, Казань, Краснодар, Сочи</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content-main_item">
+                                            <div class="main-item_title">300 +</div>
+                                            <div class="main-item_text">специалистов, регулярно проходящих аттестацию в сертифицированных органах надзора</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content-main_item">
+                                            <div class="main-item_title">12 000 м <span class="smail-num">2</span></div>
+                                            <div class="main-item_text">профессионального покрытия для различных грунтов и газонов</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content-main_item">
+                                            <div class="main-item_title">10 мВт</div>
+                                            <div class="main-item_text">мощности автономного энергообеспечения и более 20 км кабелей</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content-main_item">
+                                            <div class="main-item_title">20 +</div>
+                                            <div class="main-item_text">событий одновременно можем обеспечить профессиональным звуковым, световым, видеооборудованием и организовать весь процесс</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <!-- Обычная таблица для больших экранов -->
+                        <table class="content-main_block table_blur table-main">
                             <tbody>
                                 <tr class="mob-block mar-bot">
                                     <td class="main-item_border">
@@ -234,9 +478,8 @@
                                 <tr class="mob-block mar-bot">
                                     <td class="main-item_border">
                                         <div class="content-main_item padding-no">
-                                            <div class="main-item_title">15 000 м2</div>
-                                            <div class="main-item_text">профессионального 
-                                                сценического покрытия</div>
+                                            <div class="main-item_title">15 000 м<span class="smail-num">2</span></div>
+                                            <div class="main-item_text">профессионального сценического покрытия</div>
                                         </div>
                                     </td>
                                     <td class="main-item_border">
@@ -254,8 +497,7 @@
                                     <td>
                                         <div class="content-main_item">
                                             <div class="main-item_title">380 +</div>
-                                            <div class="main-item_text">интеллектуальных 
-                                                световых приборов </div>
+                                            <div class="main-item_text">интеллектуальных световых приборов</div>
                                         </div>
                                     </td>
                                 </tr>
@@ -263,32 +505,32 @@
                                     <td class="main-item_border">
                                         <div class="content-main_item td-border padding-no">
                                             <div class="main-item_title">300 +</div>
-                                            <div class="main-item_text">специалистов, регулярно проходящих аттестацию в сертифицированныхорганах надзора</div>
+                                            <div class="main-item_text">специалистов, регулярно проходящих аттестацию в сертифицированных органах надзора</div>
                                         </div>
                                     </td>
                                     <td class="main-item_border">
                                         <div class="content-main_item td-border">
-                                            <div class="main-item_title">12 000 м <span class="smail-num">2</span></div>
-                                            <div class="main-item_text">профессиональногопокрытия для различныхгрунтов и газонов</div>
+                                            <div class="main-item_title">12 000 м<span class="smail-num">2</span></div>
+                                            <div class="main-item_text">профессионального покрытия для различных грунтов и газонов</div>
                                         </div>
                                     </td>
                                     <td class="main-item_border">
                                         <div class="content-main_item td-border">
                                             <div class="main-item_title">10 мВт</div>
-                                            <div class="main-item_text">мощности автономногоэнергообеспеченияи более 20 км кабелей</div>
+                                            <div class="main-item_text">мощности автономного энергообеспечения и более 20 км кабелей</div>
                                         </div>
                                     </td>
                                     <td class="td-border">
                                         <div class="content-main_item td-border">
                                             <div class="main-item_title">20 +</div>
-                                            <div class="main-item_text">событий одновременно можем обеспечить профессиональным звуковым, световым, видеооборудованием 
-                                                и организовать весь процесс</div>
+                                            <div class="main-item_text">событий одновременно можем обеспечить профессиональным звуковым, световым, видеооборудованием и организовать весь процесс</div>
                                         </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    
                     <div class="catalog-content_botton">
                         <div class="main-content_btn on-flex">
                             <button class="btn-arror" id="prev-button">
@@ -304,6 +546,10 @@
                         </div>
                     </div>
                 </div>
+
+
+                
+
             </div>
             <div class="main-advantages_backlight"></div>
             <!-- <div class="main-portfolio_backlight"></div> -->
@@ -336,43 +582,47 @@
         </div>
         <div class="main-awards">
             <div class="main-portfolio_backlight"></div>
-                <div class="container-fluid">
                     <div class="main-awards_content">
                         <div class="services-content_top">
-                            <div class="content-top_title">Лицензии и свидетельства</div>
+                            
+                                <div class="content-top_title">Лицензии и свидетельства</div>
+                            </div>
                         </div>
-                        
                         <div class="awards-content_main">
-                            <div class="awards-content_item">
-                                <img class="image-awards" src="assets/images/awards/image-svu.png" alt="">
-                                <div class="image-awards_text">Сертификат соответствия требованиям </div>
-                            </div>
-                            <div class="awards-content_item">
-                                <img class="image-awards" src="assets/images/awards/awards-company/image-svu2.png" alt="">
-                                <div class="image-awards_text">Сертификат соответствия требованиям </div>
-                            </div>
-                            <div class="awards-content_item active-image_awards">
-                                <img class="image-awards" src="assets/images/awards/awards-company/image-svy3.png" alt="">
-                                <div class="image-awards_text">Сертификат соответствия требованиям </div>
-                            </div>
-                            <div class="awards-content_item">
-                                <img class="image-awards" src="assets/images/awards/awards-company/image-svu4.png" alt="">
-                                <div class="image-awards_text">Сертификат соответствия требованиям </div>
-                            </div>
-                            <div class="awards-content_item">
-                                <img class="image-awards" src="assets/images/awards/awards-company/image-svu5.png" alt="">
-                                <div class="image-awards_text">Сертификат соответствия требованиям </div>
+                            <div class="swiper mySwiper6">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide awards-content_item">
+                                        <img class="image-awards" src="assets/images/awards/image-svu.png" alt="">
+                                        <div class="image-awards_text">Сертификат соответствия требованиям </div>
+                                    </div>
+                                    <div class="swiper-slide awards-content_item">
+                                        <img class="image-awards" src="assets/images/awards/awards-company/image-svu2.png" alt="">
+                                        <div class="image-awards_text">Сертификат соответствия требованиям </div>
+                                    </div>
+                                    <div class="swiper-slide awards-content_item">
+                                        <img class="image-awards" src="assets/images/awards/awards-company/image-svy3.png" alt="">
+                                        <div class="image-awards_text">Сертификат соответствия требованиям </div>
+                                    </div>
+                                    <div class="swiper-slide awards-content_item">
+                                        <img class="image-awards" src="assets/images/awards/awards-company/image-svu4.png" alt="">
+                                        <div class="image-awards_text">Сертификат соответствия требованиям </div>
+                                    </div>
+                                    <div class="swiper-slide awards-content_item">
+                                        <img class="image-awards" src="assets/images/awards/awards-company/image-svu5.png" alt="">
+                                        <div class="image-awards_text">Сертификат соответствия требованиям </div>
+                                    </div>
+                                </div>
                             </div>
                             
                         </div>
                         <div class="awards-content_botton">
                             <div class="main-content_btn">
-                                <button class="btn-arror" id="award-left">
+                                <button class="btn-arror" id="award-left_prev">
                                     <svg class="btn-arror_left" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0.646446 7.64644C0.451183 7.8417 0.451183 8.15829 0.646446 8.35355L3.82843 11.5355C4.02369 11.7308 4.34027 11.7308 4.53553 11.5355C4.7308 11.3403 4.7308 11.0237 4.53553 10.8284L1.70711 8L4.53553 5.17157C4.7308 4.97631 4.7308 4.65972 4.53553 4.46446C4.34027 4.2692 4.02369 4.2692 3.82843 4.46446L0.646446 7.64644ZM51 7.5L1 7.5L1 8.5L51 8.5L51 7.5Z" fill="white"/>
                                     </svg>                              
                                 </button>
-                                <button class="btn-arror" id="award-rigth">
+                                <button class="btn-arror" id="award-rigth_next">
                                     <svg class="btn-arror_rigth" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M50.3536 8.35356C50.5488 8.1583 50.5488 7.84172 50.3536 7.64646L47.1716 4.46447C46.9763 4.26921 46.6597 4.26921 46.4645 4.46447C46.2692 4.65974 46.2692 4.97632 46.4645 5.17158L49.2929 8.00001L46.4645 10.8284C46.2692 11.0237 46.2692 11.3403 46.4645 11.5355C46.6597 11.7308 46.9763 11.7308 47.1716 11.5355L50.3536 8.35356ZM-9.13912e-08 8.5L50 8.50001L50 7.50001L9.13912e-08 7.5L-9.13912e-08 8.5Z" fill="white"/>
                                     </svg>                                  
@@ -645,6 +895,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/header.js"></script>
     <script src="js/advantages-block.js"></script>

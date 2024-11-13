@@ -1,56 +1,36 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const awardsItems = document.querySelectorAll('.awards-content_item');
-    const prevAward = document.getElementById('award-left');
-    const nextAward = document.getElementById('award-rigth');
-    
-    let currentIndex = 0; 
-
-    function updateActiveImage() {
-        awardsItems.forEach((item, index) => {
-            const textElement = item.querySelector('.image-awards_text'); 
-            
-            if (window.innerWidth <= 48 * 16) {
-                if (index === currentIndex) {
-                    item.classList.remove('active-image_awards');
-                    item.style.display = 'grid'; 
-                    textElement.style.display = 'grid'; 
-                    item.style.opacity = '1'; 
-                } else {
-                    item.style.display = 'none'; 
-                }
-            } else {
-              
-                item.style.display = 'grid';
-                if (index === currentIndex) {
-                    item.classList.add('active-image_awards'); 
-                } else {
-                    item.classList.remove('active-image_awards'); 
-                }
-            }
-        });
-    }
-    nextAward.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % awardsItems.length; 
-        updateActiveImage();
-    });
-
-    prevAward.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + awardsItems.length) % awardsItems.length; 
-        updateActiveImage();
-    });
-
-    updateActiveImage();
-    window.addEventListener('resize', updateActiveImage);
+var swiper = new Swiper(".mySwiper6", {
+    slidesPerView: 4,
+    spaceBetween: 17.8,
+    centeredSlides: true,
+    loop: true,
+    initialSlide: 2,
+    navigation: {
+        nextEl: "#award-rigth_next",
+        prevEl: "#award-left_prev",
+    },
+    breakpoints: {
+        769: {
+            slidesPerView: 'auto',
+            spaceBetween: 17.8,
+        },
+        0: {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+        },
+    },
+    grabCursor: true,
+    on: {
+        slideChange: function () {
+            // Удаляем класс active-image_awards у всех слайдов
+            this.slides.forEach(slide => {
+                slide.classList.remove('active-image_awards');
+            });
+            // Добавляем класс active-image_awards к активному слайду
+            const activeSlide = this.slides[this.activeIndex];
+            activeSlide.classList.add('active-image_awards');
+        },
+    },
 });
 
-
-document.querySelector('.toggle-button').addEventListener('click', function() {
-    const storyText = document.querySelector('.family-info_text');
-    storyText.classList.toggle('expanded');
-    storyText.classList.toggle('no-after'); 
-    if (storyText.classList.contains('expanded')) {
-        this.textContent = 'Скрыть';
-    } else {
-        this.textContent = 'читать полностью';
-    }
-});
+// Добавляем класс active-image_awards к слайду при инициализации
+swiper.slides[swiper.activeIndex].classList.add('active-image_awards');

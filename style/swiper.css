@@ -1,0 +1,33 @@
+.main-awards .swiper-slide {
+  width: auto !important;
+}
+.main-services .swiper-slide {
+  width: auto !important;
+}
+.swiper-slide {
+  width: auto;
+}
+.main-advantages .swiper {
+  height: 510px
+}
+.main-advantages .swiper-wrapper {
+  display: grid;
+}
+.main-awards .swiper-wrapper {
+  align-items: center;
+}
+.main-services .swiper-wrapper {
+  align-items: center;
+}
+/* .main-awards.swiper-button-lock {
+    display: block !important; 
+} */
+ @media (max-width:48em) {
+    .main-advantages .swiper-wrapper{
+        display: flex;
+    }
+    .swiper-slide {
+        width: auto; /* Allow slides to take their content width */
+        height: 100%; /* Keep height consistent */
+    }
+ }

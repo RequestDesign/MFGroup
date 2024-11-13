@@ -1,43 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const awardsItems = document.querySelectorAll('.awards-content_item'); 
-    const prevArr = document.getElementById('btn-arror_left'); 
-    const nextArr = document.getElementById('btn-arror_rigth'); 
-    
-    let currentIndex = 3;
-    function updateActiveImage() {
-        awardsItems.forEach((item, index) => {
-            const imageElement = item.querySelector('.image-awards'); 
-
-            if (window.innerWidth <= 48* 16) {
-                if (index === currentIndex) {
-                    imageElement.classList.add('active-image_awards'); 
-                    item.style.display = 'grid'; 
-                    item.style.opacity = '1'; 
-                } else {
-                    imageElement.classList.remove('active-image_awards'); 
-                    item.style.display = 'none'; 
-                }
-            } else {
-                item.style.display = 'grid'; 
-                if (index === currentIndex) {
-                    imageElement.classList.add('active-image_awards'); 
-                } else {
-                    imageElement.classList.remove('active-image_awards');
-                }
-            }
-        });
-    }
-    nextArr.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % awardsItems.length; 
-        updateActiveImage(); 
-    });
-
-    prevArr.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + awardsItems.length) % awardsItems.length; 
-        updateActiveImage(); 
-    });
-
-    updateActiveImage();
-
-    window.addEventListener('resize', updateActiveImage);
+var swiper = new Swiper(".mySwiper4", {
+    slidesPerView: 7,
+    spaceBetween: 17.8,
+    centeredSlides: true, 
+    loop: true,
+    initialSlide: 5,
+    navigation: {
+        nextEl: "#btn-arror_next",
+        prevEl: "#btn-arror_prev",
+    },
+    breakpoints: {
+        769: {
+          slidesPerView: 7,
+          spaceBetween: 17.8,
+        },
+        0:{
+          slidesPerView: "auto", 
+          spaceBetween: 12, 
+        },
+    },
+    grabCursor: true,
+    on: {
+        slideChange: function () {
+            this.slides.forEach(slide => {
+                slide.querySelector('.image-awards').classList.remove('active-image_awards');
+            });
+            const activeSlide = this.slides[this.activeIndex].querySelector('.image-awards');
+            activeSlide.classList.add('active-image_awards');
+        },
+    },
 });
+
+
+
+
