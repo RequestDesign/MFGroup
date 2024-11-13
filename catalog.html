@@ -119,7 +119,24 @@
                         </svg>
                         назад
                     </a>
-                    <button class="btn-fil">фильтры</button>
+                    <!-- <button class="btn-fil">фильтры</button> -->
+                    <div class="button-filter on-flex">
+                        <div class="custom-dropdown">
+                            <button class="btn-fil" type="button" id="filterButton" data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="btn-fil_text">Фильтры</div>
+                              <svg class="arror-left no-flex" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 7H11M14 17H5" stroke="#7C0A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 20C18.6569 20 20 18.6569 20 17C20 15.3431 18.6569 14 17 14C15.3431 14 14 15.3431 14 17C14 18.6569 15.3431 20 17 20Z" stroke="#7C0A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 10C8.65685 10 10 8.65685 10 7C10 5.34315 8.65685 4 7 4C5.34315 4 4 5.34315 4 7C4 8.65685 5.34315 10 7 10Z" stroke="#7C0A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                            </button>
+                            <div class="custom-dropdown-menu" id="filterDropdown">
+                                <div class="custom-dropdown-item" data-value="asc">По возрастанию цены</div>
+                                <div class="custom-dropdown-item" data-value="desc">По убыванию цены</div>
+                                <div class="custom-dropdown-item" data-value="popularity">По популярности</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
             </div>
@@ -130,15 +147,24 @@
                 <div class="main-catalog_content">
                     <div class="catalog-content_top-block">
                         <div class="portfolio-top_title">аренда динамических приборов</div>
-                        <button class="portfolio-item_btn no-flex">фильтры
-                            <span class="btn_arror-left">
-                                <svg class="arror-left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="button-filter">
+                            <div class="custom-dropdown no-flex">
+                                <button class="btn-fil" type="button" id="filterButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <div class="btn-fil_text">Фильтры</div>
+                                  <svg class="arror-left no-flex" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20 7H11M14 17H5" stroke="#7C0A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M17 20C18.6569 20 20 18.6569 20 17C20 15.3431 18.6569 14 17 14C15.3431 14 14 15.3431 14 17C14 18.6569 15.3431 20 17 20Z" stroke="#7C0A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M7 10C8.65685 10 10 8.65685 10 7C10 5.34315 8.65685 4 7 4C5.34315 4 4 5.34315 4 7C4 8.65685 5.34315 10 7 10Z" stroke="#7C0A4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>     
-                            </span>
-                        </button>
+                                </svg> 
+                                </button>
+                                <div class="custom-dropdown-menu" id="filterDropdown">
+                                    <div class="custom-dropdown-item" data-value="asc">По возрастанию цены</div>
+                                    <div class="custom-dropdown-item" data-value="desc">По убыванию цены</div>
+                                    <div class="custom-dropdown-item" data-value="popularity">По популярности</div>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
                     <div class="catalog-content_main">
                         <table class="content-main_block table_blur">
@@ -566,7 +592,7 @@
                     <div class="instrumentation-content_top">
                         <div class="content-top_title">Динамические приборы освещения в аренду</div>
                     </div>
-                    <div class="instrumentation-content_botton">
+                    <div class="main-instrumentation_content_block">
                         <div class="instrumentation-botton_text">Их основной принцип действия – вращение оптической системы вместе с лампой. Приборы разделяются на 2 класса: рисующие и заливающие. Заливающие используют для заливки светом сцен, объектов, художественной подсветки помещений, декораций и т.д. Рисующими приборами формируют лучи определенной формы, проецируют логотипы, создают художественные световые объекты.</div>
                         <img class="image-inst" src="assets/images/protfolio/image-prot7.png" alt="">
                     </div>
@@ -861,9 +887,10 @@
             </div>
         </div>
     </footer>
+    <script src="js/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/header.js"></script>
-    <script src="js/footer.js"></script>
+    <script src="js/button-filter.js"></script>
     <script src="js/form-input.js"></script>
     <script src="js/svg-rev.js"></script>
 </body>

@@ -140,7 +140,7 @@
 }
 .content-top_title {
   text-align: center;
-  /* width: 586px; */
+  width:80.648vh;
 }
 .instrumentation-content_top {
   display: grid;
@@ -149,12 +149,22 @@
 .instrumentation-content_botton {
   margin-top: 6vh;
   display: flex;
+  justify-content: space-between;
   gap: 3.125vw;
   padding: 50px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+.main-instrumentation_content_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6vh;
+  gap: 3.125vw;
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
 .instrumentation-botton_text {
   font-family: "HelveticaNeueCyr";
   font-size: 0.833vw;
@@ -169,6 +179,17 @@
   width: 39.063vw;
   height: 25.608vh;
 }
+.image-inst7{
+  object-fit: cover;
+  width: 39.063vw;
+  height: 22.904vh;
+}
+.image-inst8{
+  object-fit: cover;
+  width: 39.063vw;
+  height: 25.604vh;
+}
+
 /* .main-catalog_backlight {
   top: 220px;
   left: -240px;
@@ -262,7 +283,7 @@
     font-weight: 400;
     line-height: 17.95px;
     letter-spacing: 0.05em;
-    text-align: left;
+    text-align: right;
     text-transform: uppercase;
     letter-spacing: 2px;
     order: 2;

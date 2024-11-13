@@ -12,7 +12,6 @@
   display: flex;
 }
 .top-projects {
-
   height: 40px;
   display: flex;
   gap: 0.625vw;
@@ -34,6 +33,7 @@
   padding: 0 1.042vw;
   text-decoration: none;
   z-index: -1;
+  height: 40px;
 }
 .portfolio-top_all {
   border: 1px solid rgba(255, 255, 255, 1);
@@ -137,7 +137,7 @@
 .portfolio_contents_main {
   display: flex;
   justify-content: space-between;
-  gap: 4vh;
+  gap: 3.3vmax;
   height: 100%;
   margin-bottom: 3vmax;
 }
@@ -175,7 +175,7 @@
   width: 1.042vw;
 }
 .prortfolio-content_item {
-  width: 760px;
+  width: 100%;
   text-decoration: none;
   display: grid;
   gap: 2vh;
@@ -455,6 +455,7 @@
   line-height: 13.93px;
   text-align: left;
   color: rgba(218, 35, 46, 1);
+  display: none;
 }
 /* btn-form */
 .form-down {

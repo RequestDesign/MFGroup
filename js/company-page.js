@@ -1,5 +1,5 @@
 var swiper = new Swiper(".mySwiper6", {
-    slidesPerView: 4,
+    slidesPerView: 'auto',
     spaceBetween: 17.8,
     centeredSlides: true,
     loop: true,
@@ -34,3 +34,6 @@ var swiper = new Swiper(".mySwiper6", {
 
 // Добавляем класс active-image_awards к слайду при инициализации
 swiper.slides[swiper.activeIndex].classList.add('active-image_awards');
+
+
+

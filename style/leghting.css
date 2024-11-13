@@ -17,6 +17,22 @@
 }
 .intr-image {
   width: 39.063vw;
+  height: 39.931vh;
+  object-fit: cover;
+}
+.intr-image2 {
+  width: 39.063vw;
+  height: 34.671vh;
+  object-fit: cover;
+}
+.intr-image3{
+  width: 39.063vw;
+  height: 39.731vh;
+  object-fit: cover;
+}
+.intr-image4{
+  width: 39.063vw;
+  height: 37.4vh;
   object-fit: cover;
 }
 .instrumentation-botton_title {
@@ -27,9 +43,15 @@
   text-align: left;
   color: white;
   margin-bottom: 2vh;
-  width: 35vw;
   text-transform: uppercase;
+  width: 39.063vw;
 }
+.border-teg {
+  border-bottom: 1px solid white;
+  color: white;
+  text-decoration: none;
+}
+
 .instrumentation-botton_title-min {
   font-family: "HelveticaNeueCyr";
   font-size: 0.938vw;
@@ -200,16 +222,16 @@
   .otherservices-content_main {
     width: 91vw;
   }
-  .main-customers{
+  .main-customers {
     margin: 80px 0;
   }
   .otherservices-content_top {
     justify-content: center;
   }
-  .otherservices .content-top_title{
+  .otherservices .content-top_title {
     width: 100%;
   }
-  .main-customers .content-top_title{
+  .main-customers .content-top_title {
     width: 100%;
   }
   .main-customers .catalog-content_main {
@@ -240,7 +262,6 @@
   }
   .main-customers .content-main_item .main-item_img {
     width: 90%;
-
   }
   .main-customers .content-main_item .main-item_title {
     width: 100%;
@@ -279,25 +300,26 @@
   }
   .main-customers .content-main_block {
     height: 173px !important;
-    width: 91vw; 
-    overflow: hidden; 
-    position: relative; 
+    width: 91vw;
+    overflow: hidden;
+    position: relative;
   }
   #catalog-table {
     display: flex;
     transition: transform 0.5s ease;
   }
   #catalog-table tr {
-    display: flex !important; 
-    flex-direction: row !important; 
+    display: flex !important;
+    flex-direction: row !important;
     gap: 0;
   }
   #catalog-table td {
-    width: 100% !important; 
-    height: 173px !important; 
+    width: 100% !important;
+    height: 173px !important;
     position: relative;
   }
-  .main-customers .content-main_item .block-image,.yo-logo{
+  .main-customers .content-main_item .block-image,
+  .yo-logo {
     height: 62px;
   }
 }

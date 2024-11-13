@@ -1,6 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
-  spaceBetween: 0,
+  spaceBetween: 12,
   slidesOffsetAfter: 0,
   navigation: {
     nextEl: "#nextBtn",
@@ -9,7 +9,7 @@ var swiper = new Swiper(".mySwiper", {
   grabCursor: true,
   breakpoints: {
     769:{
-      spaceBetween: 0,
+      spaceBetween: 12,
       slidesOffsetAfter: 0,
     },
     768: {

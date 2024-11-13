@@ -151,6 +151,7 @@ body {
   font-weight: 400;
   font-size: 1.042vw;
   color: white;
+  text-align: right;
 }
 .header-down {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -289,6 +290,7 @@ body {
   background: none;
   border: none;
   display: inline-flex;
+  /* height: 50%; */
 }
 
 /* portfolio */
@@ -324,6 +326,7 @@ body {
   text-transform: uppercase;
   color: rgba(124, 10, 77, 1);
   letter-spacing: 2px;
+  height: 4.84vh;
 }
 .portfolio-item_btn:hover {
   box-shadow: 4.5px 0px 15px 3px rgba(255, 255, 255, 0.178);
@@ -514,12 +517,12 @@ body {
 .arr-up {
   font-size: 0.238vw;
   width: 16px;
-  height: 40px;
+  height: 3.457vmax;
 }
 .arr-down {
   font-size: 0.238vw;
   width: 16px;
-  height: 40px;
+  height: 3.457vmax;
 }
 /* footer */
 .footer-logo {
@@ -798,6 +801,7 @@ body {
     width: 76.8vw;
     font-size: 4.267vw;
     line-height: 5.547vw;
+    text-align: left;
   }
   .vector {
     width: 70%;
@@ -1186,8 +1190,7 @@ body {
     margin-bottom: 40px;
     display: none;
     transition: opacity 1s ease, max-height 0.8s ease;
-    max-height: 0;
-    opacity: 0;
+  
   }
   .arrow-icon {
     cursor: pointer;

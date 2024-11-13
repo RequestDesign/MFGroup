@@ -8,7 +8,12 @@
   width: auto;
 }
 .main-advantages .swiper {
-  height: 510px
+  /* height: 510px; */
+}
+.main-portfolio .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 .main-advantages .swiper-wrapper {
   display: grid;
@@ -22,12 +27,12 @@
 /* .main-awards.swiper-button-lock {
     display: block !important; 
 } */
- @media (max-width:48em) {
-    .main-advantages .swiper-wrapper{
-        display: flex;
-    }
-    .swiper-slide {
-        width: auto; /* Allow slides to take their content width */
-        height: 100%; /* Keep height consistent */
-    }
- }
+@media (max-width: 48em) {
+  .main-advantages .swiper-wrapper {
+    display: flex;
+  }
+  .swiper-slide {
+    width: auto; /* Allow slides to take their content width */
+    height: 100%; /* Keep height consistent */
+  }
+}

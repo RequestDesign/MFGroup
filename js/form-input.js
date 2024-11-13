@@ -45,22 +45,40 @@ const fileInput = document.getElementById("input__file");
 const fileNameDisplay = document.getElementById("file-name");
 const removeFileButton = document.getElementById("remove-file");
 const fileText = document.getElementById("file-text");
+const errorMessage = document.querySelector(".input__file-button-err");
 
 fileInput.addEventListener("change", () => {
   if (fileInput.files.length > 0) {
-    const fileName = fileInput.files[0].name;
-    fileNameDisplay.textContent = fileName;
-    removeFileButton.style.display = "inline";
-    fileText.style.display = "none";
+      const file = fileInput.files[0];
+      const fileName = file.name;
+      const fileSizeMB = file.size / (1024 * 1024); // Convert bytes to MB
+
+      if (fileSizeMB > 3) {
+          // File is too large
+          errorMessage.style.display = "flex"; // Show error message
+          fileNameDisplay.textContent = "";
+          removeFileButton.style.display = "none";
+          fileText.style.display = "inline";
+      } else {
+          // File is acceptable
+          errorMessage.style.display = "none"; // Hide error message
+          fileNameDisplay.textContent = fileName;
+          removeFileButton.style.display = "inline";
+          fileText.style.display = "none";
+      }
   } else {
-    fileNameDisplay.textContent = "";
-    removeFileButton.style.display = "none";
-    fileText.style.display = "inline";
+      // No file selected
+      fileNameDisplay.textContent = "";
+      removeFileButton.style.display = "none";
+      fileText.style.display = "inline";
+      errorMessage.style.display = "none"; // Hide error message
   }
 });
+
 removeFileButton.addEventListener("click", () => {
   fileInput.value = "";
   fileNameDisplay.textContent = "";
   removeFileButton.style.display = "none";
   fileText.style.display = "inline";
+  errorMessage.style.display = "none"; // Hide error message
 });
