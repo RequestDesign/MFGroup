@@ -77,6 +77,7 @@
 .otherservices-content_top {
   display: grid;
   justify-content: center;
+  width: 83vw;
 }
 .otherservices-content_main {
   width: 35.417vw;
@@ -134,8 +135,8 @@
   margin-top: -5px;
 }
 .main-customers .content-main_item {
-  height: 35.5vh;
-  gap: 1vh;
+  height: 20.5vmax;
+  gap: 0.5vh;
 }
 /* main-awards */
 .main-awards {

@@ -164,8 +164,8 @@
   display: grid;
   justify-items: center;
   width: auto;
-  gap: 4vh;
-  z-index: 3;
+  gap: 1.7vmax;
+  z-index: 1;
 }
 .main-similar .swiper {
   width: 100%;

@@ -41,7 +41,7 @@
 }
 .content-main_item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 5vh 1.563vw 5vh 1.563vw;
+  padding: 2.5vmax 1.563vw 2vmax 1.563vw;
   position: relative;
   transition: all 0.5s ease;
 }
@@ -65,6 +65,7 @@
 .services_content_botton {
   display: flex;
   justify-content: center;
+  width: 83vw;
 }
 .prortfolio-content_project {
   display: grid;
@@ -82,6 +83,7 @@
 .services-content_main {
   display: grid;
   gap: 2.25vw;
+  width: 83vw;
 }
 .image-block_project {
   position: relative;
@@ -128,10 +130,12 @@
 }
 .main-services_content {
   display: grid;
+  width: 91vw;
   gap: 5vh;
 }
 .services-content_project {
   position: relative;
+  width: 100%;
 }
 /* main-instrumentation */
 .main-instrumentation {
@@ -140,7 +144,9 @@
 }
 .content-top_title {
   text-align: center;
-  width:80.648vh;
+}
+.otherservices-content_top{
+  width: 83vw;
 }
 .instrumentation-content_top {
   display: grid;
@@ -202,6 +208,7 @@
 .main-typesofscenes_content {
   display: grid;
   justify-items: center;
+  width: 83vw;
 }
 .typesofscenes-content_main {
   width: 44.583vw;
@@ -226,6 +233,7 @@
     border: 2px solid rgba(255, 255, 255, 1);
   }
 }
+
 .typesofscenes-item_title {
   font-family: "HelveticaNeueCyr";
   font-size: 20px;
