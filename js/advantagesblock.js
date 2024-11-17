@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper7", {
+var swiper = new Swiper(".mySwiper8", {
     direction: "vertical", 
     slidesPerView: 1,
     spaceBetween: 30,
@@ -27,8 +27,15 @@ var swiper = new Swiper(".mySwiper7", {
 
 function updateCounter() {
     const currentIndex = swiper.realIndex + 1; 
-    const totalSlides = swiper.slides.length;
-    document.querySelector('.advantages-botton_numder').innerHTML = `${String(currentIndex).padStart(2, '0')}<span class="numder-small">/${String(totalSlides).padStart(2, '0')}</span>`;
+    const totalSlides = swiper.slides.length; 
+
+    console.log(`Current Index: ${currentIndex}, Total Slides: ${totalSlides}`);
+
+    const counterElement = document.querySelector('.advantages-botton_numder');
+    if (counterElement) {
+        counterElement.innerHTML = `${String(currentIndex).padStart(2, '0')}<span class="numder-small">/${String(totalSlides).padStart(2, '0')}</span>`;
+    }
+
 }
 
 window.addEventListener('resize', function() {

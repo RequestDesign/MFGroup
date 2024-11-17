@@ -19,7 +19,7 @@
   font-family: "Futura PT";
   font-size: 1.667vw;
   font-weight: 600;
-  line-height: 3.8vh;
+  /* line-height: 3.8vh; */
   text-align: left;
   color: white;
   text-transform: uppercase;
@@ -51,7 +51,7 @@
   font-family: "Futura PT";
   font-size: 2.708vw;
   font-weight: 600;
-  line-height: 6.2vh;
+  /* line-height: 6.2vh; */
   text-align: center;
   color: white;
   text-transform: uppercase;
@@ -64,7 +64,7 @@
   font-family: "Futura PT";
   font-size: 2.083vw;
   font-weight: 600;
-  line-height: 4.8vh;
+  line-height: normal;
   text-align: center;
   color: white;
 }
@@ -99,6 +99,7 @@
 }
 .main-awards_content {
   display: grid;
+  justify-items: center;
   gap: 6vh;
 }
 .awards-content_main {
@@ -260,11 +261,11 @@
     width: 100%;
   }
   .main-family .portfolio-item_btn {
-    width: 23vmax;
+    width: 22.422vmax;
     order: 3;
   }
   .portfolio-item_btn {
-    width: 35.422vmax;
+    width: 33.622vh;
   }
   .family-info_text {
     margin-top: 3vh;

@@ -81,7 +81,7 @@ body {
 .dropdown:hover .dropdown-menu {
   display: block;
   inset: 6.03vh auto auto 0;
-  z-index: 5 !important;
+  z-index: 6 !important;
 }
 .sorting_text {
   font-family: "HelveticaNeueCyr";
@@ -138,7 +138,7 @@ body {
 }
 .header-main_title {
   color: white;
-  width: 38.594vw;
+  width: 42.594vw;
   font-family: "Futura PT";
   font-weight: 600;
   font-size: 2.708vw;
@@ -284,7 +284,7 @@ body {
 }
 .catalog-btns {
   display: grid;
-  gap: 2.4vh;
+  gap: 0.4vh;
 }
 .catalog-btn {
   background: none;
@@ -326,7 +326,7 @@ body {
   text-transform: uppercase;
   color: rgba(124, 10, 77, 1);
   letter-spacing: 2px;
-  height: 4.84vh;
+  /* height: 4.84vh; */
 }
 .portfolio-item_btn:hover {
   box-shadow: 4.5px 0px 15px 3px rgba(255, 255, 255, 0.178);
@@ -470,7 +470,7 @@ body {
 }
 .advantages-item_content {
   display: grid;
-  gap: 2.604vw;
+  gap: 1.604vw;
   align-content: space-between;
   justify-items: right;
 }
@@ -497,7 +497,7 @@ body {
   color: white;
   font-family: "HelveticaNeueCyr";
   font-weight: 400;
-  font-size: 1.042vw;
+  font-size: 0.942vw;
 }
 .item-content_numder {
   color: white;
@@ -516,12 +516,12 @@ body {
 }
 .arr-up {
   font-size: 0.238vw;
-  width: 16px;
+  width: 0.521vw;
   height: 3.457vmax;
 }
 .arr-down {
   font-size: 0.238vw;
-  width: 16px;
+  width: 0.521vw;
   height: 3.457vmax;
 }
 /* footer */
@@ -669,7 +669,7 @@ body {
   border-radius: 50%;
   background-color: rgba(177, 177, 177, 0.4);
   box-shadow: -350px 70px 310px 220px rgba(177, 177, 177, 0.7);
-  z-index: -3;
+  z-index: 0;
   border: none;
 }
 .main-portfolio_backlight {
@@ -743,6 +743,12 @@ body {
   box-shadow: 0px 180px 350px 250px rgba(177, 177, 177, 0.4);
   z-index: -3;
 }
+.on-block{
+  display: none;
+}
+.no-block{
+  display: block;
+}
 .no-grid {
   display: grid;
 }
@@ -764,6 +770,7 @@ body {
 .advantages-botton_btn{
   display: none;
 }
+
 @media (max-width: 48em) {
   #map {
     width: 91vw;
@@ -921,8 +928,11 @@ body {
     justify-content: space-between;
     height: 100%;
   }
+  .portfolio-new{
+    justify-content: center !important;
+  }
   .portfolio-item_btn {
-    font-size: 2.7vw;
+    font-size: 2.4vw;
     padding: 9px 14px;
     gap: 12px;
   }
@@ -1251,6 +1261,12 @@ body {
   }
   .no-flex {
     display: none;
+  }
+  .no-block{
+    display: none;
+  }
+  .on-block{
+    display: block;
   }
   .main-portfolio .main-portfolio_backlight {
     box-shadow: 420px 270px 320px 100px rgba(177, 177, 177, 0.7);

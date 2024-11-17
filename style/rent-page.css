@@ -4,6 +4,7 @@
 .main-rent_content {
   display: grid;
   justify-content: center;
+  justify-items: center;
 }
 .content-top_title {
   font-family: "Futura PT";
@@ -34,6 +35,7 @@
   width: 80%;
   left: 9%;
 }
+
 .block-input {
   display: grid;
   justify-content: space-between;
@@ -147,9 +149,6 @@
   cursor: pointer;
 }
 
-.down-btn {
-  height: 5vh;
-}
 .rent-content_main {
   display: grid;
   gap: 12px;
@@ -160,17 +159,40 @@
 .input-equipment_active {
   display: flex;
 }
-
-.down-btn {
+.font-down_btn{
+  border: none;
+  height: 5vh;
+  padding: 0 2.083vw;
+  background-color: rgba(230, 230, 230, 1);
+  font-family: "Futura PT";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(31, 31, 31, 0.5);
+  cursor: no-drop !important;
+  filter: grayscale(0);
+}
+.down-btn-active.active {
+  color: rgba(124, 10, 77, 1); 
+  cursor: pointer !important; 
+}
+.font-down_btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.833vw;
 }
-.down-btn .arror-left {
+.font-down_btn .arror-left {
   filter: grayscale(1);
 }
 @media (max-width: 48em) {
+  .font-down_btn{
+    font-size: 16px;
+    gap: 2vw;
+  }
   .content-top_title {
     width: 230px;
     font-size: 28px;
@@ -180,7 +202,7 @@
   .content-top_text {
     font-size: 16px;
     text-align: left;
-    width: 91vw;
+    width: 100%;
   }
   .main-rent_content {
     width: 91vw;

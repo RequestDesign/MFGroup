@@ -35,6 +35,11 @@
   height: 37.4vh;
   object-fit: cover;
 }
+.intr-image5{
+  width: 39.063vw;
+  height: 43.731vh;
+  object-fit: cover;
+}
 .instrumentation-botton_title {
   font-family: "Futura PT";
   font-size: 1.667vw;
@@ -196,7 +201,7 @@
     order: 1;
     width: 91vw;
   }
-  .intr-image {
+  .intr-image,.intr-image2,.intr-image3,.intr-image4 {
     width: 100%;
     height: 18.557vmax;
     object-fit: cover;

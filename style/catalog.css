@@ -262,6 +262,7 @@
 .main-way_block{
   display: none;
 }
+
 @media (max-width: 769px) {
   .main-item_btn {
     padding: 0.6vh 0.3vw;
@@ -327,10 +328,16 @@
     top: 24% !important;
   }
   .main-way_block {
+    display: block;
+  }
+  .way_block_top{
     display: flex;
     justify-content: space-between;
   }
-
+  .services-content_top,
+  .services_content_botton{
+    width: 91vw;
+  }
   .no-flex {
     display: none;
   }
@@ -371,7 +378,7 @@
     width: 100%;
     font-size: 14px;
   }
-  .image-inst {
+  .image-inst,.image-inst7,.image-inst8 {
     width: 100%;
     height: 18.557vmax;
     object-fit: cover;
@@ -401,8 +408,15 @@
     height: 15vmin;
     object-fit: cover;
   }
+  .main-catalog .portfolio-item_btn{
+    width: 150px;
+  }
   .portfolio-item_btn {
-    width: 24.422vmax;
+    width: 22.422vmax;
+  }
+  .main-instrumentation_content_block{
+    display: grid;
+    gap: 20px;
   }
   .table_blur,
   .content-main_block {

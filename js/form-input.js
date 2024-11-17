@@ -1,27 +1,27 @@
 document.querySelectorAll(".form-input").forEach((input) => {
-  const label = input.nextElementSibling; 
+  const label = input.nextElementSibling;
 
   input.addEventListener("focus", function () {
-    label.classList.add("active"); 
+    label.classList.add("active");
   });
 
   input.addEventListener("blur", function () {
     if (!this.value) {
       label.classList.remove("active");
     }
-    checkInputs(); 
+    checkInputs();
   });
   input.addEventListener("input", function () {
     if (this.value) {
-      label.classList.add("active"); 
+      label.classList.add("active");
     } else {
-      label.classList.remove("active"); 
+      label.classList.remove("active");
     }
-    checkInputs(); 
+    checkInputs();
   });
 
   label.addEventListener("click", function () {
-    this.classList.add("clicked"); 
+    this.classList.add("clicked");
   });
 });
 
@@ -49,29 +49,26 @@ const errorMessage = document.querySelector(".input__file-button-err");
 
 fileInput.addEventListener("change", () => {
   if (fileInput.files.length > 0) {
-      const file = fileInput.files[0];
-      const fileName = file.name;
-      const fileSizeMB = file.size / (1024 * 1024); // Convert bytes to MB
+    const file = fileInput.files[0];
+    const fileName = file.name;
+    const fileSizeMB = file.size / (1024 * 1024);
 
-      if (fileSizeMB > 3) {
-          // File is too large
-          errorMessage.style.display = "flex"; // Show error message
-          fileNameDisplay.textContent = "";
-          removeFileButton.style.display = "none";
-          fileText.style.display = "inline";
-      } else {
-          // File is acceptable
-          errorMessage.style.display = "none"; // Hide error message
-          fileNameDisplay.textContent = fileName;
-          removeFileButton.style.display = "inline";
-          fileText.style.display = "none";
-      }
-  } else {
-      // No file selected
+    if (fileSizeMB > 3) {
+      errorMessage.style.display = "flex";
       fileNameDisplay.textContent = "";
       removeFileButton.style.display = "none";
       fileText.style.display = "inline";
-      errorMessage.style.display = "none"; // Hide error message
+    } else {
+      errorMessage.style.display = "none";
+      fileNameDisplay.textContent = fileName;
+      removeFileButton.style.display = "inline";
+      fileText.style.display = "none";
+    }
+  } else {
+    fileNameDisplay.textContent = "";
+    removeFileButton.style.display = "none";
+    fileText.style.display = "inline";
+    errorMessage.style.display = "none";
   }
 });
 
@@ -80,5 +77,5 @@ removeFileButton.addEventListener("click", () => {
   fileNameDisplay.textContent = "";
   removeFileButton.style.display = "none";
   fileText.style.display = "inline";
-  errorMessage.style.display = "none"; // Hide error message
+  errorMessage.style.display = "none";
 });

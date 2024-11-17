@@ -4,12 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function initFooterLinks() {
         titles.forEach(title => {
             title.addEventListener('click', function() {
-                // Проверка ширины окна
                 if (window.matchMedia("(max-width: 48em)").matches) {
                     const currentLinks = this.nextElementSibling;
                     const isActive = currentLinks.style.display === 'grid';
 
-                    // Закрываем все блоки и сбрасываем стрелки
+            
                     titles.forEach(t => {
                         const links = t.nextElementSibling;
                         links.style.display = 'none';
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         t.querySelector('.arrow-drop-down').style.display = 'grid';
                     });
 
-                    // Если текущий блок не активен, открываем его
                     if (!isActive) {
                         currentLinks.style.display = 'grid';
                         this.querySelector('.arrow-drop-up').style.display = 'block';
@@ -28,6 +26,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Инициализация ссылок при загрузке страницы
     initFooterLinks();
 });

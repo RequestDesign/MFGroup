@@ -5,7 +5,7 @@
   width: 100%;
 }
 .main {
-  margin-top: 3vmax;
+  padding-top: 3vmax;
   position: relative;
 }
 .portfolio-top_projects {
@@ -293,7 +293,7 @@
   font-family: "Futura PT";
   font-size: 2.708vw;
   font-weight: 600;
-  line-height: 62.4px;
+  line-height: 5.393vh;
   text-align: center;
   text-transform: uppercase;
   width: 37.708vw;
@@ -528,6 +528,7 @@
 .down-statement_checkbox:disabled::after {
   filter: grayscale(100%);
 }
+
 .down-btn {
   border: none;
   height: 56px;
