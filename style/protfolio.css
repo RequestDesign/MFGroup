@@ -16,7 +16,6 @@
   display: flex;
   gap: 0.625vw;
   position: relative;
-  overflow: hidden;
 }
 .portfolio-top_project {
   display: grid !important;
@@ -95,9 +94,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: -50px;
+  right: -20px;
   top: 10%;
-  right: 0;
   width: 32px;
   height: 32px;
   border: none;
@@ -705,7 +703,7 @@
   .block-white_text {
     font-size: 4.8vw;
     left: 23vmin;
-    width: 100%;
+    width: 48vw;
   }
   .main-form_fon {
     margin-bottom: 80px;

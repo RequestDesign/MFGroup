@@ -8,7 +8,7 @@ var swiper = new Swiper(".mySwiper", {
   },
   grabCursor: true,
   breakpoints: {
-    769:{
+    769: {
       spaceBetween: 12,
       slidesOffsetAfter: 0,
     },
@@ -17,4 +17,15 @@ var swiper = new Swiper(".mySwiper", {
       slidesOffsetAfter: 0,
     },
   },
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".portfolio-top_btn");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      buttons.forEach((btn) => btn.classList.remove("active-btn"));
+      this.classList.add("active-btn");
+    });
+  });
 });
