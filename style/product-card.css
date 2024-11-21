@@ -17,7 +17,7 @@
 .image-content {
   object-fit: cover;
   width: 39.323vw;
-  /* height: 41.487vh; */
+  height: 21.487vmax;
 }
 .content-image_numder {
   display: flex;
