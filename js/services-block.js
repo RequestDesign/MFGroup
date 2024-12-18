@@ -1,70 +1,43 @@
-const btnUp = document.getElementById("btn-up");
-const btnDown = document.getElementById("btn-down");
-const catalogItems = document.querySelectorAll(".main-catalog_item");
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("ready");
 
-let currentIndex = 2; 
+  function scrollActive(direction) {
+    const buttons = document.querySelectorAll(".text-fon");
+    const activeButton = document.querySelector(".text-fon.active-text");
+    if (!activeButton) return;
+    const currentIndex = Array.from(buttons).indexOf(activeButton);
+    let newIndex = (currentIndex + direction + buttons.length) % buttons.length;
 
-catalogItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    
-    const button = item.querySelector(".text-fon");
-    const imageBtn = item.querySelector(".image-btn");
+    buttons[newIndex].click();
+  }
 
-    document.querySelectorAll(".text-fon").forEach((btn) => {
-      btn.classList.remove("active-text");
-    });
-
-    document.querySelectorAll(".image-btn").forEach((btn) => {
-      btn.classList.remove("image-active");
-      btn.style.display = "none"; 
-    });
-
-    button.classList.toggle("active-text");
-
-    if (imageBtn.classList.contains("image-active")) {
-      imageBtn.classList.remove("image-active"); 
-      imageBtn.style.display = "none";
-    } else {
-      imageBtn.classList.add("image-active");
-      imageBtn.style.display = "flex"; 
-    }
+  document.getElementById("btn-up").addEventListener("click", function () {
+    scrollActive(-1);
   });
-});
-
-function updateActiveItem() {
-    catalogItems.forEach((item, index) => {
-        const button = item.querySelector(".text-fon");
-        const imageBtn = item.querySelector(".image-btn");
-
-        button.classList.remove("active-text");
-        imageBtn.classList.remove("image-active");
-
-        if (index === currentIndex) {
-            button.classList.add("active-text");
-            imageBtn.classList.add("image-active");
-        }else if(index !== currentIndex){
-            button.classList.remove("active-text");
-            imageBtn.classList.remove("image-active"); 
-            imageBtn.style.display = "none";
-        }
+  document.getElementById("btn-down").addEventListener("click", function () {
+    scrollActive(1);
+  });
+  document.querySelectorAll(".text-fon").forEach((button) => {
+    button.addEventListener("click", function () {
+      document
+        .querySelectorAll(".text-fon")
+        .forEach((btn) => btn.classList.remove("active-text"));
+      this.classList.add("active-text");
+      const targetImage = this.getAttribute("data-target");
+      document
+        .querySelectorAll(".image-btn")
+        .forEach((img) => img.classList.remove("image-active"));
+      const activeImage = document.querySelector(
+        `.image-btn img[data-image="${targetImage}"]`
+      );
+      if (activeImage) {
+        activeImage.parentElement.classList.add("image-active");
+      }
     });
-}
-btnUp.addEventListener('click', () => {
-    if (currentIndex > 0) {
-        currentIndex--;
-    } else {
-        currentIndex = catalogItems.length - 1;
-    }
-    updateActiveItem();
-});
+  });
 
-btnDown.addEventListener('click', () => {
-    if (currentIndex < catalogItems.length - 1) {
-        currentIndex++;
-    } else {
-        currentIndex = 0; 
-    }
-    updateActiveItem();
+  const defaultButton = document.querySelector(".text-fon.active-text");
+  if (defaultButton) {
+    defaultButton.click();
+  }
 });
-
-updateActiveItem();

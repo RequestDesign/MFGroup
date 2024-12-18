@@ -11,6 +11,7 @@ document.querySelectorAll(".form-input").forEach((input) => {
     }
     checkInputs();
   });
+
   input.addEventListener("input", function () {
     if (this.value) {
       label.classList.add("active");
@@ -28,10 +29,14 @@ document.querySelectorAll(".form-input").forEach((input) => {
 function checkInputs() {
   const inputs = document.querySelectorAll(".form-input");
   const submitButton = document.querySelector(".down-btn");
+  const agreementCheckbox = document.getElementById("agreement");
+  
   const allFilled = Array.from(inputs).every(
     (input) => input.value.trim() !== ""
   );
-  if (allFilled) {
+  const isAgreementChecked = agreementCheckbox.checked; 
+
+  if (allFilled && isAgreementChecked) {
     submitButton.classList.add("form-btn_active");
     submitButton.disabled = false;
     submitButton.style.cursor = "pointer";
@@ -41,11 +46,17 @@ function checkInputs() {
     submitButton.style.cursor = "no-drop";
   }
 }
+
+const agreementCheckbox = document.getElementById("agreement");
+agreementCheckbox.addEventListener("change", checkInputs);
+
 const fileInput = document.getElementById("input__file");
 const fileNameDisplay = document.getElementById("file-name");
 const removeFileButton = document.getElementById("remove-file");
 const fileText = document.getElementById("file-text");
 const errorMessage = document.querySelector(".input__file-button-err");
+
+
 
 fileInput.addEventListener("change", () => {
   if (fileInput.files.length > 0) {

@@ -13,7 +13,7 @@
 .area-item_img {
   width: 17.969vw;
   height: 26vh;
-  object-fit: cover;
+  object-fit: contain;
 }
 @media (max-width: 48em) {
   .area-item_img {
