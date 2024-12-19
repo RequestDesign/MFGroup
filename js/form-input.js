@@ -63,7 +63,7 @@ fileInput.addEventListener("change", () => {
     const file = fileInput.files[0];
     const fileName = file.name;
     const fileSizeMB = file.size / (1024 * 1024);
-
+ 
     if (fileSizeMB > 3) {
       errorMessage.style.display = "flex";
       fileNameDisplay.textContent = "";
