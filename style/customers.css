@@ -35,6 +35,8 @@
 }
 .atals {
   width: 8.021vw;
+  filter: invert(1) brightness(2) contrast(0.88) grayscale(1); 
+  transition: filter 0.5s ease;
 }
 .agen {
   width: 8.594vw;
@@ -44,33 +46,49 @@
 }
 .lacou {
   width: 11.458vw;
+  filter: invert(1) brightness(2) contrast(0.88) grayscale(1);
+  transition: filter 0.5s ease; 
 }
 .martin {
   width: 7.552vw;
+  filter: invert(1) brightness(2) contrast(0.88) grayscale(1); 
+  transition: filter 0.5s ease;
 }
 .nexo {
   width: 6.563vw;
+  filter: invert(1) brightness(2) contrast(0.88) grayscale(1); 
+  transition: filter 0.5s ease;
 }
 .robert {
   width: 7.917vw;
+  filter: invert(1) brightness(2) contrast(0.88) grayscale(1);
+  transition: filter 0.5s ease; 
 }
 .robe {
   width: 8.073vw;
+  filter: invert(1) brightness(2) contrast(0.88) grayscale(1); 
+  transition: filter 0.5s ease;
 }
 .prolve {
   width: 8.802vw;
 }
 .fenix {
   width: 11.042vw;
+  filter: invert(1) brightness(2) contrast(0.88) grayscale(1); 
+  transition: filter 0.5s ease;
 }
 .doughty {
   width: 9.688vw;
 }
 .stage {
   width: 9.688vw;
+  filter: invert(1) brightness(2) contrast(0.88) grayscale(1); 
+  transition: filter 0.5s ease;
 }
 .allen {
   width: 11.25vw;
+  filter: invert(1) brightness(2) contrast(0.88) grayscale(1); 
+  transition: filter 0.5s ease;
 }
 .clay {
   width: 8.125vw;
