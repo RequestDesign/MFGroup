@@ -790,6 +790,10 @@ body {
     width: 91.467vw !important;
     overflow: hidden;
   }
+  .video-iframe{
+    width: 100% !important;
+    height: 55vw !important;
+  }
   .main-container {
     margin: 0;
     margin-left: 4.267vw !important;

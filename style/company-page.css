@@ -80,6 +80,9 @@
 .main-awards .services-content_top {
   justify-content: center;
 }
+.main-video{
+  margin: 18vh 0;
+}
 .content_main-video {
   width: 53.333vw;
 }

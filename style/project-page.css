@@ -24,9 +24,9 @@
   gap: 16px;
 }
 .main-portfolio {
-  margin-bottom: 12px;
+  margin-bottom: 0.625vw;
 }
-.main-bestproject_top{
+.main-bestproject_top {
   width: 10%;
 }
 .main-portfolio_main {
@@ -162,7 +162,19 @@
 .main-image_numder {
   display: none;
 }
-
+.main-portfolio_main-content-iframe {
+  
+}
+.main-portfolio_main-content-iframe_content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.042vw;
+}
+.video-iframe {
+  width: 83.333vw;
+  height: 36.25vw;
+}
 @media (max-width: 48em) {
   .main {
     margin-top: 20px;
@@ -174,7 +186,7 @@
   .bestproject-top_prev {
     font-size: 16px;
   }
-  .main-bestproject_top{
+  .main-bestproject_top {
     width: 30%;
   }
   .main-portfolio_main {
@@ -184,7 +196,7 @@
     height: 35.498vh;
     margin-top: 20px;
   }
-  .main-portfolio_main-content{
+  .main-portfolio_main-content {
     margin-left: 4.267vw !important;
     margin-right: 4.267vw !important;
     width: 91.467vw !important;
