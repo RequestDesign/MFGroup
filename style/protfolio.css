@@ -180,8 +180,8 @@
 }
 
 .prortfolio-block_white {
-  background-color: white;
-  height: 100%;
+  background: linear-gradient(to left, rgb(225 142 191), rgb(155 151 216));
+  height: 15.969vw;
   position: relative;
   width: 25.729vw;
 }
@@ -644,6 +644,7 @@
   }
   .prortfolio-block_white{
     width: 91vw;
+    height: 63.125vw;
   }
   .portfolio-top_btns {
     width: 100%;
