@@ -414,11 +414,11 @@
     height: 24px;
   }
   .portfolio-item_btn {
-    width: 100%;
+    width: auto;
     text-align: center;
     display: flex;
     justify-content: center;
-    white-space:nowrap;
+    white-space: nowrap;
   }
   .main-catalog .portfolio-top_title {
     font-size: 5.8vw;

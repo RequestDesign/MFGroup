@@ -264,11 +264,11 @@
     width: 100%;
   }
   .main-family .portfolio-item_btn {
-    width: 22.422vmax;
+    width: auto;
     order: 3;
   }
   .portfolio-item_btn {
-    width: 33.622vh;
+    width: auto;
   }
   .family-info_text {
     margin-top: 3vh;

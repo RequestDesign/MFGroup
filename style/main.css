@@ -362,7 +362,7 @@ body {
   text-align: left;
   font-family: "Futura PT";
   font-weight: 600;
-  font-size: 1.667vw;
+  font-size: 1.467vw;
   width: 18.333vw;
   line-height: 3.84vh;
 }
@@ -396,6 +396,7 @@ body {
   background: #101010;
   border: 0.408vw solid #101010;
   margin-left: -2px;
+  margin-right: 5vw;
 }
 .portfolio_main-image {
   display: flex;
@@ -872,6 +873,9 @@ body {
   .number-mobl {
     order: 3;
   }
+  .svg-image{
+    width: 5.625vw;
+  }
   .header-top {
     align-items: end;
     height: 45px;
@@ -933,6 +937,8 @@ body {
     display: flex;
     justify-content: space-between;
     height: 100%;
+    margin-right: 0;
+    /* width: fit-content; */
   }
   .portfolio-new{
     justify-content: center !important;
@@ -956,14 +962,26 @@ body {
 
   .main-content_text {
     position: absolute;
-    bottom: 68px;
+    bottom: 8.813vh;
     left: 28px;
     z-index: 2;
-    font-size: 16px;
-    width: 100%;
+    font-size: 3vw;
+    width: 77.25vw;
     font-weight: 400;
     font-family: "HelveticaNeueCyr";
     text-transform: capitalize;
+    line-height: normal;
+  }
+  .mySwiper1 .swiper-slide::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(101, 100, 100, 0.037) 0%, rgb(0, 0, 0) 100%);
+    pointer-events: none;
   }
   /* catalog */
   .main-catalog {

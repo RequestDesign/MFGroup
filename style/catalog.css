@@ -82,6 +82,7 @@
 
 .services-content_main {
   display: grid;
+  justify-items: center;
   gap: 2.25vw;
   width: 83vw;
 }
@@ -156,6 +157,7 @@
   margin-top: 6vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 3.125vw;
   padding: 50px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -339,7 +341,7 @@
     width: 91vw;
   }
   .no-flex {
-    display: none;
+    display: none !important;
   }
   .main-item_border {
     border: none;
@@ -409,10 +411,10 @@
     object-fit: cover;
   }
   .main-catalog .portfolio-item_btn{
-    width: 150px;
+    width: auto;
   }
   .portfolio-item_btn {
-    width: 22.422vmax;
+    width: auto;
   }
   .main-instrumentation_content_block{
     display: grid;
