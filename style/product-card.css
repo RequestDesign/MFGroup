@@ -439,6 +439,7 @@
   }
   .main-item_img {
     width: 44.267vw;
+    height: auto;
   }
   .main-item_title {
     font-size: 14px;
@@ -456,7 +457,7 @@
   }
   .content-main_item {
     border: 0;
-    /* max-width: 44.4vw; */
+    max-width: fit-content;
     padding: 0;
     gap: 12px;
   }

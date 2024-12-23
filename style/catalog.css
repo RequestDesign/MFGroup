@@ -434,7 +434,7 @@
   }
   .content-main_item {
     border: 0;
-    width: 40.8vw;
+    width: fit-content;
     padding: 0;
     gap: 12px;
   }
@@ -443,6 +443,7 @@
   }
   .main-item_img {
     width: 42.133vw;
+    height: auto;
   }
   .main-item_title {
     height: 51px;
