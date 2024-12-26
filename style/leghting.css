@@ -27,7 +27,7 @@
 }
 .intr-image3{
   width: 39.063vw;
-  height: 39.731vh;
+  height: 21.458vw;
   object-fit: cover;
 }
 .intr-image4{
@@ -203,13 +203,14 @@
     width: 91vw;
   }
   .intr-image,.intr-image2,.intr-image3,.intr-image4 {
-    width: 100%;
-    height: 18.557vmax;
+    width: 91.467vw;
+    height: 56.25vw;
     object-fit: cover;
     order: 2;
   }
   .instrumentation-botton_title {
-    font-size: 18px;
+    font-size: 5.625vw;
+    line-height: normal;
     width: 100%;
   }
   .instrumentation-botton_title-min {
@@ -258,6 +259,7 @@
   }
   .main-customers .mob-block {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
   .main-customers .main-item_border {
     width: 91vw;

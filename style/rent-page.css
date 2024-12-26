@@ -194,10 +194,10 @@
     gap: 2vw;
   }
   .content-top_title {
-    width: 230px;
-    font-size: 28px;
+    width: 100%;
+    font-size: 7.75vw;
     text-align: left;
-    line-height: 33.6px;
+    line-height: normal;
   }
   .content-top_text {
     font-size: 16px;
