@@ -154,6 +154,7 @@
   width: 38.854vw;
   text-align: left;
   text-transform: uppercase;
+  text-align: center;
 }
 /* .similar-content_main {
   display: flex;
@@ -426,7 +427,6 @@
   .content-top_title {
     width: 100%;
     font-size: 7.75vw;
-    text-align: center;
     line-height: normal;
   }
   .main-content_btn {

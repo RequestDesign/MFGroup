@@ -196,8 +196,8 @@
   object-fit: contain;
 }
 .image-block_white {
-  width: 100%;
-  object-fit: contain;
+  width: 25.729vw;
+  height: 15.969vw;
 }
 .content-project_text {
   color: white;

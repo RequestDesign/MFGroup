@@ -2,13 +2,13 @@ ymaps.ready(init);
         function init() {
             // Первая карта (Москва, ул. Бутлерова, дом 17)
             var myMap1 = new ymaps.Map("map", {
-                center: [55.634, 37.482], 
+                center: [55.64990, 37.5405], 
                 zoom: 16,
                 controls: ['zoomControl', 'typeSelector']
             });
-            var myPlacemark1 = new ymaps.Placemark([55.634, 37.482], {
+            var myPlacemark1 = new ymaps.Placemark([55.64990, 37.5405], {
                 hintContent: 'Здесь мы находимся!',
-                balloonContent: 'Здесь находится офис: 117342, г. Москва, ул. Бутлерова, дом 17, БЦ Neo Geo, 5 этаж, офис 5082'
+                balloonContent: 'Здесь находится офис: 117342, ул. Бутлерова, дом 17, БЦ Neo Geo, 5 этаж, офис 5082'
             }, {
                 preset: 'islands#redIcon'
             });
@@ -22,7 +22,7 @@ ymaps.ready(init);
             });
             var myPlacemark3 = new ymaps.Placemark([55.795, 49.106], {
                 hintContent: 'Здесь мы находимся!',
-                balloonContent: 'Здесь находится офис: 420030, г. Казань, ул. Адмиралтейская, дом 3, корпус 4, офис 12'
+                balloonContent: 'Здесь находится офис: ул. Адмиралтейская, дом 3, корпус 4, офис 12'
             }, {
                 preset: 'islands#redIcon'
             });
