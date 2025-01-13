@@ -1,13 +1,13 @@
-const dropdown = document.querySelector('.dropdown');
-const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+// const dropdown = document.querySelector('.dropdown');
+// const dropdownMenu = dropdown.querySelector('.dropdown-menu');
 
-dropdown.addEventListener('mouseover', function() {
-  dropdownMenu.style.display = 'block';
-});
+// dropdown.addEventListener('mouseover', function() {
+//   dropdownMenu.style.display = 'block';
+// });
 
-dropdown.addEventListener('mouseout', function() {
-  dropdownMenu.style.display = 'none';
-});
+// dropdown.addEventListener('mouseout', function() {
+//   dropdownMenu.style.display = 'none';
+// });
 
 document.querySelector('.burger-btn').addEventListener('click', function() {
   const menu = document.querySelector('.header-top_burger');

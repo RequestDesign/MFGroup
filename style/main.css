@@ -81,7 +81,7 @@ body {
 }
 .dropdown:hover .dropdown-menu {
   display: block;
-  inset: 6.03vh auto auto 0;
+  inset: 2.5rem auto auto 0;
   z-index: 6 !important;
 }
 .sorting_text {
@@ -95,7 +95,7 @@ body {
   font-family: "HelveticaNeueCyr" !important;
   font-weight: 400 !important;
   font-size: 0.938vw !important;
-  height: 48px;
+  height: 2.5vw;
   display: grid;
   align-content: center;
   padding: 0 !important;
@@ -263,6 +263,7 @@ body {
   text-align: left;
   border: none;
   background: none;
+  z-index: 1;
 }
 .active-text {
   -webkit-text-fill-color: white;
@@ -270,10 +271,12 @@ body {
 }
 .main-catalog_btn {
   display: grid;
-  margin-top: 4.4vh;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   justify-items: end;
   align-content: space-between;
 }
+
 .catalog-btn_text {
   text-align: right;
   width: 7.24vw;
@@ -519,12 +522,12 @@ body {
 }
 .arr-up {
   font-size: 0.238vw;
-  width: 0.521vw;
+  width: 0.821vw;
   height: 3.457vmax;
 }
 .arr-down {
   font-size: 0.238vw;
-  width: 0.521vw;
+  width: 0.821vw;
   height: 3.457vmax;
 }
 /* footer */
@@ -955,7 +958,7 @@ body {
   }
   .portfolio-image {
     width: 90.933vw;
-    height: 26.608vmax;
+    height: 54.375vw;
     position: relative;
     object-fit: cover;
   }
